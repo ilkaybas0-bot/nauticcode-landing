@@ -5,20 +5,28 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
   const t = useTranslations("header");
+  const pathname = usePathname();
+  const isHome = pathname === "/";
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  // On the home page these are same-page hash scrolls; anywhere else
+  // (e.g. /privacy) the targets don't exist, so route home first.
+  const withHomePrefix = (hash: string) => (isHome ? hash : `/${hash}`);
+
   const navLinks = [
-    { label: t("navServices"), href: "#services" },
-    { label: t("navArchitecture"), href: "#services" },
-    { label: t("navStack"), href: "#stack" },
-    { label: t("navCaseStudies"), href: "#case-studies" },
-    { label: t("navAbout"), href: "#about" },
+    { label: t("navServices"), href: withHomePrefix("#services") },
+    { label: t("navArchitecture"), href: withHomePrefix("#services") },
+    { label: t("navStack"), href: withHomePrefix("#stack") },
+    { label: t("navCaseStudies"), href: withHomePrefix("#case-studies") },
+    { label: t("navAbout"), href: withHomePrefix("#about") },
   ];
+  const ctaHref = withHomePrefix("#contact");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -39,7 +47,7 @@ export default function Header() {
       }`}
     >
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
-        <a href="#" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <Image
             src="/logo-mark.png"
             alt=""
@@ -51,28 +59,28 @@ export default function Header() {
           <span className="font-sans text-base font-semibold tracking-tight text-text-primary">
             Nautic<span className="text-accent-cyan">Code</span>
           </span>
-        </a>
+        </Link>
 
         <div className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="font-mono text-sm text-text-secondary transition-colors hover:text-accent-cyan"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
 
         <div className="hidden items-center gap-5 md:flex">
           <LanguageSwitcher />
-          <a
-            href="#contact"
+          <Link
+            href={ctaHref}
             className="inline-flex items-center rounded-md border border-accent-cyan/40 bg-accent-cyan/10 px-4 py-2 font-mono text-sm font-medium text-accent-cyan shadow-glow-cyan transition-all hover:bg-accent-cyan/20 hover:shadow-glow-cyan-lg"
           >
             {t("cta")}
-          </a>
+          </Link>
         </div>
 
         <button
@@ -99,23 +107,23 @@ export default function Header() {
           >
             <div className="flex flex-col gap-1 px-6 py-4">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
                   className="rounded-md px-2 py-2.5 font-mono text-sm text-text-secondary transition-colors hover:bg-surface hover:text-accent-cyan"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
               <LanguageSwitcher className="px-2 py-2.5" />
-              <a
-                href="#contact"
+              <Link
+                href={ctaHref}
                 onClick={() => setMobileOpen(false)}
                 className="mt-2 inline-flex items-center justify-center rounded-md border border-accent-cyan/40 bg-accent-cyan/10 px-4 py-2.5 font-mono text-sm font-medium text-accent-cyan"
               >
                 {t("cta")}
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}
