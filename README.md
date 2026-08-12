@@ -40,7 +40,7 @@ Set the same three variables in the Vercel project's Environment Variables setti
 - Turkish is served at `/tr`.
 - The visitor's browser language is auto-detected on first visit; the header's EN/TR switcher lets them override it.
 - UI strings live in `messages/en.json` and `messages/tr.json`. Add a key to both files, then read it with `useTranslations("namespace")` in the component.
-- The Privacy Policy page (`app/[locale]/privacy`) is English-only for now — it renders the same content regardless of locale.
+- The Privacy Policy page (`app/[locale]/privacy`) is fully localized too, including the "last updated" date via `Intl.DateTimeFormat`.
 - Routing config: `i18n/routing.ts`, `i18n/request.ts`, `i18n/navigation.ts`, `middleware.ts`.
 
 **Architecture note:** `app/[locale]/layout.tsx` is the true root layout (contains `<html>`/`<body>`) — this is required so Next.js re-renders it (and picks up the new locale/messages) on client-side navigation between locales. Don't move the `<html>` tag or the `NextIntlClientProvider` back to a layout outside `[locale]`; that reintroduces a bug where switching languages updates the URL but leaves stale content mounted.
@@ -52,7 +52,7 @@ app/
   [locale]/
     page.tsx          # home page, assembles all sections
     layout.tsx         # root layout: fonts, metadata, providers, <html lang>
-    privacy/page.tsx   # privacy policy (English-only)
+    privacy/page.tsx   # privacy policy (localized)
     not-found.tsx       # branded 404
     [...rest]/page.tsx # catch-all that calls notFound() for unmatched routes
   api/contact/route.ts # form submission handler (Resend + honeypot + rate limit)
