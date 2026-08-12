@@ -72,10 +72,7 @@ export default function Capabilities() {
           </p>
         </div>
 
-        <div
-          id="stack"
-          className="mt-12 grid scroll-mt-24 grid-cols-1 gap-4 lg:grid-cols-6"
-        >
+        <div className="mt-12 grid grid-cols-1 gap-4 lg:grid-cols-6">
           {CAPABILITIES.map((cap, i) => (
             <motion.div
               key={cap.title}

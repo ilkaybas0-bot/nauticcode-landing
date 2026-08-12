@@ -12,10 +12,10 @@ const CONTACT_EMAIL = "ilkaybas0@gmail.com";
 
 export default function PrivacyPolicyPage() {
   return (
-    <main>
+    <>
       <Header />
 
-      <section className="relative pb-24 pt-40 lg:pb-32 lg:pt-48">
+      <main id="main-content" className="relative pb-24 pt-40 lg:pb-32 lg:pt-48">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <span className="font-mono text-xs uppercase tracking-widest text-accent-cyan">
             Legal
@@ -144,9 +144,9 @@ export default function PrivacyPolicyPage() {
             </div>
           </div>
         </div>
-      </section>
+      </main>
 
       <Footer />
-    </main>
+    </>
   );
 }

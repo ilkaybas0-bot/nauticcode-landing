@@ -5,10 +5,13 @@ import Footer from "@/components/Footer";
 
 export default function NotFound() {
   return (
-    <main>
+    <>
       <Header />
 
-      <section className="relative flex min-h-[70vh] items-center justify-center pb-24 pt-40 lg:pt-48">
+      <main
+        id="main-content"
+        className="relative flex min-h-[70vh] items-center justify-center pb-24 pt-40 lg:pt-48"
+      >
         <div className="mx-auto w-full max-w-lg px-6 lg:px-8">
           <div className="glass overflow-hidden rounded-xl shadow-2xl">
             <div className="flex items-center gap-2 border-b border-border bg-black/20 px-4 py-3">
@@ -40,9 +43,9 @@ export default function NotFound() {
             </div>
           </div>
         </div>
-      </section>
+      </main>
 
       <Footer />
-    </main>
+    </>
   );
 }

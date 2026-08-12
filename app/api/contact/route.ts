@@ -129,5 +129,28 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Failed to send email." }, { status: 502 });
   }
 
+  // Best-effort confirmation to the submitter. Doesn't fail the request if
+  // it errors — Resend's sandbox mode only allows sending to the account's
+  // own address until a domain is verified, so this silently no-ops until
+  // then. The internal notification above is the part that matters.
+  try {
+    await resend.emails.send({
+      from: fromAddress,
+      to: email,
+      subject: "We received your request — NauticCode",
+      html: `
+        <div style="font-family: monospace; font-size: 14px; line-height: 1.6;">
+          <p>Hi ${escapeHtml(name.split(" ")[0])},</p>
+          <p>Thanks for reaching out to NauticCode. We've received your
+          engineering audit request for <strong>${escapeHtml(company)}</strong>
+          and a senior engineer will reply within one business day.</p>
+          <p>— NauticCode</p>
+        </div>
+      `,
+    });
+  } catch (err) {
+    console.error("Confirmation email failed (non-fatal):", err);
+  }
+
   return NextResponse.json({ ok: true });
 }
