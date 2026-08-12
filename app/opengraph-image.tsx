@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { LOGO_MARK_SQUARE_B64 } from "@/lib/logo";
 
 export const runtime = "edge";
 export const size = { width: 1200, height: 630 };
@@ -34,12 +35,13 @@ export default function OpengraphImage() {
               border: "1px solid #1E293B",
             }}
           >
-            <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M12 2 L14.5 9.5 L22 12 L14.5 14.5 L12 22 L9.5 14.5 L2 12 L9.5 9.5 Z"
-                fill="#00F2FE"
-              />
-            </svg>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={`data:image/png;base64,${LOGO_MARK_SQUARE_B64}`}
+              width={36}
+              height={36}
+              alt=""
+            />
           </div>
           <div
             style={{

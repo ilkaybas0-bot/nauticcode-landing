@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { LOGO_MARK_SQUARE_B64 } from "@/lib/logo";
 
 export const runtime = "edge";
 export const size = { width: 32, height: 32 };
@@ -17,12 +18,13 @@ export default function Icon() {
           background: "#070B12",
         }}
       >
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-          <path
-            d="M12 2 L14.5 9.5 L22 12 L14.5 14.5 L12 22 L9.5 14.5 L2 12 L9.5 9.5 Z"
-            fill="#00F2FE"
-          />
-        </svg>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={`data:image/png;base64,${LOGO_MARK_SQUARE_B64}`}
+          width={26}
+          height={26}
+          alt=""
+        />
       </div>
     ),
     { ...size }

@@ -3,40 +3,9 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
-
-function CompassMark() {
-  return (
-    <span className="relative flex h-8 w-8 items-center justify-center rounded-md border border-border bg-surface">
-      <span
-        aria-hidden
-        className="absolute -left-2 font-mono text-xs text-accent-cyan/70"
-      >
-        &lt;
-      </span>
-      <svg
-        width="16"
-        height="16"
-        viewBox="0 0 24 24"
-        fill="none"
-        className="text-accent-cyan"
-      >
-        <path
-          d="M12 2 L14.5 9.5 L22 12 L14.5 14.5 L12 22 L9.5 14.5 L2 12 L9.5 9.5 Z"
-          fill="currentColor"
-          fillOpacity="0.9"
-        />
-      </svg>
-      <span
-        aria-hidden
-        className="absolute -right-2 font-mono text-xs text-accent-cyan/70"
-      >
-        &gt;
-      </span>
-    </span>
-  );
-}
 
 export default function Header() {
   const t = useTranslations("header");
@@ -70,8 +39,15 @@ export default function Header() {
       }`}
     >
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
-        <a href="#" className="flex items-center gap-3">
-          <CompassMark />
+        <a href="#" className="flex items-center gap-2">
+          <Image
+            src="/logo-mark.png"
+            alt=""
+            width={259}
+            height={159}
+            priority
+            className="h-8 w-auto"
+          />
           <span className="font-sans text-base font-semibold tracking-tight text-text-primary">
             Nautic<span className="text-accent-cyan">Code</span>
           </span>
