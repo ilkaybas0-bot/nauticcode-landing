@@ -2,9 +2,10 @@ import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { NextIntlClientProvider } from "next-intl";
-import { getLocale, getMessages, getTranslations } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 import MotionProvider from "@/components/MotionProvider";
-import "./globals.css";
+import "../globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -74,11 +75,21 @@ const organizationJsonLd = {
   slogan: "B2B Software Engineering",
 };
 
-export default async function RootLayout({
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export default async function LocaleLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
-  const locale = await getLocale();
-  const messages = await getMessages();
+  params,
+}: Readonly<{
+  children: React.ReactNode;
+  params: { locale: string };
+}>) {
+  const { locale } = params;
+  setRequestLocale(locale);
+
+  const messages = await getMessages({ locale });
   const t = await getTranslations({ locale, namespace: "layout" });
 
   return (
