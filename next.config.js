@@ -1,3 +1,6 @@
+const createNextIntlPlugin = require("next-intl/plugin");
+const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
+
 const isDev = process.env.NODE_ENV !== "production";
 
 const csp = [
@@ -37,4 +40,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = withNextIntl(nextConfig);

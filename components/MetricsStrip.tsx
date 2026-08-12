@@ -2,9 +2,10 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView, animate } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 type Stat = {
-  label: string;
+  labelKey: "stat1Label" | "stat2Label" | "stat3Label";
   prefix?: string;
   suffix?: string;
   value: number;
@@ -12,9 +13,9 @@ type Stat = {
 };
 
 const STATS: Stat[] = [
-  { label: "System Uptime Architecture", value: 99.98, suffix: "%", decimals: 2 },
-  { label: "Operational Velocity Boost", value: 4.2, suffix: "x", decimals: 1 },
-  { label: "Infrastructure Costs Saved", prefix: "$", value: 12, suffix: "M+" },
+  { labelKey: "stat1Label", value: 99.98, suffix: "%", decimals: 2 },
+  { labelKey: "stat2Label", value: 4.2, suffix: "x", decimals: 1 },
+  { labelKey: "stat3Label", prefix: "$", value: 12, suffix: "M+" },
 ];
 
 function StatCounter({ stat }: { stat: Stat }) {
@@ -42,13 +43,15 @@ function StatCounter({ stat }: { stat: Stat }) {
 }
 
 export default function MetricsStrip() {
+  const t = useTranslations("metrics");
+
   return (
     <section className="relative border-y border-border bg-surface/30 py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
           {STATS.map((stat, i) => (
             <motion.div
-              key={stat.label}
+              key={stat.labelKey}
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
@@ -58,7 +61,9 @@ export default function MetricsStrip() {
               <div className="text-4xl font-semibold text-gradient sm:text-5xl">
                 <StatCounter stat={stat} />
               </div>
-              <p className="mt-2 text-sm text-text-secondary">{stat.label}</p>
+              <p className="mt-2 text-sm text-text-secondary">
+                {t(stat.labelKey)}
+              </p>
             </motion.div>
           ))}
         </div>

@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import MotionProvider from "@/components/MotionProvider";
 import "./globals.css";
 
@@ -72,11 +74,15 @@ const organizationJsonLd = {
   slogan: "B2B Software Engineering",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+  const t = await getTranslations({ locale, namespace: "layout" });
+
   return (
-    <html lang="en" className="dark">
+    <html lang={locale} className="dark">
       <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans`}>
         <script
           type="application/ld+json"
@@ -86,9 +92,11 @@ export default function RootLayout({
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-accent-cyan focus:px-4 focus:py-2 focus:font-mono focus:text-sm focus:font-semibold focus:text-bg"
         >
-          Skip to content
+          {t("skipToContent")}
         </a>
-        <MotionProvider>{children}</MotionProvider>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <MotionProvider>{children}</MotionProvider>
+        </NextIntlClientProvider>
         <Analytics />
       </body>
     </html>

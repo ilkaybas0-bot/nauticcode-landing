@@ -1,0 +1,95 @@
+{
+  "layout": {
+    "skipToContent": "İçeriğe geç"
+  },
+  "header": {
+    "toggleMenu": "Menüyü aç/kapat",
+    "navServices": "Hizmetler",
+    "navArchitecture": "Mimari",
+    "navStack": "Teknoloji",
+    "navCaseStudies": "Vaka Analizleri",
+    "navAbout": "Hakkımızda",
+    "cta": "Mühendislik Denetimi Talep Et"
+  },
+  "hero": {
+    "badgeStatus": "[SİSTEMLER AKTİF]",
+    "badgeText": "Yeni Nesil B2B Yazılım Mimarisi",
+    "headline": "Kurumsal Sistemler İçin Akıllı <highlight>Kod Akışlarını</highlight> Haritalıyoruz.",
+    "subheadline": "Operasyonel hızınızı ölçeklendirmek için dayanıklı özel yazılımlar, otonom yapay zekâ iş akışları ve bulut altyapısı geliştiriyoruz.",
+    "ctaPrimary": "Projenizi Başlatın",
+    "ctaSecondary": "Sistem Mimarisini İncele"
+  },
+  "metrics": {
+    "stat1Label": "Sistem Çalışma Süresi Mimarisi",
+    "stat2Label": "Operasyonel Hız Artışı",
+    "stat3Label": "Tasarruf Edilen Altyapı Maliyeti"
+  },
+  "capabilities": {
+    "eyebrow": "Temel Yetkinlikler",
+    "heading": "Otonom kurumsal sistemler için mühendislik temelleri.",
+    "description": "Dört disiplin, tek bütünleşik mühendislik pratiği — model tabanlı ajanlardan onları ayakta tutan altyapıya kadar.",
+    "card1Title": "Özel AI Ajanları & RAG Pipeline'ları",
+    "card1Description": "LLM'leri mevcut veritabanlarınıza entegre eden otonom iş akışları — bilgiyle zenginleştirilmiş (RAG), bağlama duyarlı ve operasyonel verinizle harekete geçecek şekilde tasarlanmış.",
+    "card2Title": "Kurumsal Yazılım Mühendisliği",
+    "card2Description": "Ölçekte doğruluk için tasarlanmış mikroservisler, Rust/Go backend motorları ve düşük gecikmeli API'ler.",
+    "card3Title": "Otomatik İş Mantığı",
+    "card3Description": "Operasyonel yığınınızdaki manuel yükü ortadan kaldıran karmaşık n8n/Python orkestrasyonu.",
+    "card4Title": "Bulut Altyapısı & DevOps",
+    "card4Description": "Kubernetes, kesintisiz CI/CD hatlarıyla kurulmuş AWS/GCP sunucusuz mimariler."
+  },
+  "techStack": {
+    "eyebrow": "Teknoloji",
+    "heading": "Mühendisliğin arkasındaki araçlar.",
+    "description": "Framework taassubu yok — sorun için doğru olanı, ekibinizin sürdürebileceği kadar dayanıklı olanı seçiyoruz.",
+    "cat1Label": "Diller & Çalışma Zamanları",
+    "cat2Label": "Yapay Zekâ & Veri",
+    "cat3Label": "Altyapı",
+    "cat4Label": "Otomasyon & Teslimat"
+  },
+  "caseStudy": {
+    "eyebrow": "Örnek Senaryo",
+    "heading": "Büyük Ölçekte Sevkiyat Modernizasyonu",
+    "description": "Manuel yönlendirmeyi otonom, olay tabanlı bir ajanla nasıl değiştireceğimizi gösteren temsili bir senaryo — gerçek bir müşteri projesi değildir.",
+    "statLabel1": "Genel gider azalması",
+    "statLabel2": "Yıllık tasarruf",
+    "challengeLabel": "Sorun",
+    "challengeTitle": "Eski usul manuel sevkiyat",
+    "challengeDescription": "Manuel, insan tarafından yönlendirilen sevkiyat kararları filo genelinde yüzde 14 operasyonel gecikmeye yol açıyordu, gerçek zamanlı yük koşullarına dair görünürlük yoktu.",
+    "solutionLabel": "Geliştirilen Çözüm",
+    "solutionTitle": "Olay tabanlı yapay zekâ sevkiyat ajanı",
+    "solutionDescription": "Go + PostgreSQL DAG motoru üzerine kurulu — canlı yük ve rota verisini işleyen, çakışmaları çözen ve gerçek zamanlı sevkiyat yapan otonom bir ajan.",
+    "impactLabel": "Etki",
+    "impactTitle": "Yüzde 68 genel gider azalması",
+    "impactDescription": "Sevkiyat kararları artık manuel inceleme döngüleri yerine milisaniyeler içinde çözülüyor, yılda 1,8 milyon dolar tasarruf sağlanıyor."
+  },
+  "about": {
+    "eyebrow": "Hakkımızda",
+    "heading": "Küçük, deneyimli bir mühendislik ekibi.",
+    "paragraph1": "NauticCode; B2B sistemler, özel yazılım platformları, yapay zekâ ajanları ve bunları ayakta tutan altyapı üzerine odaklanan bağımsız bir yazılım mühendisliği pratiğidir. Hesap yöneticisi yok, şişirilmiş ekipler yok — sisteminizi kuran mühendislerle doğrudan çalışırsınız.",
+    "paragraph2": "Aklınızda bir proje, bir iş birliği fikri ya da sadece bir sorunuz mu var? Doğrudan yazın, her mesajı kendimiz okuyoruz.",
+    "contactLabel": "İletişime Geçin"
+  },
+  "footerCta": {
+    "headline": "Yazılım Altyapınızı <highlight>Modernize</highlight> Etmeye Hazır mısınız?",
+    "subheadline": "Denetimi başlatın. Kıdemli bir mühendis altyapınızı inceler ve bir iş günü içinde geri döner.",
+    "terminalTitle": "npm run book-audit",
+    "fieldNamePrompt": "adınız?",
+    "fieldNamePlaceholder": "Ayşe Yılmaz",
+    "fieldEmailPrompt": "iş e-postanız?",
+    "fieldEmailPlaceholder": "ayse@sirket.com",
+    "fieldCompanyPrompt": "şirket adı?",
+    "fieldCompanyPlaceholder": "Acme Lojistik",
+    "fieldProjectPrompt": "ne inşa etmek istiyorsunuz?",
+    "fieldProjectPlaceholder": "AI sevkiyat ajanı, dahili araçlar, geçiş projesi…",
+    "sending": "Gönderiliyor",
+    "next": "İleri",
+    "submitRequest": "Talebi Gönder",
+    "successTitle": "denetim talebi alındı",
+    "successMessage": "Teşekkürler, {name} — bir iş günü içinde {email} adresinden size ulaşacağız.",
+    "genericError": "Bir şeyler ters gitti. Lütfen tekrar deneyin."
+  },
+  "footer": {
+    "copyright": "© {year} NauticCode. Tüm hakları saklıdır.",
+    "privacyPolicy": "Gizlilik Politikası"
+  }
+}

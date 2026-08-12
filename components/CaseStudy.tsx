@@ -2,38 +2,38 @@
 
 import { motion } from "framer-motion";
 import { AlertTriangle, Cpu, TrendingUp } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const BREAKDOWN = [
   {
     icon: AlertTriangle,
-    label: "Challenge",
-    title: "Legacy manual dispatching",
-    description:
-      "Manual, human-routed dispatch decisions caused 14% operational latency across the fleet, with no visibility into real-time load conditions.",
+    labelKey: "challengeLabel",
+    titleKey: "challengeTitle",
+    descriptionKey: "challengeDescription",
     accent: "text-amber-400",
     border: "border-amber-400/20",
   },
   {
     icon: Cpu,
-    label: "Engineered Solution",
-    title: "Event-driven AI dispatching agent",
-    description:
-      "Built on Go + a PostgreSQL DAG engine — an autonomous agent that ingests live load and route data, resolves conflicts, and dispatches in real time.",
+    labelKey: "solutionLabel",
+    titleKey: "solutionTitle",
+    descriptionKey: "solutionDescription",
     accent: "text-accent-cyan",
     border: "border-accent-cyan/20",
   },
   {
     icon: TrendingUp,
-    label: "Impact",
-    title: "68% overhead reduction",
-    description:
-      "$1.8M in annual savings, with dispatch decisions now resolved in milliseconds instead of manual review cycles.",
+    labelKey: "impactLabel",
+    titleKey: "impactTitle",
+    descriptionKey: "impactDescription",
     accent: "text-emerald-400",
     border: "border-emerald-400/20",
   },
-];
+] as const;
 
 export default function CaseStudy() {
+  const t = useTranslations("caseStudy");
+
   return (
     <section id="case-studies" className="relative py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -42,15 +42,13 @@ export default function CaseStudy() {
             <div className="relative flex flex-col justify-between border-b border-border bg-gradient-to-br from-accent-cobalt/10 via-transparent to-transparent p-8 lg:col-span-2 lg:border-b-0 lg:border-r lg:p-10">
               <div>
                 <span className="font-mono text-xs uppercase tracking-widest text-accent-cyan">
-                  Illustrative Example
+                  {t("eyebrow")}
                 </span>
                 <h2 className="mt-4 font-sans text-2xl font-semibold tracking-tight sm:text-3xl">
-                  Dispatch Modernization at Scale
+                  {t("heading")}
                 </h2>
                 <p className="mt-4 text-sm leading-relaxed text-text-secondary">
-                  A representative scenario showing how we&apos;d replace
-                  manual routing with an autonomous, event-driven agent —
-                  not an actual client engagement.
+                  {t("description")}
                 </p>
               </div>
 
@@ -60,7 +58,7 @@ export default function CaseStudy() {
                     68%
                   </div>
                   <p className="mt-1 text-xs text-text-secondary">
-                    Overhead reduction
+                    {t("statLabel1")}
                   </p>
                 </div>
                 <div>
@@ -68,7 +66,7 @@ export default function CaseStudy() {
                     $1.8M
                   </div>
                   <p className="mt-1 text-xs text-text-secondary">
-                    Annual savings
+                    {t("statLabel2")}
                   </p>
                 </div>
               </div>
@@ -77,7 +75,7 @@ export default function CaseStudy() {
             <div className="grid grid-cols-1 divide-y divide-border sm:grid-cols-3 sm:divide-x sm:divide-y-0 lg:col-span-3">
               {BREAKDOWN.map((item, i) => (
                 <motion.div
-                  key={item.label}
+                  key={item.labelKey}
                   initial={{ opacity: 0, y: 16 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
@@ -92,13 +90,13 @@ export default function CaseStudy() {
                   <span
                     className={`mt-5 block font-mono text-xs uppercase tracking-widest ${item.accent}`}
                   >
-                    {item.label}
+                    {t(item.labelKey)}
                   </span>
                   <h3 className="mt-2 font-sans text-base font-semibold text-text-primary">
-                    {item.title}
+                    {t(item.titleKey)}
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-text-secondary">
-                    {item.description}
+                    {t(item.descriptionKey)}
                   </p>
                 </motion.div>
               ))}

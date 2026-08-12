@@ -3,39 +3,54 @@
 import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, Loader2, TerminalSquare } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 type FieldKey = "name" | "email" | "company" | "project";
 
 type Field = {
   key: FieldKey;
-  prompt: string;
-  placeholder: string;
+  promptKey:
+    | "fieldNamePrompt"
+    | "fieldEmailPrompt"
+    | "fieldCompanyPrompt"
+    | "fieldProjectPrompt";
+  placeholderKey:
+    | "fieldNamePlaceholder"
+    | "fieldEmailPlaceholder"
+    | "fieldCompanyPlaceholder"
+    | "fieldProjectPlaceholder";
   type: "text" | "email";
 };
 
 const FIELDS: Field[] = [
-  { key: "name", prompt: "your name?", placeholder: "Jane Doe", type: "text" },
+  {
+    key: "name",
+    promptKey: "fieldNamePrompt",
+    placeholderKey: "fieldNamePlaceholder",
+    type: "text",
+  },
   {
     key: "email",
-    prompt: "work email?",
-    placeholder: "jane@company.com",
+    promptKey: "fieldEmailPrompt",
+    placeholderKey: "fieldEmailPlaceholder",
     type: "email",
   },
   {
     key: "company",
-    prompt: "company name?",
-    placeholder: "Acme Logistics",
+    promptKey: "fieldCompanyPrompt",
+    placeholderKey: "fieldCompanyPlaceholder",
     type: "text",
   },
   {
     key: "project",
-    prompt: "what are you looking to build?",
-    placeholder: "AI dispatch agent, internal tooling, migration…",
+    promptKey: "fieldProjectPrompt",
+    placeholderKey: "fieldProjectPlaceholder",
     type: "text",
   },
 ];
 
 export default function FooterCTA() {
+  const t = useTranslations("footerCta");
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Record<FieldKey, string>>({
     name: "",
@@ -76,12 +91,12 @@ export default function FooterCTA() {
 
       if (!res.ok) {
         const data = await res.json().catch(() => null);
-        throw new Error(data?.error || "Something went wrong. Please try again.");
+        throw new Error(data?.error || t("genericError"));
       }
 
       setSubmitted(true);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
+      setError(err instanceof Error ? err.message : t("genericError"));
     } finally {
       setSubmitting(false);
     }
@@ -99,8 +114,11 @@ export default function FooterCTA() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="font-sans text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl"
         >
-          Ready to <span className="text-gradient">Modernize</span> Your
-          Software Stack?
+          {t.rich("headline", {
+            highlight: (chunks) => (
+              <span className="text-gradient">{chunks}</span>
+            ),
+          })}
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 16 }}
@@ -109,8 +127,7 @@ export default function FooterCTA() {
           transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
           className="mx-auto mt-4 max-w-xl text-base text-text-secondary"
         >
-          Run the audit. A senior engineer reviews your stack and replies
-          within one business day.
+          {t("subheadline")}
         </motion.p>
 
         <motion.div
@@ -126,7 +143,7 @@ export default function FooterCTA() {
             <span className="h-3 w-3 rounded-full bg-emerald-500/70" />
             <span className="ml-3 flex items-center gap-1.5 font-mono text-xs text-text-secondary">
               <TerminalSquare size={12} />
-              npm run book-audit
+              {t("terminalTitle")}
             </span>
             {!submitted && (
               <span className="ml-auto font-mono text-[11px] text-text-secondary">
@@ -138,7 +155,7 @@ export default function FooterCTA() {
           <div className="min-h-[220px] px-5 py-6 font-mono text-[13px] leading-relaxed">
             {FIELDS.slice(0, step).map((f) => (
               <p key={f.key} className="text-text-secondary">
-                <span className="text-emerald-400">✓</span> {f.prompt}{" "}
+                <span className="text-emerald-400">✓</span> {t(f.promptKey)}{" "}
                 <span className="text-text-primary">{answers[f.key]}</span>
               </p>
             ))}
@@ -165,7 +182,7 @@ export default function FooterCTA() {
 
                 <label htmlFor={field.key} className="block text-accent-cyan">
                   {"> "}
-                  {field.prompt}
+                  {t(field.promptKey)}
                 </label>
                 <div className="mt-2 flex items-center gap-2 border-b border-border pb-2 transition-colors focus-within:border-accent-cyan">
                   <span className="text-text-secondary">$</span>
@@ -177,7 +194,7 @@ export default function FooterCTA() {
                     disabled={submitting}
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
-                    placeholder={field.placeholder}
+                    placeholder={t(field.placeholderKey)}
                     className="w-full bg-transparent text-text-primary placeholder:text-text-secondary/80 focus:outline-none disabled:opacity-50"
                   />
                 </div>
@@ -195,12 +212,12 @@ export default function FooterCTA() {
                 >
                   {submitting ? (
                     <>
-                      Sending
+                      {t("sending")}
                       <Loader2 size={14} className="animate-spin" />
                     </>
                   ) : (
                     <>
-                      {isLast ? "Submit request" : "Next"}
+                      {isLast ? t("submitRequest") : t("next")}
                       <ArrowRight
                         size={14}
                         className="transition-transform group-hover:translate-x-0.5"
@@ -219,11 +236,13 @@ export default function FooterCTA() {
               >
                 <div className="flex items-center gap-2 text-emerald-400">
                   <CheckCircle2 size={16} />
-                  <span>audit request received</span>
+                  <span>{t("successTitle")}</span>
                 </div>
                 <p className="text-text-secondary">
-                  Thanks, {answers.name.split(" ")[0]} — we&apos;ll reach out
-                  to {answers.email} within one business day.
+                  {t("successMessage", {
+                    name: answers.name.split(" ")[0],
+                    email: answers.email,
+                  })}
                 </p>
               </motion.div>
             )}

@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { TerminalSquare } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Link } from "@/i18n/navigation";
 
 export default function NotFound() {
   return (

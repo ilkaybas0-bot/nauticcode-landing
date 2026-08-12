@@ -1,0 +1,95 @@
+{
+  "layout": {
+    "skipToContent": "Skip to content"
+  },
+  "header": {
+    "toggleMenu": "Toggle navigation menu",
+    "navServices": "Services",
+    "navArchitecture": "Architecture",
+    "navStack": "Stack",
+    "navCaseStudies": "Case Studies",
+    "navAbout": "About",
+    "cta": "Request Engineering Audit"
+  },
+  "hero": {
+    "badgeStatus": "[SYSTEMS ONLINE]",
+    "badgeText": "Next-Gen B2B Software Architecture",
+    "headline": "Charting Intelligent <highlight>Code Flows</highlight> for Enterprise Systems.",
+    "subheadline": "We engineer resilient custom software, autonomous AI workflows, and cloud infrastructure designed to scale your operational velocity.",
+    "ctaPrimary": "Start Your Project",
+    "ctaSecondary": "View Systems Architecture"
+  },
+  "metrics": {
+    "stat1Label": "System Uptime Architecture",
+    "stat2Label": "Operational Velocity Boost",
+    "stat3Label": "Infrastructure Costs Saved"
+  },
+  "capabilities": {
+    "eyebrow": "Core Capabilities",
+    "heading": "Engineering primitives for autonomous enterprise systems.",
+    "description": "Four disciplines, one integrated engineering practice — from model-driven agents to the infrastructure that keeps them running.",
+    "card1Title": "Custom AI Agents & RAG Pipelines",
+    "card1Description": "Autonomous workflows integrating LLMs into existing databases — retrieval-augmented, context-aware, and built to act on your operational data.",
+    "card2Title": "Enterprise Software Engineering",
+    "card2Description": "Microservices, Rust/Go backend engines, and low-latency APIs engineered for correctness at scale.",
+    "card3Title": "Automated Business Logic",
+    "card3Description": "Complex n8n/Python orchestration eliminating manual overhead across your operational stack.",
+    "card4Title": "Cloud Infrastructure & DevOps",
+    "card4Description": "Kubernetes, AWS/GCP serverless setups with zero-downtime CI/CD pipelines built for resilience."
+  },
+  "techStack": {
+    "eyebrow": "Stack",
+    "heading": "The tools behind the engineering.",
+    "description": "No framework worship — we pick what is correct for the problem and durable for your team to maintain.",
+    "cat1Label": "Languages & Runtimes",
+    "cat2Label": "AI & Data",
+    "cat3Label": "Infrastructure",
+    "cat4Label": "Automation & Delivery"
+  },
+  "caseStudy": {
+    "eyebrow": "Illustrative Example",
+    "heading": "Dispatch Modernization at Scale",
+    "description": "A representative scenario showing how we would replace manual routing with an autonomous, event-driven agent — not an actual client engagement.",
+    "statLabel1": "Overhead reduction",
+    "statLabel2": "Annual savings",
+    "challengeLabel": "Challenge",
+    "challengeTitle": "Legacy manual dispatching",
+    "challengeDescription": "Manual, human-routed dispatch decisions caused 14% operational latency across the fleet, with no visibility into real-time load conditions.",
+    "solutionLabel": "Engineered Solution",
+    "solutionTitle": "Event-driven AI dispatching agent",
+    "solutionDescription": "Built on Go + a PostgreSQL DAG engine — an autonomous agent that ingests live load and route data, resolves conflicts, and dispatches in real time.",
+    "impactLabel": "Impact",
+    "impactTitle": "68% overhead reduction",
+    "impactDescription": "$1.8M in annual savings, with dispatch decisions now resolved in milliseconds instead of manual review cycles."
+  },
+  "about": {
+    "eyebrow": "About",
+    "heading": "A small, senior engineering practice.",
+    "paragraph1": "NauticCode is an independent software engineering practice focused on B2B systems: custom platforms, AI agents, and the infrastructure that keeps them running. No account managers, no bloated teams — you work directly with the engineers building your system.",
+    "paragraph2": "Have a project in mind, a partnership idea, or just a question? Reach out directly, we read every message ourselves.",
+    "contactLabel": "Get in touch"
+  },
+  "footerCta": {
+    "headline": "Ready to <highlight>Modernize</highlight> Your Software Stack?",
+    "subheadline": "Run the audit. A senior engineer reviews your stack and replies within one business day.",
+    "terminalTitle": "npm run book-audit",
+    "fieldNamePrompt": "your name?",
+    "fieldNamePlaceholder": "Jane Doe",
+    "fieldEmailPrompt": "work email?",
+    "fieldEmailPlaceholder": "jane@company.com",
+    "fieldCompanyPrompt": "company name?",
+    "fieldCompanyPlaceholder": "Acme Logistics",
+    "fieldProjectPrompt": "what are you looking to build?",
+    "fieldProjectPlaceholder": "AI dispatch agent, internal tooling, migration…",
+    "sending": "Sending",
+    "next": "Next",
+    "submitRequest": "Submit request",
+    "successTitle": "audit request received",
+    "successMessage": "Thanks, {name} — we will reach out to {email} within one business day.",
+    "genericError": "Something went wrong. Please try again."
+  },
+  "footer": {
+    "copyright": "© {year} NauticCode. All rights reserved.",
+    "privacyPolicy": "Privacy Policy"
+  }
+}

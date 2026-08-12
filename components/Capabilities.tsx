@@ -3,11 +3,16 @@
 import { motion } from "framer-motion";
 import { Bot, Boxes, Workflow, Cloud, type LucideIcon } from "lucide-react";
 import { useRef, type MouseEvent } from "react";
+import { useTranslations } from "next-intl";
 
 type Capability = {
   icon: LucideIcon;
-  title: string;
-  description: string;
+  titleKey: "card1Title" | "card2Title" | "card3Title" | "card4Title";
+  descriptionKey:
+    | "card1Description"
+    | "card2Description"
+    | "card3Description"
+    | "card4Description";
   tags: string[];
   span: string;
 };
@@ -15,33 +20,29 @@ type Capability = {
 const CAPABILITIES: Capability[] = [
   {
     icon: Bot,
-    title: "Custom AI Agents & RAG Pipelines",
-    description:
-      "Autonomous workflows integrating LLMs into existing databases — retrieval-augmented, context-aware, and built to act on your operational data.",
+    titleKey: "card1Title",
+    descriptionKey: "card1Description",
     tags: ["LLM Orchestration", "Vector DBs", "RAG"],
     span: "lg:col-span-3",
   },
   {
     icon: Boxes,
-    title: "Enterprise Software Engineering",
-    description:
-      "Microservices, Rust/Go backend engines, and low-latency APIs engineered for correctness at scale.",
+    titleKey: "card2Title",
+    descriptionKey: "card2Description",
     tags: ["Rust", "Go", "gRPC"],
     span: "lg:col-span-3",
   },
   {
     icon: Workflow,
-    title: "Automated Business Logic",
-    description:
-      "Complex n8n/Python orchestration eliminating manual overhead across your operational stack.",
+    titleKey: "card3Title",
+    descriptionKey: "card3Description",
     tags: ["n8n", "Python", "Orchestration"],
     span: "lg:col-span-2",
   },
   {
     icon: Cloud,
-    title: "Cloud Infrastructure & DevOps",
-    description:
-      "Kubernetes, AWS/GCP serverless setups with zero-downtime CI/CD pipelines built for resilience.",
+    titleKey: "card4Title",
+    descriptionKey: "card4Description",
     tags: ["Kubernetes", "AWS/GCP", "CI/CD"],
     span: "lg:col-span-4",
   },
@@ -55,27 +56,27 @@ function handleCardMouseMove(e: MouseEvent<HTMLDivElement>) {
 }
 
 export default function Capabilities() {
+  const t = useTranslations("capabilities");
+
   return (
     <section id="services" className="relative py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-2xl">
           <span className="font-mono text-xs uppercase tracking-widest text-accent-cyan">
-            Core Capabilities
+            {t("eyebrow")}
           </span>
           <h2 className="mt-4 font-sans text-3xl font-semibold tracking-tight sm:text-4xl">
-            Engineering primitives for autonomous enterprise systems.
+            {t("heading")}
           </h2>
           <p className="mt-4 text-base leading-relaxed text-text-secondary">
-            Four disciplines, one integrated engineering practice — from
-            model-driven agents to the infrastructure that keeps them
-            running.
+            {t("description")}
           </p>
         </div>
 
         <div className="mt-12 grid grid-cols-1 gap-4 lg:grid-cols-6">
           {CAPABILITIES.map((cap, i) => (
             <motion.div
-              key={cap.title}
+              key={cap.titleKey}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
@@ -99,10 +100,10 @@ export default function Capabilities() {
                 </div>
 
                 <h3 className="mt-5 font-sans text-lg font-semibold text-text-primary">
-                  {cap.title}
+                  {t(cap.titleKey)}
                 </h3>
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-text-secondary">
-                  {cap.description}
+                  {t(cap.descriptionKey)}
                 </p>
 
                 <div className="mt-5 flex flex-wrap gap-2">

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, TerminalSquare } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const TERMINAL_LINES = [
   { text: "$ nauticcode deploy --agent=dispatch-ai", color: "text-text-secondary" },
@@ -29,6 +30,8 @@ const lineVariants = {
 };
 
 export default function Hero() {
+  const t = useTranslations("hero");
+
   return (
     <section
       id="architecture"
@@ -48,8 +51,8 @@ export default function Hero() {
               <span className="absolute inline-flex h-full w-full animate-pulse-dot rounded-full bg-accent-cyan" />
             </span>
             <span className="font-mono text-xs tracking-wide text-text-secondary">
-              <span className="text-accent-cyan">[SYSTEMS ONLINE]</span> Next-Gen
-              B2B Software Architecture
+              <span className="text-accent-cyan">{t("badgeStatus")}</span>{" "}
+              {t("badgeText")}
             </span>
           </motion.div>
 
@@ -59,9 +62,11 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
             className="mt-6 font-sans text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl"
           >
-            Charting Intelligent{" "}
-            <span className="text-gradient">Code Flows</span> for Enterprise
-            Systems.
+            {t.rich("headline", {
+              highlight: (chunks) => (
+                <span className="text-gradient">{chunks}</span>
+              ),
+            })}
           </motion.h1>
 
           <motion.p
@@ -70,9 +75,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
             className="mt-6 max-w-xl text-lg leading-relaxed text-text-secondary"
           >
-            We engineer resilient custom software, autonomous AI workflows,
-            and cloud infrastructure designed to scale your operational
-            velocity.
+            {t("subheadline")}
           </motion.p>
 
           <motion.div
@@ -85,7 +88,7 @@ export default function Hero() {
               href="#contact"
               className="group inline-flex items-center justify-center gap-2 rounded-md bg-accent-cyan px-6 py-3 font-mono text-sm font-semibold text-bg shadow-glow-cyan transition-all hover:shadow-glow-cyan-lg"
             >
-              Start Your Project
+              {t("ctaPrimary")}
               <ArrowRight
                 size={16}
                 className="transition-transform group-hover:translate-x-0.5"
@@ -95,7 +98,7 @@ export default function Hero() {
               href="#architecture"
               className="inline-flex items-center justify-center gap-2 rounded-md border border-border px-6 py-3 font-mono text-sm font-medium text-text-primary transition-colors hover:border-accent-cyan/50 hover:text-accent-cyan"
             >
-              View Systems Architecture
+              {t("ctaSecondary")}
             </a>
           </motion.div>
         </div>

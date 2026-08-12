@@ -3,13 +3,8 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-
-const NAV_LINKS = [
-  { label: "Services", href: "#services" },
-  { label: "Architecture", href: "#architecture" },
-  { label: "Case Studies", href: "#case-studies" },
-  { label: "Stack", href: "#stack" },
-];
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 function CompassMark() {
   return (
@@ -44,8 +39,17 @@ function CompassMark() {
 }
 
 export default function Header() {
+  const t = useTranslations("header");
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const navLinks = [
+    { label: t("navServices"), href: "#services" },
+    { label: t("navArchitecture"), href: "#architecture" },
+    { label: t("navStack"), href: "#stack" },
+    { label: t("navCaseStudies"), href: "#case-studies" },
+    { label: t("navAbout"), href: "#about" },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -74,7 +78,7 @@ export default function Header() {
         </a>
 
         <div className="hidden items-center gap-8 md:flex">
-          {NAV_LINKS.map((link) => (
+          {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
@@ -85,18 +89,19 @@ export default function Header() {
           ))}
         </div>
 
-        <div className="hidden md:block">
+        <div className="hidden items-center gap-5 md:flex">
+          <LanguageSwitcher />
           <a
             href="#contact"
             className="inline-flex items-center rounded-md border border-accent-cyan/40 bg-accent-cyan/10 px-4 py-2 font-mono text-sm font-medium text-accent-cyan shadow-glow-cyan transition-all hover:bg-accent-cyan/20 hover:shadow-glow-cyan-lg"
           >
-            Request Engineering Audit
+            {t("cta")}
           </a>
         </div>
 
         <button
           type="button"
-          aria-label="Toggle navigation menu"
+          aria-label={t("toggleMenu")}
           aria-expanded={mobileOpen}
           aria-controls="mobile-menu"
           onClick={() => setMobileOpen((v) => !v)}
@@ -117,7 +122,7 @@ export default function Header() {
             className="overflow-hidden border-b border-border bg-bg/95 backdrop-blur-xl md:hidden"
           >
             <div className="flex flex-col gap-1 px-6 py-4">
-              {NAV_LINKS.map((link) => (
+              {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
@@ -127,12 +132,13 @@ export default function Header() {
                   {link.label}
                 </a>
               ))}
+              <LanguageSwitcher className="px-2 py-2.5" />
               <a
                 href="#contact"
                 onClick={() => setMobileOpen(false)}
                 className="mt-2 inline-flex items-center justify-center rounded-md border border-accent-cyan/40 bg-accent-cyan/10 px-4 py-2.5 font-mono text-sm font-medium text-accent-cyan"
               >
-                Request Engineering Audit
+                {t("cta")}
               </a>
             </div>
           </motion.div>
