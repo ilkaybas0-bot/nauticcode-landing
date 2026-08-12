@@ -1,10 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail } from "lucide-react";
+import { Mail, MessageCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const CONTACT_EMAIL = "nauticcode.contact@gmail.com";
+const WHATSAPP_NUMBER = "905384519785";
+const WHATSAPP_DISPLAY = "+90 538 451 97 85";
 
 export default function About() {
   const t = useTranslations("about");
@@ -41,20 +43,37 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="glass flex flex-col justify-between rounded-xl p-8 lg:col-span-2"
+            className="glass flex flex-col gap-6 rounded-xl p-8 lg:col-span-2"
           >
-            <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-border bg-bg/60 text-accent-cyan">
-              <Mail size={20} strokeWidth={1.75} />
-            </div>
-            <div className="mt-6">
-              <span className="font-mono text-xs uppercase tracking-widest text-text-secondary">
+            <div>
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-border bg-bg/60 text-accent-cyan">
+                <Mail size={20} strokeWidth={1.75} />
+              </div>
+              <span className="mt-4 block font-mono text-xs uppercase tracking-widest text-text-secondary">
                 {t("contactLabel")}
               </span>
               <a
                 href={`mailto:${CONTACT_EMAIL}`}
-                className="mt-3 block break-all font-mono text-lg text-text-primary transition-colors hover:text-accent-cyan"
+                className="mt-2 block break-all font-mono text-lg text-text-primary transition-colors hover:text-accent-cyan"
               >
                 {CONTACT_EMAIL}
+              </a>
+            </div>
+
+            <div className="border-t border-border pt-6">
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-border bg-bg/60 text-emerald-400">
+                <MessageCircle size={20} strokeWidth={1.75} />
+              </div>
+              <span className="mt-4 block font-mono text-xs uppercase tracking-widest text-text-secondary">
+                {t("whatsappLabel")}
+              </span>
+              <a
+                href={`https://wa.me/${WHATSAPP_NUMBER}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 block font-mono text-lg text-text-primary transition-colors hover:text-emerald-400"
+              >
+                {WHATSAPP_DISPLAY}
               </a>
             </div>
           </motion.div>
