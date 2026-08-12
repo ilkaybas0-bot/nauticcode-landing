@@ -7,7 +7,7 @@
     "navServices": "Services",
     "navArchitecture": "Architecture",
     "navStack": "Stack",
-    "navCaseStudies": "Case Studies",
+    "navCaseStudies": "Approach",
     "navAbout": "About",
     "cta": "Request a Software Audit"
   },
@@ -67,6 +67,7 @@
     "heading": "A small, senior development practice.",
     "paragraph1": "NauticCode is an independent software development practice focused on B2B systems: custom platforms, AI agents, and the infrastructure that keeps them running. No account managers, no bloated teams — you work directly with the people building your system.",
     "paragraph2": "Have a project in mind, a partnership idea, or just a question? Reach out directly, we read every message ourselves.",
+    "availability": "Currently taking on a limited number of new projects",
     "contactLabel": "Get in touch"
   },
   "footerCta": {

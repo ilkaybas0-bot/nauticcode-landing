@@ -7,7 +7,7 @@
     "navServices": "Hizmetler",
     "navArchitecture": "Mimari",
     "navStack": "Teknoloji",
-    "navCaseStudies": "Vaka Analizleri",
+    "navCaseStudies": "Yaklaşımımız",
     "navAbout": "Hakkımızda",
     "cta": "Yazılım Denetimi Talep Et"
   },
@@ -67,6 +67,7 @@
     "heading": "Küçük, deneyimli bir geliştirme ekibi.",
     "paragraph1": "NauticCode; B2B sistemler, özel yazılım platformları, yapay zekâ ajanları ve bunları ayakta tutan altyapı üzerine odaklanan bağımsız bir yazılım geliştirme pratiğidir. Hesap yöneticisi yok, şişirilmiş ekipler yok — sisteminizi kuran ekiple doğrudan çalışırsınız.",
     "paragraph2": "Aklınızda bir proje, bir iş birliği fikri ya da sadece bir sorunuz mu var? Doğrudan yazın, her mesajı kendimiz okuyoruz.",
+    "availability": "Şu anda sınırlı sayıda yeni proje kabul ediyoruz",
     "contactLabel": "İletişime Geçin"
   },
   "footerCta": {

@@ -26,6 +26,14 @@ export default function About() {
             <p className="mt-4 text-base leading-relaxed text-text-secondary">
               {t("paragraph2")}
             </p>
+            <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-3 py-1.5">
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full animate-pulse-dot rounded-full bg-accent-cyan" />
+              </span>
+              <span className="font-mono text-xs text-text-secondary">
+                {t("availability")}
+              </span>
+            </div>
           </div>
 
           <motion.div
