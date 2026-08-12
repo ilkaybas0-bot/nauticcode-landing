@@ -30,7 +30,10 @@ const lineVariants = {
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pb-24 pt-40 lg:pb-32 lg:pt-48">
+    <section
+      id="architecture"
+      className="relative overflow-hidden pb-24 pt-40 lg:pb-32 lg:pt-48"
+    >
       <div className="absolute inset-0 -z-10 bg-grid bg-radial-fade [mask-image:radial-gradient(ellipse_60%_60%_at_50%_0%,black,transparent)]" />
 
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 px-6 lg:grid-cols-2 lg:px-8">

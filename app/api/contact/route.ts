@@ -5,11 +5,35 @@ export const runtime = "nodejs";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
+const RATE_LIMIT_MAX_REQUESTS = 5;
+// Best-effort only: resets on cold start and isn't shared across serverless
+// instances. Good enough to blunt a single script hammering the endpoint;
+// swap for Upstash/Vercel KV if real abuse shows up.
+const requestLog = new Map<string, number[]>();
+
+function isRateLimited(ip: string) {
+  const now = Date.now();
+  const timestamps = (requestLog.get(ip) || []).filter(
+    (t) => now - t < RATE_LIMIT_WINDOW_MS
+  );
+
+  if (timestamps.length >= RATE_LIMIT_MAX_REQUESTS) {
+    requestLog.set(ip, timestamps);
+    return true;
+  }
+
+  timestamps.push(now);
+  requestLog.set(ip, timestamps);
+  return false;
+}
+
 type ContactPayload = {
   name: string;
   email: string;
   company: string;
   project: string;
+  website?: string;
 };
 
 function escapeHtml(value: string) {
@@ -22,11 +46,27 @@ function escapeHtml(value: string) {
 }
 
 export async function POST(request: Request) {
+  const ip =
+    request.headers.get("x-forwarded-for")?.split(",")[0].trim() || "unknown";
+
+  if (isRateLimited(ip)) {
+    return NextResponse.json(
+      { error: "Too many requests. Please try again later." },
+      { status: 429 }
+    );
+  }
+
   let body: Partial<ContactPayload>;
   try {
     body = await request.json();
   } catch {
     return NextResponse.json({ error: "Invalid JSON body." }, { status: 400 });
+  }
+
+  // Honeypot: real users never fill this hidden field. Bots that
+  // auto-fill every input do. Pretend success without sending anything.
+  if (body.website) {
+    return NextResponse.json({ ok: true });
   }
 
   const name = body.name?.trim();

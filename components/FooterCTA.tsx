@@ -44,6 +44,7 @@ export default function FooterCTA() {
     project: "",
   });
   const [value, setValue] = useState("");
+  const [honeypot, setHoneypot] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -70,7 +71,7 @@ export default function FooterCTA() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(next),
+        body: JSON.stringify({ ...next, website: honeypot }),
       });
 
       if (!res.ok) {
@@ -151,6 +152,17 @@ export default function FooterCTA() {
                 onSubmit={handleSubmit}
                 className="mt-1"
               >
+                <input
+                  type="text"
+                  name="website"
+                  value={honeypot}
+                  onChange={(e) => setHoneypot(e.target.value)}
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  className="absolute -left-[9999px] h-0 w-0 opacity-0"
+                />
+
                 <label htmlFor={field.key} className="block text-accent-cyan">
                   {"> "}
                   {field.prompt}
