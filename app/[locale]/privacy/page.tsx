@@ -1,16 +1,33 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description: "How NauticCode collects, uses, and protects your data.",
-};
-
-const LAST_UPDATED = "August 12, 2026";
+const LAST_UPDATED = new Date("2026-08-12T00:00:00Z");
 const CONTACT_EMAIL = "ilkaybas0@gmail.com";
 
-export default function PrivacyPolicyPage() {
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const t = await getTranslations({ locale: params.locale, namespace: "privacy" });
+  return {
+    title: { absolute: `${t("title")} — NauticCode` },
+    description: t("metaDescription"),
+  };
+}
+
+export default async function PrivacyPolicyPage({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  const t = await getTranslations({ locale: params.locale, namespace: "privacy" });
+  const formattedDate = new Intl.DateTimeFormat(params.locale, {
+    dateStyle: "long",
+  }).format(LAST_UPDATED);
+
   return (
     <>
       <Header />
@@ -18,127 +35,96 @@ export default function PrivacyPolicyPage() {
       <main id="main-content" className="relative pb-24 pt-40 lg:pb-32 lg:pt-48">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <span className="font-mono text-xs uppercase tracking-widest text-accent-cyan">
-            Legal
+            {t("eyebrow")}
           </span>
           <h1 className="mt-4 font-sans text-3xl font-semibold tracking-tight sm:text-4xl">
-            Privacy Policy
+            {t("title")}
           </h1>
           <p className="mt-3 font-mono text-xs text-text-secondary">
-            Last updated: {LAST_UPDATED}
+            {t("lastUpdated", { date: formattedDate })}
           </p>
 
           <div className="mt-10 space-y-8 text-sm leading-relaxed text-text-secondary">
-            <p>
-              This policy explains what data NauticCode collects through
-              this website, why we collect it, and how you can control it.
-              We built this site to be honest about it: we collect the
-              minimum needed to respond to your audit request, nothing more.
-            </p>
+            <p>{t("intro")}</p>
 
             <div>
               <h2 className="font-sans text-lg font-semibold text-text-primary">
-                What we collect
+                {t("collectTitle")}
+              </h2>
+              <p className="mt-2">{t("collectBody")}</p>
+            </div>
+
+            <div>
+              <h2 className="font-sans text-lg font-semibold text-text-primary">
+                {t("analyticsTitle")}
+              </h2>
+              <p className="mt-2">{t("analyticsBody")}</p>
+            </div>
+
+            <div>
+              <h2 className="font-sans text-lg font-semibold text-text-primary">
+                {t("whyTitle")}
+              </h2>
+              <p className="mt-2">{t("whyBody")}</p>
+            </div>
+
+            <div>
+              <h2 className="font-sans text-lg font-semibold text-text-primary">
+                {t("processedTitle")}
               </h2>
               <p className="mt-2">
-                When you submit the audit request form, we collect the
-                information you type in: your name, work email, company
-                name, and a description of what you want to build. We don&apos;t
-                collect this data anywhere else on the site — there are no
-                other forms, and we don&apos;t track you across other sites.
+                {t.rich("processedBody", {
+                  link: (chunks) => (
+                    <a
+                      href="https://resend.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-accent-cyan hover:underline"
+                    >
+                      {chunks}
+                    </a>
+                  ),
+                })}
               </p>
             </div>
 
             <div>
               <h2 className="font-sans text-lg font-semibold text-text-primary">
-                Analytics
+                {t("retentionTitle")}
               </h2>
-              <p className="mt-2">
-                We use Vercel Analytics to understand aggregate traffic
-                (pages viewed, approximate location by country, referrers).
-                It doesn&apos;t use cookies and doesn&apos;t collect
-                personally identifiable information.
-              </p>
+              <p className="mt-2">{t("retentionBody")}</p>
             </div>
 
             <div>
               <h2 className="font-sans text-lg font-semibold text-text-primary">
-                Why we collect it
+                {t("rightsTitle")}
               </h2>
-              <p className="mt-2">
-                Solely to respond to your audit request — to understand
-                what you&apos;re looking to build and get back to you within
-                one business day, as promised on the form.
-              </p>
+              <p className="mt-2">{t("rightsBody")}</p>
             </div>
 
             <div>
               <h2 className="font-sans text-lg font-semibold text-text-primary">
-                How it&apos;s processed
+                {t("changesTitle")}
               </h2>
-              <p className="mt-2">
-                Form submissions are sent as an email via{" "}
-                <a
-                  href="https://resend.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent-cyan hover:underline"
-                >
-                  Resend
-                </a>
-                , our email delivery provider, to our inbox. Resend
-                processes the message on our behalf and does not use your
-                data for any purpose of its own. The site itself is hosted
-                on Vercel.
-              </p>
+              <p className="mt-2">{t("changesBody")}</p>
             </div>
 
             <div>
               <h2 className="font-sans text-lg font-semibold text-text-primary">
-                Retention
+                {t("contactTitle")}
               </h2>
               <p className="mt-2">
-                We keep audit request emails only as long as needed to
-                respond to you and maintain a basic business record of the
-                conversation. If you&apos;d like your data deleted sooner,
-                contact us and we&apos;ll remove it.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="font-sans text-lg font-semibold text-text-primary">
-                Your rights
-              </h2>
-              <p className="mt-2">
-                You can ask us what data we hold about you, ask us to
-                correct it, or ask us to delete it, at any time. We don&apos;t
-                sell your data or share it with anyone beyond the
-                processors named above.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="font-sans text-lg font-semibold text-text-primary">
-                Changes to this policy
-              </h2>
-              <p className="mt-2">
-                If this policy changes, we&apos;ll update the date at the top
-                of this page.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="font-sans text-lg font-semibold text-text-primary">
-                Contact
-              </h2>
-              <p className="mt-2">
-                Questions about your data? Reach us at{" "}
-                <a
-                  href={`mailto:${CONTACT_EMAIL}`}
-                  className="text-accent-cyan hover:underline"
-                >
-                  {CONTACT_EMAIL}
-                </a>
-                .
+                {t.rich("contactBody", {
+                  link: (chunks) => (
+                    <a
+                      href={`mailto:${CONTACT_EMAIL}`}
+                      className="text-accent-cyan hover:underline"
+                    >
+                      {chunks}
+                    </a>
+                  ),
+                  email: CONTACT_EMAIL,
+                })}
               </p>
             </div>
           </div>

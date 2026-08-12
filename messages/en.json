@@ -92,5 +92,28 @@
   "footer": {
     "copyright": "© {year} NauticCode. All rights reserved.",
     "privacyPolicy": "Privacy Policy"
+  },
+  "privacy": {
+    "metaDescription": "How NauticCode collects, uses, and protects your data.",
+    "eyebrow": "Legal",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: {date}",
+    "intro": "This policy explains what data NauticCode collects through this website, why we collect it, and how you can control it. We built this site to be honest about it: we collect the minimum needed to respond to your audit request, nothing more.",
+    "collectTitle": "What we collect",
+    "collectBody": "When you submit the audit request form, we collect the information you type in: your name, work email, company name, and a description of what you want to build. We do not collect this data anywhere else on the site — there are no other forms, and we do not track you across other sites.",
+    "analyticsTitle": "Analytics",
+    "analyticsBody": "We use Vercel Analytics to understand aggregate traffic (pages viewed, approximate location by country, referrers). It does not use cookies and does not collect personally identifiable information.",
+    "whyTitle": "Why we collect it",
+    "whyBody": "Solely to respond to your audit request — to understand what you are looking to build and get back to you within one business day, as promised on the form.",
+    "processedTitle": "How it is processed",
+    "processedBody": "Form submissions are sent as an email via <link>Resend</link>, our email delivery provider, to our inbox. Resend processes the message on our behalf and does not use your data for any purpose of its own. The site itself is hosted on Vercel.",
+    "retentionTitle": "Retention",
+    "retentionBody": "We keep audit request emails only as long as needed to respond to you and maintain a basic business record of the conversation. If you would like your data deleted sooner, contact us and we will remove it.",
+    "rightsTitle": "Your rights",
+    "rightsBody": "You can ask us what data we hold about you, ask us to correct it, or ask us to delete it, at any time. We do not sell your data or share it with anyone beyond the processors named above.",
+    "changesTitle": "Changes to this policy",
+    "changesBody": "If this policy changes, we will update the date at the top of this page.",
+    "contactTitle": "Contact",
+    "contactBody": "Questions about your data? Reach us at <link>{email}</link>."
   }
 }

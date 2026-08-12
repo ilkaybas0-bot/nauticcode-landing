@@ -92,5 +92,28 @@
   "footer": {
     "copyright": "© {year} NauticCode. Tüm hakları saklıdır.",
     "privacyPolicy": "Gizlilik Politikası"
+  },
+  "privacy": {
+    "metaDescription": "NauticCode verilerinizi nasıl topluyor, kullanıyor ve koruyor.",
+    "eyebrow": "Yasal",
+    "title": "Gizlilik Politikası",
+    "lastUpdated": "Son güncelleme: {date}",
+    "intro": "Bu politika, NauticCode'un bu web sitesi üzerinden hangi verileri topladığını, neden topladığını ve bu veriler üzerinde nasıl kontrol sahibi olabileceğinizi açıklar. Bu konuda dürüst olmak için bu sayfayı oluşturduk: denetim talebinize yanıt vermek için gereken asgari veriyi topluyoruz, fazlasını değil.",
+    "collectTitle": "Ne topluyoruz",
+    "collectBody": "Denetim talebi formunu gönderdiğinizde, yazdığınız bilgileri topluyoruz: adınız, iş e-postanız, şirket adınız ve ne inşa etmek istediğinize dair bir açıklama. Bu veriyi sitenin başka hiçbir yerinde toplamıyoruz — başka form yok ve sizi başka sitelerde takip etmiyoruz.",
+    "analyticsTitle": "Analitik",
+    "analyticsBody": "Toplam trafiği anlamak için Vercel Analytics kullanıyoruz (görüntülenen sayfalar, ülkeye göre yaklaşık konum, yönlendiren siteler). Çerez kullanmaz ve kişisel olarak tanımlanabilir bilgi toplamaz.",
+    "whyTitle": "Neden topluyoruz",
+    "whyBody": "Sadece denetim talebinize yanıt vermek için — ne inşa etmek istediğinizi anlamak ve formda söz verildiği gibi bir iş günü içinde size geri dönmek amacıyla.",
+    "processedTitle": "Nasıl işleniyor",
+    "processedBody": "Form gönderimleri, e-posta gönderim sağlayıcımız <link>Resend</link> üzerinden e-posta olarak gelen kutumuza gönderilir. Resend, mesajı bizim adımıza işler ve verinizi kendi amaçları için kullanmaz. Sitenin kendisi Vercel üzerinde barındırılır.",
+    "retentionTitle": "Saklama süresi",
+    "retentionBody": "Denetim talebi e-postalarını yalnızca size yanıt vermek ve konuşmanın temel bir iş kaydını tutmak için gereken süre boyunca saklarız. Verinizin daha erken silinmesini isterseniz, bizimle iletişime geçin, kaldıralım.",
+    "rightsTitle": "Haklarınız",
+    "rightsBody": "Hakkınızda hangi verileri tuttuğumuzu sorabilir, düzeltilmesini isteyebilir veya istediğiniz zaman silinmesini talep edebilirsiniz. Verinizi satmayız ve yukarıda adı geçen işlemciler dışında kimseyle paylaşmayız.",
+    "changesTitle": "Bu politikadaki değişiklikler",
+    "changesBody": "Bu politika değişirse, bu sayfanın üstündeki tarihi güncelleriz.",
+    "contactTitle": "İletişim",
+    "contactBody": "Verileriniz hakkında sorularınız mı var? Bize <link>{email}</link> adresinden ulaşın."
   }
 }
