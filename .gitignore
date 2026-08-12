@@ -17,6 +17,7 @@
 *.pem
 npm-debug.log*
 dev.log
+start.log
 
 # typescript
 *.tsbuildinfo

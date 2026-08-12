@@ -62,12 +62,26 @@ export const viewport: Viewport = {
   themeColor: "#070B12",
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "NauticCode",
+  url: SITE_URL,
+  logo: `${SITE_URL}/icon`,
+  description: SITE_DESCRIPTION,
+  slogan: "B2B Software Engineering",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="dark">
       <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <MotionProvider>{children}</MotionProvider>
         <Analytics />
       </body>

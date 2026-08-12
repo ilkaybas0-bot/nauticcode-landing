@@ -4,6 +4,7 @@ import MetricsStrip from "@/components/MetricsStrip";
 import Capabilities from "@/components/Capabilities";
 import CaseStudy from "@/components/CaseStudy";
 import FooterCTA from "@/components/FooterCTA";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Capabilities />
       <CaseStudy />
       <FooterCTA />
+      <Footer />
     </main>
   );
 }
