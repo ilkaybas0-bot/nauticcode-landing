@@ -49,15 +49,10 @@ const config: Config = {
           "0%, 49%": { opacity: "1" },
           "50%, 100%": { opacity: "0" },
         },
-        marquee: {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-50%)" },
-        },
       },
       animation: {
         "pulse-dot": "pulseDot 2s ease-in-out infinite",
         blink: "blink 1s step-start infinite",
-        marquee: "marquee 30s linear infinite",
       },
     },
   },

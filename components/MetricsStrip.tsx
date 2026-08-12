@@ -3,15 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView, animate } from "framer-motion";
 
-const PARTNER_LOGOS = [
-  "Meridian Freight",
-  "Orbital Systems",
-  "Vantage Capital",
-  "Northstar Retail",
-  "Halcyon Health",
-  "Ferrovia Logistics",
-];
-
 type Stat = {
   label: string;
   prefix?: string;
@@ -54,26 +45,7 @@ export default function MetricsStrip() {
   return (
     <section className="relative border-y border-border bg-surface/30 py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <p className="text-center font-mono text-xs uppercase tracking-widest text-text-secondary">
-          Trusted by engineering-led teams
-        </p>
-
-        <div className="relative mt-8 overflow-hidden">
-          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-bg to-transparent" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-bg to-transparent" />
-          <div className="flex w-max animate-marquee gap-16">
-            {[...PARTNER_LOGOS, ...PARTNER_LOGOS].map((name, i) => (
-              <span
-                key={`${name}-${i}`}
-                className="whitespace-nowrap font-sans text-lg font-semibold tracking-tight text-text-secondary/40 grayscale transition-colors hover:text-text-secondary/70"
-              >
-                {name}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-16 grid grid-cols-1 gap-8 border-t border-border pt-12 sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
           {STATS.map((stat, i) => (
             <motion.div
               key={stat.label}

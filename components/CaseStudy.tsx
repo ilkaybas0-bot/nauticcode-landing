@@ -42,15 +42,15 @@ export default function CaseStudy() {
             <div className="relative flex flex-col justify-between border-b border-border bg-gradient-to-br from-accent-cobalt/10 via-transparent to-transparent p-8 lg:col-span-2 lg:border-b-0 lg:border-r lg:p-10">
               <div>
                 <span className="font-mono text-xs uppercase tracking-widest text-accent-cyan">
-                  Case Study
+                  Illustrative Example
                 </span>
                 <h2 className="mt-4 font-sans text-2xl font-semibold tracking-tight sm:text-3xl">
-                  Global Logistics Provider
+                  Dispatch Modernization at Scale
                 </h2>
                 <p className="mt-4 text-sm leading-relaxed text-text-secondary">
-                  An enterprise dispatch operation replaced manual routing
-                  with an autonomous, event-driven agent — engineered end to
-                  end by NauticCode.
+                  A representative scenario showing how we&apos;d replace
+                  manual routing with an autonomous, event-driven agent —
+                  not an actual client engagement.
                 </p>
               </div>
 

@@ -167,7 +167,7 @@ export default function FooterCTA() {
                   {"> "}
                   {field.prompt}
                 </label>
-                <div className="mt-2 flex items-center gap-2 border-b border-border pb-2">
+                <div className="mt-2 flex items-center gap-2 border-b border-border pb-2 transition-colors focus-within:border-accent-cyan">
                   <span className="text-text-secondary">$</span>
                   <input
                     id={field.key}
@@ -178,7 +178,7 @@ export default function FooterCTA() {
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
                     placeholder={field.placeholder}
-                    className="w-full bg-transparent text-text-primary placeholder:text-text-secondary/40 focus:outline-none disabled:opacity-50"
+                    className="w-full bg-transparent text-text-primary placeholder:text-text-secondary/80 focus:outline-none disabled:opacity-50"
                   />
                 </div>
 

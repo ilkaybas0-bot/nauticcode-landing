@@ -97,6 +97,8 @@ export default function Header() {
         <button
           type="button"
           aria-label="Toggle navigation menu"
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-menu"
           onClick={() => setMobileOpen((v) => !v)}
           className="flex h-9 w-9 items-center justify-center rounded-md border border-border text-text-secondary md:hidden"
         >
@@ -107,6 +109,7 @@ export default function Header() {
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
+            id="mobile-menu"
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
