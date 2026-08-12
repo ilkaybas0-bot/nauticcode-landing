@@ -32,8 +32,7 @@ export default function PrivacyPolicyPage() {
               This policy explains what data NauticCode collects through
               this website, why we collect it, and how you can control it.
               We built this site to be honest about it: we collect the
-              minimum needed to respond to your engineering audit request,
-              nothing more.
+              minimum needed to respond to your audit request, nothing more.
             </p>
 
             <div>

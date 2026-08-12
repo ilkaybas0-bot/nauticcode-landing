@@ -11,12 +11,12 @@ import Footer from "@/components/Footer";
 
 const LOCALIZED_METADATA = {
   en: {
-    title: "NauticCode — B2B Software Engineering",
+    title: "NauticCode — B2B Software Development",
     description:
       "We engineer resilient custom software, autonomous AI workflows, and cloud infrastructure designed to scale your operational velocity.",
   },
   tr: {
-    title: "NauticCode — B2B Yazılım Mühendisliği",
+    title: "NauticCode — B2B Yazılım Geliştirme",
     description:
       "Operasyonel hızınızı ölçeklendirmek için dayanıklı özel yazılımlar, otonom yapay zekâ iş akışları ve bulut altyapısı geliştiriyoruz.",
   },

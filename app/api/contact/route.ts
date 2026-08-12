@@ -108,7 +108,7 @@ export async function POST(request: Request) {
       from: fromAddress,
       to: toAddress,
       replyTo: email,
-      subject: `Engineering audit request — ${company}`,
+      subject: `Software audit request — ${company}`,
       html: `
         <div style="font-family: monospace; font-size: 14px; line-height: 1.6;">
           <p><strong>New audit request via nauticcode.com</strong></p>
@@ -142,8 +142,8 @@ export async function POST(request: Request) {
         <div style="font-family: monospace; font-size: 14px; line-height: 1.6;">
           <p>Hi ${escapeHtml(name.split(" ")[0])},</p>
           <p>Thanks for reaching out to NauticCode. We've received your
-          engineering audit request for <strong>${escapeHtml(company)}</strong>
-          and a senior engineer will reply within one business day.</p>
+          audit request for <strong>${escapeHtml(company)}</strong>
+          and a senior developer will reply within one business day.</p>
           <p>— NauticCode</p>
         </div>
       `,

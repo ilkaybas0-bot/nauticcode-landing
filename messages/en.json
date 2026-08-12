@@ -9,7 +9,7 @@
     "navStack": "Stack",
     "navCaseStudies": "Case Studies",
     "navAbout": "About",
-    "cta": "Request Engineering Audit"
+    "cta": "Request a Software Audit"
   },
   "hero": {
     "badgeStatus": "[SYSTEMS ONLINE]",
@@ -26,11 +26,11 @@
   },
   "capabilities": {
     "eyebrow": "Core Capabilities",
-    "heading": "Engineering primitives for autonomous enterprise systems.",
-    "description": "Four disciplines, one integrated engineering practice — from model-driven agents to the infrastructure that keeps them running.",
+    "heading": "Practical building blocks for autonomous enterprise systems.",
+    "description": "Four disciplines, one hands-on development practice — from model-driven agents to the infrastructure that keeps them running.",
     "card1Title": "Custom AI Agents & RAG Pipelines",
     "card1Description": "Autonomous workflows integrating LLMs into existing databases — retrieval-augmented, context-aware, and built to act on your operational data.",
-    "card2Title": "Enterprise Software Engineering",
+    "card2Title": "Custom Software Development",
     "card2Description": "Microservices, Rust/Go backend engines, and low-latency APIs engineered for correctness at scale.",
     "card3Title": "Automated Business Logic",
     "card3Description": "Complex n8n/Python orchestration eliminating manual overhead across your operational stack.",
@@ -39,7 +39,7 @@
   },
   "techStack": {
     "eyebrow": "Stack",
-    "heading": "The tools behind the engineering.",
+    "heading": "The tools behind the work.",
     "description": "No framework worship — we pick what is correct for the problem and durable for your team to maintain.",
     "cat1Label": "Languages & Runtimes",
     "cat2Label": "AI & Data",
@@ -64,14 +64,14 @@
   },
   "about": {
     "eyebrow": "About",
-    "heading": "A small, senior engineering practice.",
-    "paragraph1": "NauticCode is an independent software engineering practice focused on B2B systems: custom platforms, AI agents, and the infrastructure that keeps them running. No account managers, no bloated teams — you work directly with the engineers building your system.",
+    "heading": "A small, senior development practice.",
+    "paragraph1": "NauticCode is an independent software development practice focused on B2B systems: custom platforms, AI agents, and the infrastructure that keeps them running. No account managers, no bloated teams — you work directly with the people building your system.",
     "paragraph2": "Have a project in mind, a partnership idea, or just a question? Reach out directly, we read every message ourselves.",
     "contactLabel": "Get in touch"
   },
   "footerCta": {
     "headline": "Ready to <highlight>Modernize</highlight> Your Software Stack?",
-    "subheadline": "Run the audit. A senior engineer reviews your stack and replies within one business day.",
+    "subheadline": "Run the audit. A senior developer reviews your stack and replies within one business day.",
     "terminalTitle": "npm run book-audit",
     "fieldNamePrompt": "your name?",
     "fieldNamePlaceholder": "Jane Doe",

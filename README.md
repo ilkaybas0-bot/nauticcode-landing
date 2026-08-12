@@ -1,6 +1,6 @@
 # NauticCode Landing Page
 
-Marketing site for NauticCode (B2B software engineering), built with Next.js 14 (App Router) and Tailwind CSS.
+Marketing site for NauticCode (B2B software development), built with Next.js 14 (App Router) and Tailwind CSS.
 
 Live: https://nauticcode-landing.vercel.app
 

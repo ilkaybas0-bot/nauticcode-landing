@@ -20,7 +20,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 const SITE_URL = "https://nauticcode.com";
-const SITE_TITLE = "NauticCode — B2B Software Engineering";
+const SITE_TITLE = "NauticCode — B2B Software Development";
 const SITE_DESCRIPTION =
   "We engineer resilient custom software, autonomous AI workflows, and cloud infrastructure designed to scale your operational velocity.";
 
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   description: SITE_DESCRIPTION,
   keywords: [
-    "B2B software engineering",
+    "B2B software development",
     "custom AI agents",
     "RAG pipelines",
     "enterprise software development",
@@ -72,7 +72,7 @@ const organizationJsonLd = {
   url: SITE_URL,
   logo: `${SITE_URL}/icon`,
   description: SITE_DESCRIPTION,
-  slogan: "B2B Software Engineering",
+  slogan: "B2B Software Development",
 };
 
 export function generateStaticParams() {

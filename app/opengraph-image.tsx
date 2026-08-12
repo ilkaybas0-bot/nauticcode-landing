@@ -82,7 +82,7 @@ export default function OpengraphImage() {
             textTransform: "uppercase",
           }}
         >
-          B2B Software Engineering
+          B2B Software Development
         </div>
       </div>
     ),
