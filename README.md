@@ -31,8 +31,9 @@ Copy `.env.local.example` to `.env.local` and fill in:
 | `RESEND_API_KEY` | API key from [resend.com](https://resend.com) — powers the audit-request form |
 | `CONTACT_EMAIL_TO` | Inbox that receives audit request notifications |
 | `CONTACT_EMAIL_FROM` | Sender address. Until a domain is verified in Resend, this can only deliver to the Resend account's own email — see [Resend domains](https://resend.com/domains) |
+| `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN` | Optional. Free database at [upstash.com](https://upstash.com) — enables persistent rate limiting on `/api/contact`. Without these, it falls back to an in-memory limiter (fine for local dev, not for production). |
 
-Set the same three variables in the Vercel project's Environment Variables settings for production.
+Set the same variables in the Vercel project's Environment Variables settings for production.
 
 ## Internationalization
 
@@ -69,7 +70,7 @@ public/logo-mark.png    # logo mark used in the header
 
 ## Known limitations
 
-- **Rate limiting** on `/api/contact` is in-memory per serverless instance — good enough to blunt casual abuse, not a real distributed limiter. Swap for Upstash/Vercel KV if abuse becomes an issue.
+- **Rate limiting** on `/api/contact` uses Upstash Redis when `UPSTASH_REDIS_REST_URL`/`UPSTASH_REDIS_REST_TOKEN` are set (persistent, shared across instances); otherwise it falls back to an in-memory limiter that resets on cold start and isn't shared. Set the Upstash vars in production.
 - **Confirmation email** to the form submitter is best-effort: until a custom domain is verified in Resend, it can only actually deliver when the submitter's address matches the Resend account's own email. The internal notification to `CONTACT_EMAIL_TO` always works.
 - **Case Study** section is an illustrative example, not a real client engagement — labeled as such on the page.
 
