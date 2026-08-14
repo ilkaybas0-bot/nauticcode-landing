@@ -1,0 +1,120 @@
+{
+  "layout": {
+    "skipToContent": "跳转到内容"
+  },
+  "header": {
+    "toggleMenu": "切换导航菜单",
+    "navServices": "服务",
+    "navArchitecture": "架构",
+    "navStack": "技术栈",
+    "navCaseStudies": "方法论",
+    "navAbout": "关于我们",
+    "cta": "申请软件审计"
+  },
+  "hero": {
+    "badgeStatus": "[系统在线]",
+    "badgeText": "新一代 B2B 软件架构",
+    "headline": "为企业系统规划智能<highlight>代码流程</highlight>。",
+    "subheadline": "我们打造稳健的定制软件、自主 AI 工作流和云基础设施，助力提升您的运营效率。",
+    "ctaPrimary": "启动您的项目",
+    "ctaSecondary": "查看系统架构"
+  },
+  "metrics": {
+    "stat1Label": "系统正常运行架构",
+    "stat2Label": "运营效率提升",
+    "stat3Label": "节省的基础设施成本"
+  },
+  "capabilities": {
+    "eyebrow": "核心能力",
+    "heading": "面向自主企业系统的实用构建模块。",
+    "description": "四大领域，一套务实的开发实践——从模型驱动的智能体，到支撑它们运行的基础设施。",
+    "card1Title": "定制 AI 智能体与 RAG 管道",
+    "card1Description": "将大语言模型集成到现有数据库中的自主工作流——具备检索增强能力、上下文感知，并可根据您的运营数据采取行动。",
+    "card2Title": "定制软件开发",
+    "card2Description": "微服务、Rust/Go 后端引擎，以及为大规模精确运行而设计的低延迟 API。",
+    "card3Title": "自动化业务逻辑",
+    "card3Description": "复杂的 n8n/Python 编排，消除运营流程中的人工负担。",
+    "card4Title": "云基础设施与 DevOps",
+    "card4Description": "Kubernetes、AWS/GCP 无服务器架构，配备零停机 CI/CD 流水线。"
+  },
+  "techStack": {
+    "eyebrow": "技术栈",
+    "heading": "支撑这项工作的工具。",
+    "description": "不迷信框架——我们只选择真正适合问题、且您的团队能够长期维护的方案。",
+    "cat1Label": "编程语言与运行环境",
+    "cat2Label": "AI 与数据",
+    "cat3Label": "基础设施",
+    "cat4Label": "自动化与交付"
+  },
+  "caseStudy": {
+    "eyebrow": "示例场景",
+    "heading": "大规模调度系统现代化",
+    "description": "一个示例场景，展示我们将如何用自主的事件驱动智能体取代人工调度——并非真实的客户项目。",
+    "statLabel1": "运营成本降低",
+    "statLabel2": "年度节省",
+    "challengeLabel": "挑战",
+    "challengeTitle": "陈旧的人工调度方式",
+    "challengeDescription": "由人工处理的调度决策导致整个车队产生 14% 的运营延迟，且无法实时了解载荷状况。",
+    "solutionLabel": "设计的解决方案",
+    "solutionTitle": "事件驱动的 AI 调度智能体",
+    "solutionDescription": "基于 Go 与 PostgreSQL DAG 引擎构建——一个自主智能体，实时处理载荷与路线数据、解决冲突并即时完成调度。",
+    "impactLabel": "成效",
+    "impactTitle": "运营成本降低 68%",
+    "impactDescription": "年度节省 180 万美元，调度决策现已在毫秒级完成，取代了人工审核流程。"
+  },
+  "about": {
+    "eyebrow": "关于我们",
+    "heading": "一支小而精的资深开发团队。",
+    "paragraph1": "NauticCode 是一家独立的软件开发工作室，专注于 B2B 系统：定制平台、AI 智能体，以及支撑它们运行的基础设施。没有客户经理，没有臃肿的团队——您将直接与构建您系统的人员合作。",
+    "paragraph2": "有项目构想、合作意向，或只是想提个问题？直接联系我们，每条消息我们都会亲自阅读。",
+    "availability": "目前接受有限数量的新项目",
+    "contactLabel": "联系我们",
+    "whatsappLabel": "通过 WhatsApp 联系"
+  },
+  "footerCta": {
+    "headline": "准备好<highlight>升级</highlight>您的软件架构了吗？",
+    "subheadline": "立即启动审计。资深开发人员将审查您的技术栈，并在一个工作日内回复。",
+    "terminalTitle": "npm run book-audit",
+    "fieldNamePrompt": "您的姓名？",
+    "fieldNamePlaceholder": "Jane Doe",
+    "fieldEmailPrompt": "工作邮箱？",
+    "fieldEmailPlaceholder": "jane@company.com",
+    "fieldCompanyPrompt": "公司名称？",
+    "fieldCompanyPlaceholder": "Acme Logistics",
+    "fieldProjectPrompt": "您想构建什么？",
+    "fieldProjectPlaceholder": "AI 调度智能体、内部工具、系统迁移……",
+    "sending": "发送中",
+    "next": "下一步",
+    "submitRequest": "提交申请",
+    "successTitle": "审计申请已收到",
+    "successMessage": "谢谢，{name} —— 我们将在一个工作日内通过 {email} 与您联系。",
+    "genericError": "出现了一些问题，请重试。"
+  },
+  "footer": {
+    "copyright": "© {year} NauticCode. 保留所有权利。",
+    "privacyPolicy": "隐私政策"
+  },
+  "privacy": {
+    "metaDescription": "了解 NauticCode 如何收集、使用和保护您的数据。",
+    "eyebrow": "法律",
+    "title": "隐私政策",
+    "lastUpdated": "最后更新：{date}",
+    "intro": "本政策说明 NauticCode 通过本网站收集哪些数据、为何收集，以及您如何加以控制。我们希望在这一点上做到坦诚：我们只收集回应您的审计申请所需的最少数据，不会更多。",
+    "collectTitle": "我们收集哪些信息",
+    "collectBody": "当您提交审计申请表单时，我们会收集您输入的信息：姓名、工作邮箱、公司名称，以及您想构建内容的描述。我们不会在网站的其他任何地方收集此类数据——没有其他表单，我们也不会在其他网站上追踪您。",
+    "analyticsTitle": "数据分析",
+    "analyticsBody": "我们使用 Vercel Analytics 来了解总体流量情况（页面浏览量、按国家/地区划分的大致位置、来源渠道）。它不使用 Cookie，也不收集可识别个人身份的信息。",
+    "whyTitle": "我们为何收集这些信息",
+    "whyBody": "仅用于回应您的审计申请——了解您想构建的内容，并按照表单中的承诺在一个工作日内与您联系。",
+    "processedTitle": "如何处理这些信息",
+    "processedBody": "表单提交内容会通过我们的邮件发送服务商 <link>Resend</link> 以邮件形式发送到我们的收件箱。Resend 代表我们处理该消息，不会将您的数据用于其自身目的。网站本身托管在 Vercel 上。",
+    "retentionTitle": "数据保留",
+    "retentionBody": "我们仅在回复您以及维护基本业务记录所需的时间内保留审计申请邮件。如果您希望更早删除您的数据，请联系我们，我们会将其移除。",
+    "rightsTitle": "您的权利",
+    "rightsBody": "您可以随时询问我们持有您的哪些数据，要求我们更正或删除这些数据。我们不会出售您的数据，也不会与上述处理方之外的任何人共享。",
+    "changesTitle": "本政策的变更",
+    "changesBody": "如果本政策发生变更，我们会更新本页顶部的日期。",
+    "contactTitle": "联系方式",
+    "contactBody": "对您的数据有疑问？请通过 <link>{email}</link> 联系我们。"
+  }
+}

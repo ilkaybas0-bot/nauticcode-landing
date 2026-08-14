@@ -91,9 +91,10 @@ export default async function LocaleLayout({
 
   const messages = await getMessages({ locale });
   const t = await getTranslations({ locale, namespace: "layout" });
+  const dir = locale === "ar" ? "rtl" : "ltr";
 
   return (
-    <html lang={locale} className="dark">
+    <html lang={locale} dir={dir} className="dark">
       <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans`}>
         <script
           type="application/ld+json"

@@ -1,0 +1,120 @@
+{
+  "layout": {
+    "skipToContent": "Saltar al contenido"
+  },
+  "header": {
+    "toggleMenu": "Alternar menú de navegación",
+    "navServices": "Servicios",
+    "navArchitecture": "Arquitectura",
+    "navStack": "Stack",
+    "navCaseStudies": "Enfoque",
+    "navAbout": "Nosotros",
+    "cta": "Solicitar una Auditoría de Software"
+  },
+  "hero": {
+    "badgeStatus": "[SISTEMAS EN LÍNEA]",
+    "badgeText": "Arquitectura de Software B2B de Nueva Generación",
+    "headline": "Trazando <highlight>Flujos de Código</highlight> Inteligentes para Sistemas Empresariales.",
+    "subheadline": "Diseñamos software personalizado resiliente, flujos de trabajo autónomos de IA e infraestructura en la nube pensados para escalar tu velocidad operativa.",
+    "ctaPrimary": "Inicia Tu Proyecto",
+    "ctaSecondary": "Ver Arquitectura de Sistemas"
+  },
+  "metrics": {
+    "stat1Label": "Arquitectura de Disponibilidad del Sistema",
+    "stat2Label": "Aumento de Velocidad Operativa",
+    "stat3Label": "Costos de Infraestructura Ahorrados"
+  },
+  "capabilities": {
+    "eyebrow": "Capacidades Principales",
+    "heading": "Componentes prácticos para sistemas empresariales autónomos.",
+    "description": "Cuatro disciplinas, una práctica de desarrollo cercana — desde agentes basados en modelos hasta la infraestructura que los mantiene funcionando.",
+    "card1Title": "Agentes de IA Personalizados y Pipelines RAG",
+    "card1Description": "Flujos de trabajo autónomos que integran LLMs en bases de datos existentes — con recuperación aumentada, sensibles al contexto y diseñados para actuar sobre tus datos operativos.",
+    "card2Title": "Desarrollo de Software a Medida",
+    "card2Description": "Microservicios, motores backend en Rust/Go y APIs de baja latencia diseñados para funcionar con precisión a escala.",
+    "card3Title": "Lógica de Negocio Automatizada",
+    "card3Description": "Orquestación compleja con n8n/Python que elimina la carga manual en tu operación.",
+    "card4Title": "Infraestructura en la Nube y DevOps",
+    "card4Description": "Kubernetes, configuraciones serverless en AWS/GCP con pipelines CI/CD sin tiempo de inactividad."
+  },
+  "techStack": {
+    "eyebrow": "Stack",
+    "heading": "Las herramientas detrás del trabajo.",
+    "description": "Nada de dogmatismo de frameworks — elegimos lo correcto para el problema y lo que tu equipo pueda mantener a largo plazo.",
+    "cat1Label": "Lenguajes y Entornos de Ejecución",
+    "cat2Label": "IA y Datos",
+    "cat3Label": "Infraestructura",
+    "cat4Label": "Automatización y Entrega"
+  },
+  "caseStudy": {
+    "eyebrow": "Ejemplo Ilustrativo",
+    "heading": "Modernización de Despacho a Gran Escala",
+    "description": "Un escenario representativo que muestra cómo reemplazaríamos el enrutamiento manual con un agente autónomo basado en eventos — no se trata de un proyecto real con un cliente.",
+    "statLabel1": "Reducción de gastos operativos",
+    "statLabel2": "Ahorro anual",
+    "challengeLabel": "Desafío",
+    "challengeTitle": "Despacho manual anticuado",
+    "challengeDescription": "Las decisiones de despacho manuales, gestionadas por personas, generaban un 14% de latencia operativa en toda la flota, sin visibilidad sobre las condiciones de carga en tiempo real.",
+    "solutionLabel": "Solución Diseñada",
+    "solutionTitle": "Agente de despacho por IA basado en eventos",
+    "solutionDescription": "Construido sobre Go y un motor DAG de PostgreSQL — un agente autónomo que procesa datos de carga y ruta en vivo, resuelve conflictos y despacha en tiempo real.",
+    "impactLabel": "Impacto",
+    "impactTitle": "68% de reducción de gastos operativos",
+    "impactDescription": "$1.8M en ahorros anuales, con decisiones de despacho que ahora se resuelven en milisegundos en lugar de ciclos de revisión manual."
+  },
+  "about": {
+    "eyebrow": "Nosotros",
+    "heading": "Una práctica de desarrollo pequeña y experimentada.",
+    "paragraph1": "NauticCode es una práctica independiente de desarrollo de software enfocada en sistemas B2B: plataformas a medida, agentes de IA y la infraestructura que los mantiene funcionando. Sin gestores de cuenta, sin equipos inflados — trabajas directamente con las personas que construyen tu sistema.",
+    "paragraph2": "¿Tienes un proyecto en mente, una idea de colaboración o simplemente una pregunta? Escríbenos directamente, leemos cada mensaje nosotros mismos.",
+    "availability": "Actualmente aceptando un número limitado de nuevos proyectos",
+    "contactLabel": "Ponte en contacto",
+    "whatsappLabel": "Escríbenos por WhatsApp"
+  },
+  "footerCta": {
+    "headline": "¿Listo para <highlight>Modernizar</highlight> Tu Stack de Software?",
+    "subheadline": "Inicia la auditoría. Un desarrollador senior revisará tu stack y te responderá dentro de un día hábil.",
+    "terminalTitle": "npm run book-audit",
+    "fieldNamePrompt": "¿tu nombre?",
+    "fieldNamePlaceholder": "Jane Doe",
+    "fieldEmailPrompt": "¿correo de trabajo?",
+    "fieldEmailPlaceholder": "jane@empresa.com",
+    "fieldCompanyPrompt": "¿nombre de la empresa?",
+    "fieldCompanyPlaceholder": "Acme Logistics",
+    "fieldProjectPrompt": "¿qué quieres construir?",
+    "fieldProjectPlaceholder": "Agente de despacho con IA, herramientas internas, migración…",
+    "sending": "Enviando",
+    "next": "Siguiente",
+    "submitRequest": "Enviar solicitud",
+    "successTitle": "solicitud de auditoría recibida",
+    "successMessage": "Gracias, {name} — te contactaremos a {email} dentro de un día hábil.",
+    "genericError": "Algo salió mal. Por favor, inténtalo de nuevo."
+  },
+  "footer": {
+    "copyright": "© {year} NauticCode. Todos los derechos reservados.",
+    "privacyPolicy": "Política de Privacidad"
+  },
+  "privacy": {
+    "metaDescription": "Cómo NauticCode recopila, usa y protege tus datos.",
+    "eyebrow": "Legal",
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: {date}",
+    "intro": "Esta política explica qué datos recopila NauticCode a través de este sitio web, por qué los recopilamos y cómo puedes controlarlos. Creamos este sitio para ser honestos al respecto: recopilamos lo mínimo necesario para responder a tu solicitud de auditoría, nada más.",
+    "collectTitle": "Qué recopilamos",
+    "collectBody": "Cuando envías el formulario de solicitud de auditoría, recopilamos la información que escribes: tu nombre, correo de trabajo, nombre de la empresa y una descripción de lo que quieres construir. No recopilamos estos datos en ningún otro lugar del sitio — no hay otros formularios, y no te rastreamos en otros sitios.",
+    "analyticsTitle": "Analítica",
+    "analyticsBody": "Usamos Vercel Analytics para entender el tráfico agregado (páginas vistas, ubicación aproximada por país, referencias). No usa cookies ni recopila información personalmente identificable.",
+    "whyTitle": "Por qué lo recopilamos",
+    "whyBody": "Únicamente para responder a tu solicitud de auditoría — para entender qué quieres construir y responderte dentro de un día hábil, tal como se promete en el formulario.",
+    "processedTitle": "Cómo se procesa",
+    "processedBody": "Los envíos del formulario se envían como correo a través de <link>Resend</link>, nuestro proveedor de entrega de correo, a nuestra bandeja de entrada. Resend procesa el mensaje en nuestro nombre y no usa tus datos para ningún propósito propio. El sitio en sí está alojado en Vercel.",
+    "retentionTitle": "Retención",
+    "retentionBody": "Conservamos los correos de solicitud de auditoría solo el tiempo necesario para responderte y mantener un registro comercial básico de la conversación. Si deseas que tus datos se eliminen antes, contáctanos y los eliminaremos.",
+    "rightsTitle": "Tus derechos",
+    "rightsBody": "Puedes preguntarnos qué datos tenemos sobre ti, pedirnos que los corrijamos o que los eliminemos, en cualquier momento. No vendemos tus datos ni los compartimos con nadie más allá de los procesadores mencionados anteriormente.",
+    "changesTitle": "Cambios a esta política",
+    "changesBody": "Si esta política cambia, actualizaremos la fecha en la parte superior de esta página.",
+    "contactTitle": "Contacto",
+    "contactBody": "¿Preguntas sobre tus datos? Contáctanos en <link>{email}</link>."
+  }
+}

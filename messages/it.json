@@ -1,0 +1,120 @@
+{
+  "layout": {
+    "skipToContent": "Vai al contenuto"
+  },
+  "header": {
+    "toggleMenu": "Attiva/disattiva menu di navigazione",
+    "navServices": "Servizi",
+    "navArchitecture": "Architettura",
+    "navStack": "Stack",
+    "navCaseStudies": "Approccio",
+    "navAbout": "Chi siamo",
+    "cta": "Richiedi un Audit Software"
+  },
+  "hero": {
+    "badgeStatus": "[SISTEMI ATTIVI]",
+    "badgeText": "Architettura Software B2B di Nuova Generazione",
+    "headline": "Tracciamo <highlight>Flussi di Codice</highlight> Intelligenti per Sistemi Aziendali.",
+    "subheadline": "Progettiamo software personalizzato resiliente, flussi di lavoro AI autonomi e infrastrutture cloud pensate per scalare la tua velocità operativa.",
+    "ctaPrimary": "Avvia il Tuo Progetto",
+    "ctaSecondary": "Vedi l'Architettura dei Sistemi"
+  },
+  "metrics": {
+    "stat1Label": "Architettura di Disponibilità del Sistema",
+    "stat2Label": "Aumento della Velocità Operativa",
+    "stat3Label": "Costi Infrastrutturali Risparmiati"
+  },
+  "capabilities": {
+    "eyebrow": "Competenze Principali",
+    "heading": "Componenti pratici per sistemi aziendali autonomi.",
+    "description": "Quattro discipline, un'unica pratica di sviluppo concreta — dagli agenti basati su modelli all'infrastruttura che li mantiene attivi.",
+    "card1Title": "Agenti AI Personalizzati e Pipeline RAG",
+    "card1Description": "Flussi di lavoro autonomi che integrano gli LLM nei database esistenti — con recupero aumentato, sensibili al contesto e progettati per agire sui tuoi dati operativi.",
+    "card2Title": "Sviluppo Software su Misura",
+    "card2Description": "Microservizi, motori backend in Rust/Go e API a bassa latenza progettati per la correttezza su larga scala.",
+    "card3Title": "Logica di Business Automatizzata",
+    "card3Description": "Orchestrazione complessa con n8n/Python che elimina il carico manuale nel tuo stack operativo.",
+    "card4Title": "Infrastruttura Cloud e DevOps",
+    "card4Description": "Kubernetes, configurazioni serverless AWS/GCP con pipeline CI/CD a zero downtime."
+  },
+  "techStack": {
+    "eyebrow": "Stack",
+    "heading": "Gli strumenti dietro il lavoro.",
+    "description": "Nessun culto dei framework — scegliamo ciò che è corretto per il problema e sostenibile per il tuo team.",
+    "cat1Label": "Linguaggi e Runtime",
+    "cat2Label": "AI e Dati",
+    "cat3Label": "Infrastruttura",
+    "cat4Label": "Automazione e Delivery"
+  },
+  "caseStudy": {
+    "eyebrow": "Esempio Illustrativo",
+    "heading": "Modernizzazione della Spedizione su Larga Scala",
+    "description": "Uno scenario rappresentativo che mostra come sostituiremmo l'instradamento manuale con un agente autonomo basato su eventi — non si tratta di un incarico reale con un cliente.",
+    "statLabel1": "Riduzione dei costi operativi",
+    "statLabel2": "Risparmio annuo",
+    "challengeLabel": "Sfida",
+    "challengeTitle": "Spedizione manuale obsoleta",
+    "challengeDescription": "Le decisioni di spedizione manuali, gestite da persone, causavano un 14% di latenza operativa sull'intera flotta, senza visibilità sulle condizioni di carico in tempo reale.",
+    "solutionLabel": "Soluzione Progettata",
+    "solutionTitle": "Agente di spedizione AI basato su eventi",
+    "solutionDescription": "Costruito su Go e un motore DAG PostgreSQL — un agente autonomo che elabora dati di carico e percorso in tempo reale, risolve i conflitti e spedisce istantaneamente.",
+    "impactLabel": "Impatto",
+    "impactTitle": "68% di riduzione dei costi operativi",
+    "impactDescription": "1,8 milioni di dollari di risparmio annuo, con decisioni di spedizione ora risolte in millisecondi anziché con cicli di revisione manuale."
+  },
+  "about": {
+    "eyebrow": "Chi siamo",
+    "heading": "Una pratica di sviluppo piccola ed esperta.",
+    "paragraph1": "NauticCode è una pratica indipendente di sviluppo software focalizzata su sistemi B2B: piattaforme personalizzate, agenti AI e l'infrastruttura che li mantiene attivi. Nessun account manager, nessun team gonfiato — lavori direttamente con le persone che costruiscono il tuo sistema.",
+    "paragraph2": "Hai un progetto in mente, un'idea di collaborazione o semplicemente una domanda? Scrivici direttamente, leggiamo ogni messaggio di persona.",
+    "availability": "Attualmente accettiamo un numero limitato di nuovi progetti",
+    "contactLabel": "Contattaci",
+    "whatsappLabel": "Scrivici su WhatsApp"
+  },
+  "footerCta": {
+    "headline": "Pronto a <highlight>Modernizzare</highlight> il Tuo Stack Software?",
+    "subheadline": "Avvia l'audit. Uno sviluppatore senior esaminerà il tuo stack e ti risponderà entro un giorno lavorativo.",
+    "terminalTitle": "npm run book-audit",
+    "fieldNamePrompt": "il tuo nome?",
+    "fieldNamePlaceholder": "Jane Doe",
+    "fieldEmailPrompt": "email di lavoro?",
+    "fieldEmailPlaceholder": "jane@azienda.com",
+    "fieldCompanyPrompt": "nome dell'azienda?",
+    "fieldCompanyPlaceholder": "Acme Logistics",
+    "fieldProjectPrompt": "cosa vuoi costruire?",
+    "fieldProjectPlaceholder": "Agente di spedizione AI, strumenti interni, migrazione…",
+    "sending": "Invio in corso",
+    "next": "Avanti",
+    "submitRequest": "Invia richiesta",
+    "successTitle": "richiesta di audit ricevuta",
+    "successMessage": "Grazie, {name} — ti contatteremo a {email} entro un giorno lavorativo.",
+    "genericError": "Qualcosa è andato storto. Riprova."
+  },
+  "footer": {
+    "copyright": "© {year} NauticCode. Tutti i diritti riservati.",
+    "privacyPolicy": "Informativa sulla Privacy"
+  },
+  "privacy": {
+    "metaDescription": "Come NauticCode raccoglie, utilizza e protegge i tuoi dati.",
+    "eyebrow": "Legale",
+    "title": "Informativa sulla Privacy",
+    "lastUpdated": "Ultimo aggiornamento: {date}",
+    "intro": "Questa informativa spiega quali dati raccoglie NauticCode tramite questo sito web, perché li raccogliamo e come puoi controllarli. Abbiamo creato questo sito per essere onesti al riguardo: raccogliamo il minimo necessario per rispondere alla tua richiesta di audit, nient'altro.",
+    "collectTitle": "Cosa raccogliamo",
+    "collectBody": "Quando invii il modulo di richiesta audit, raccogliamo le informazioni che digiti: nome, email di lavoro, nome dell'azienda e una descrizione di ciò che vuoi costruire. Non raccogliamo questi dati altrove sul sito — non ci sono altri moduli e non ti tracciamo su altri siti.",
+    "analyticsTitle": "Analisi",
+    "analyticsBody": "Utilizziamo Vercel Analytics per comprendere il traffico aggregato (pagine visualizzate, posizione approssimativa per paese, referrer). Non utilizza cookie e non raccoglie informazioni personali identificabili.",
+    "whyTitle": "Perché li raccogliamo",
+    "whyBody": "Esclusivamente per rispondere alla tua richiesta di audit — per capire cosa vuoi costruire e ricontattarti entro un giorno lavorativo, come promesso nel modulo.",
+    "processedTitle": "Come vengono elaborati",
+    "processedBody": "Gli invii dei moduli vengono inviati come email tramite <link>Resend</link>, il nostro provider di consegna email, alla nostra casella di posta. Resend elabora il messaggio per nostro conto e non utilizza i tuoi dati per scopi propri. Il sito stesso è ospitato su Vercel.",
+    "retentionTitle": "Conservazione",
+    "retentionBody": "Conserviamo le email di richiesta audit solo per il tempo necessario a risponderti e a mantenere un registro commerciale di base della conversazione. Se desideri che i tuoi dati vengano eliminati prima, contattaci e li rimuoveremo.",
+    "rightsTitle": "I tuoi diritti",
+    "rightsBody": "Puoi chiederci quali dati abbiamo su di te, chiederci di correggerli o di eliminarli, in qualsiasi momento. Non vendiamo i tuoi dati né li condividiamo con nessuno al di fuori dei fornitori sopra indicati.",
+    "changesTitle": "Modifiche a questa informativa",
+    "changesBody": "Se questa informativa cambia, aggiorneremo la data in cima a questa pagina.",
+    "contactTitle": "Contatti",
+    "contactBody": "Domande sui tuoi dati? Contattaci a <link>{email}</link>."
+  }
+}
