@@ -37,10 +37,10 @@ Set the same variables in the Vercel project's Environment Variables settings fo
 
 ## Internationalization
 
-- English is the default locale, served with no URL prefix (`/`).
-- Turkish is served at `/tr`.
-- The visitor's browser language is auto-detected on first visit; the header's EN/TR switcher lets them override it.
-- UI strings live in `messages/en.json` and `messages/tr.json`. Add a key to both files, then read it with `useTranslations("namespace")` in the component.
+- Six locales: English (default, no URL prefix — `/`), Turkish (`/tr`), Spanish (`/es`), Italian (`/it`), Arabic (`/ar`), Chinese (`/zh`).
+- The visitor's browser language is auto-detected on first visit; the header's flag dropdown (`components/LanguageSwitcher.tsx`) lets them override it.
+- UI strings live in `messages/{locale}.json`. Add a key to all six files with matching structure, then read it with `useTranslations("namespace")` in the component. `node -e` scripts checking key parity across all files were used during development — worth re-running after adding new keys.
+- Arabic renders `dir="rtl"` on `<html>` (set in `[locale]/layout.tsx`), so text reads correctly right-to-left. This is text-direction support, not a full mirrored layout — component structure (nav order, grid columns) stays LTR-arranged. A true bidi redesign (logical CSS properties throughout) would be a separate, larger task.
 - The Privacy Policy page (`app/[locale]/privacy`) is fully localized too, including the "last updated" date via `Intl.DateTimeFormat`.
 - Routing config: `i18n/routing.ts`, `i18n/request.ts`, `i18n/navigation.ts`, `middleware.ts`.
 
