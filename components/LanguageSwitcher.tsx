@@ -4,15 +4,23 @@ import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { useLocale } from "next-intl";
+import GB from "country-flag-icons/react/3x2/GB";
+import TR from "country-flag-icons/react/3x2/TR";
+import ES from "country-flag-icons/react/3x2/ES";
+import IT from "country-flag-icons/react/3x2/IT";
+import SA from "country-flag-icons/react/3x2/SA";
+import CN from "country-flag-icons/react/3x2/CN";
 import { Link, usePathname } from "@/i18n/navigation";
 
+// Emoji flags render as plain "GB"/"TR" text on Windows (Segoe UI Emoji has
+// no flag glyphs), so we use real SVG flag icons instead.
 const LOCALES = [
-  { code: "en", flag: "🇬🇧", name: "English" },
-  { code: "tr", flag: "🇹🇷", name: "Türkçe" },
-  { code: "es", flag: "🇪🇸", name: "Español" },
-  { code: "it", flag: "🇮🇹", name: "Italiano" },
-  { code: "ar", flag: "🇸🇦", name: "العربية" },
-  { code: "zh", flag: "🇨🇳", name: "中文" },
+  { code: "en", Flag: GB, name: "English" },
+  { code: "tr", Flag: TR, name: "Türkçe" },
+  { code: "es", Flag: ES, name: "Español" },
+  { code: "it", Flag: IT, name: "Italiano" },
+  { code: "ar", Flag: SA, name: "العربية" },
+  { code: "zh", Flag: CN, name: "中文" },
 ] as const;
 
 export default function LanguageSwitcher({
@@ -56,7 +64,7 @@ export default function LanguageSwitcher({
         aria-expanded={open}
         className="flex items-center gap-1.5 rounded-md border border-border px-2.5 py-1.5 font-mono text-xs text-text-secondary transition-colors hover:border-accent-cyan/40 hover:text-accent-cyan"
       >
-        <span aria-hidden>{current.flag}</span>
+        <current.Flag aria-hidden className="h-3 w-4 rounded-[2px]" />
         <span>{current.code.toUpperCase()}</span>
         <ChevronDown
           size={12}
@@ -88,7 +96,7 @@ export default function LanguageSwitcher({
                     : "text-text-secondary hover:bg-surface hover:text-text-primary"
                 }`}
               >
-                <span aria-hidden>{l.flag}</span>
+                <l.Flag aria-hidden className="h-3.5 w-5 flex-shrink-0 rounded-[2px]" />
                 <span>{l.name}</span>
               </Link>
             ))}
