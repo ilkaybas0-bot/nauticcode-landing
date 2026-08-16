@@ -23,7 +23,7 @@ export default function Header() {
     { label: t("navServices"), href: withHomePrefix("#services") },
     { label: t("navArchitecture"), href: withHomePrefix("#services") },
     { label: t("navStack"), href: withHomePrefix("#stack") },
-    { label: t("navCaseStudies"), href: withHomePrefix("#case-studies") },
+    { label: t("navCaseStudies"), href: withHomePrefix("#projects") },
     { label: t("navAbout"), href: withHomePrefix("#about") },
   ];
   const ctaHref = withHomePrefix("#contact");

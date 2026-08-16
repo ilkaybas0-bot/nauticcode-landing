@@ -60,7 +60,7 @@ app/
   icon.tsx, apple-icon.tsx, opengraph-image.tsx, twitter-image.tsx
   robots.ts, sitemap.ts
 components/            # one file per landing-page section, plus shared bits
-  (Header, Hero, MetricsStrip, Capabilities, TechStack, CaseStudy, About,
+  (Header, Hero, MetricsStrip, Capabilities, TechStack, Projects, About,
    FooterCTA, Footer, LanguageSwitcher, MotionProvider)
 i18n/                  # next-intl routing/request/navigation config
 messages/              # en.json / tr.json translation dictionaries
@@ -72,7 +72,7 @@ public/logo-mark.png    # logo mark used in the header
 
 - **Rate limiting** on `/api/contact` uses Upstash Redis when `UPSTASH_REDIS_REST_URL`/`UPSTASH_REDIS_REST_TOKEN` are set (persistent, shared across instances); otherwise it falls back to an in-memory limiter that resets on cold start and isn't shared. Set the Upstash vars in production.
 - **Confirmation email** to the form submitter is best-effort: until a custom domain is verified in Resend, it can only actually deliver when the submitter's address matches the Resend account's own email. The internal notification to `CONTACT_EMAIL_TO` always works.
-- **Case Study** section is an illustrative example, not a real client engagement — labeled as such on the page.
+- **Projects** section (`components/Projects.tsx`) showcases real, currently-live products (Slotly, QR Menu, NauticCode AI, NSS Score) — not fictional case studies.
 
 ## Deployment
 

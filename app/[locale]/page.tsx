@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import MetricsStrip from "@/components/MetricsStrip";
 import Capabilities from "@/components/Capabilities";
 import TechStack from "@/components/TechStack";
-import CaseStudy from "@/components/CaseStudy";
+import Projects from "@/components/Projects";
 import About from "@/components/About";
 import FooterCTA from "@/components/FooterCTA";
 import Footer from "@/components/Footer";
@@ -76,7 +76,7 @@ export default function Home() {
         <MetricsStrip />
         <Capabilities />
         <TechStack />
-        <CaseStudy />
+        <Projects />
         <About />
         <FooterCTA />
       </main>
