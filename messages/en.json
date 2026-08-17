@@ -59,7 +59,7 @@
     "project2Description": "A multi-tenant digital menu platform built with Streamlit. Each business gets its own panel to manage menus, while customers scan a QR code to view them — no app download required.",
     "project2Cta": "View menu",
     "project3Category": "AI Assistant",
-    "project3Name": "NauticCode AI",
+    "project3Name": "Mogens Software AI",
     "project3Description": "A chat-based personal assistant for notes and reminders, built for desktop and Android.",
     "project3Badge": "Desktop & Android app",
     "project4Category": "Live Sports Data",
@@ -70,7 +70,7 @@
   "about": {
     "eyebrow": "About",
     "heading": "A small, senior development practice.",
-    "paragraph1": "NauticCode is an independent software development practice focused on B2B systems: custom platforms, AI agents, and the infrastructure that keeps them running. No account managers, no bloated teams — you work directly with the people building your system.",
+    "paragraph1": "Mogens Software is an independent software development practice focused on B2B systems: custom platforms, AI agents, and the infrastructure that keeps them running. No account managers, no bloated teams — you work directly with the people building your system.",
     "paragraph2": "Have a project in mind, a partnership idea, or just a question? Reach out directly, we read every message ourselves.",
     "availability": "Currently taking on a limited number of new projects",
     "contactLabel": "Get in touch",
@@ -96,15 +96,15 @@
     "genericError": "Something went wrong. Please try again."
   },
   "footer": {
-    "copyright": "© {year} NauticCode. All rights reserved.",
+    "copyright": "© {year} Mogens Software. All rights reserved.",
     "privacyPolicy": "Privacy Policy"
   },
   "privacy": {
-    "metaDescription": "How NauticCode collects, uses, and protects your data.",
+    "metaDescription": "How Mogens Software collects, uses, and protects your data.",
     "eyebrow": "Legal",
     "title": "Privacy Policy",
     "lastUpdated": "Last updated: {date}",
-    "intro": "This policy explains what data NauticCode collects through this website, why we collect it, and how you can control it. We built this site to be honest about it: we collect the minimum needed to respond to your audit request, nothing more.",
+    "intro": "This policy explains what data Mogens Software collects through this website, why we collect it, and how you can control it. We built this site to be honest about it: we collect the minimum needed to respond to your audit request, nothing more.",
     "collectTitle": "What we collect",
     "collectBody": "When you submit the audit request form, we collect the information you type in: your name, work email, company name, and a description of what you want to build. We do not collect this data anywhere else on the site — there are no other forms, and we do not track you across other sites.",
     "analyticsTitle": "Analytics",
@@ -123,3 +123,4 @@
     "contactBody": "Questions about your data? Reach us at <link>{email}</link>."
   }
 }
+

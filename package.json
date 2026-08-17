@@ -1,5 +1,5 @@
 {
-  "name": "nauticcode-landing",
+  "name": "Mogens Software-landing",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -31,3 +31,4 @@
     "typescript": "^5.5.4"
   }
 }
+

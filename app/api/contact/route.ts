@@ -77,7 +77,7 @@ export async function POST(request: Request) {
   }
 
   const toAddress = process.env.CONTACT_EMAIL_TO || "ilkaybas0@gmail.com";
-  const fromAddress = process.env.CONTACT_EMAIL_FROM || "NauticCode Audit Bot <onboarding@resend.dev>";
+  const fromAddress = process.env.CONTACT_EMAIL_FROM || "Mogens Software Audit Bot <onboarding@resend.dev>";
 
   const resend = new Resend(apiKey);
 
@@ -89,7 +89,7 @@ export async function POST(request: Request) {
       subject: `Software audit request — ${company}`,
       html: `
         <div style="font-family: monospace; font-size: 14px; line-height: 1.6;">
-          <p><strong>New audit request via nauticcode.com</strong></p>
+          <p><strong>New audit request via Mogens Software.com</strong></p>
           <p><strong>Name:</strong> ${escapeHtml(name)}</p>
           <p><strong>Email:</strong> ${escapeHtml(email)}</p>
           <p><strong>Company:</strong> ${escapeHtml(company)}</p>
@@ -115,14 +115,14 @@ export async function POST(request: Request) {
     await resend.emails.send({
       from: fromAddress,
       to: email,
-      subject: "We received your request — NauticCode",
+      subject: "We received your request — Mogens Software",
       html: `
         <div style="font-family: monospace; font-size: 14px; line-height: 1.6;">
           <p>Hi ${escapeHtml(name.split(" ")[0])},</p>
-          <p>Thanks for reaching out to NauticCode. We've received your
+          <p>Thanks for reaching out to Mogens Software. We've received your
           audit request for <strong>${escapeHtml(company)}</strong>
           and a senior developer will reply within one business day.</p>
-          <p>— NauticCode</p>
+          <p>— Mogens Software</p>
         </div>
       `,
     });
@@ -132,3 +132,4 @@ export async function POST(request: Request) {
 
   return NextResponse.json({ ok: true });
 }
+

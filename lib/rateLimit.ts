@@ -14,7 +14,7 @@ const persistentLimiter =
     ? new Ratelimit({
         redis: new Redis({ url: upstashUrl, token: upstashToken }),
         limiter: Ratelimit.slidingWindow(MAX_REQUESTS, "10 m"),
-        prefix: "nauticcode:contact",
+        prefix: "Mogens Software:contact",
       })
     : null;
 
@@ -46,3 +46,4 @@ export async function isRateLimited(key: string): Promise<boolean> {
   }
   return isMemoryRateLimited(key);
 }
+

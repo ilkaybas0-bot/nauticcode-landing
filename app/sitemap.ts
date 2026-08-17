@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 
-const SITE_URL = "https://nauticcode.com";
+const SITE_URL = "https://Mogens Software.com";
 
 function localePath(locale: string) {
   return locale === routing.defaultLocale ? "" : `/${locale}`;
@@ -32,3 +32,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 }
+
