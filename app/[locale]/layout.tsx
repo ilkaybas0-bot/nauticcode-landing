@@ -19,8 +19,8 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const SITE_URL = "https://nauticcode.com";
-const SITE_TITLE = "NauticCode — B2B Software Development";
+const SITE_URL = "https://mogenssoftware.com";
+const SITE_TITLE = "Mogens Software — B2B Software Development";
 const SITE_DESCRIPTION =
   "We engineer resilient custom software, autonomous AI workflows, and cloud infrastructure designed to scale your operational velocity.";
 
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: SITE_TITLE,
-    template: "%s — NauticCode",
+    template: "%s — Mogens Software",
   },
   description: SITE_DESCRIPTION,
   keywords: [
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
     "DevOps automation",
     "AI workflow automation",
   ],
-  authors: [{ name: "NauticCode" }],
-  creator: "NauticCode",
+  authors: [{ name: "Mogens Software" }],
+  creator: "Mogens Software",
   robots: { index: true, follow: true },
   icons: {
     icon: "/icon",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: SITE_URL,
-    siteName: "NauticCode",
+    siteName: "Mogens Software",
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
   },
@@ -62,13 +62,13 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#070B12",
+  themeColor: "#030304",
 };
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "NauticCode",
+  name: "Mogens Software",
   url: SITE_URL,
   logo: `${SITE_URL}/icon`,
   description: SITE_DESCRIPTION,

@@ -57,7 +57,7 @@ export default function Header() {
             className="h-8 w-auto"
           />
           <span className="font-sans text-base font-semibold tracking-tight text-text-primary">
-            Nautic<span className="text-accent-cyan">Code</span>
+            Mogens <span className="text-accent-cyan">Software</span>
           </span>
         </Link>
 

@@ -1,8 +1,8 @@
-# NauticCode Landing Page
+# Mogens Software Landing Page
 
-Marketing site for NauticCode (B2B software development), built with Next.js 14 (App Router) and Tailwind CSS.
+Marketing site for Mogens Software (B2B software development), built with Next.js 14 (App Router) and Tailwind CSS.
 
-Live: https://nauticcode-landing.vercel.app
+Live: https://mogenssoftware.com (pending DNS connection — currently served from the Vercel preview URL until the domain is attached in the Vercel dashboard)
 
 ## Stack
 
@@ -72,7 +72,7 @@ public/logo-mark.png    # logo mark used in the header
 
 - **Rate limiting** on `/api/contact` uses Upstash Redis when `UPSTASH_REDIS_REST_URL`/`UPSTASH_REDIS_REST_TOKEN` are set (persistent, shared across instances); otherwise it falls back to an in-memory limiter that resets on cold start and isn't shared. Set the Upstash vars in production.
 - **Confirmation email** to the form submitter is best-effort: until a custom domain is verified in Resend, it can only actually deliver when the submitter's address matches the Resend account's own email. The internal notification to `CONTACT_EMAIL_TO` always works.
-- **Projects** section (`components/Projects.tsx`) showcases real, currently-live products (Slotly, QR Menu, NauticCode AI, NSS Score) — not fictional case studies.
+- **Projects** section (`components/Projects.tsx`) showcases real, currently-live products (Slotly, QR Menu, Mogens Software AI, NSS Score) — not fictional case studies.
 
 ## Deployment
 

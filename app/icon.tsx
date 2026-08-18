@@ -15,7 +15,7 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#070B12",
+          background: "#030304",
         }}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}

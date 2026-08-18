@@ -16,9 +16,9 @@ export default function OpengraphImage() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          background: "#070B12",
+          background: "#030304",
           backgroundImage:
-            "radial-gradient(circle at 50% 30%, rgba(0,242,254,0.16), transparent 60%)",
+            "radial-gradient(circle at 50% 30%, rgba(139,92,246,0.16), transparent 60%)",
           padding: 80,
         }}
       >
@@ -31,8 +31,8 @@ export default function OpengraphImage() {
               width: 56,
               height: 56,
               borderRadius: 12,
-              background: "#0D1527",
-              border: "1px solid #1E293B",
+              background: "#0F0B1A",
+              border: "1px solid #241F33",
             }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -48,11 +48,11 @@ export default function OpengraphImage() {
               display: "flex",
               fontSize: 40,
               fontWeight: 600,
-              color: "#FFFFFF",
+              color: "#F2F4F7",
               letterSpacing: "-0.02em",
             }}
           >
-            Nautic<span style={{ color: "#00F2FE" }}>Code</span>
+            Mogens <span style={{ color: "#8B5CF6" }}>Software</span>
           </div>
         </div>
 
@@ -63,7 +63,7 @@ export default function OpengraphImage() {
             fontSize: 60,
             fontWeight: 600,
             lineHeight: 1.15,
-            color: "#FFFFFF",
+            color: "#F2F4F7",
             textAlign: "center",
             letterSpacing: "-0.02em",
             maxWidth: 980,
@@ -77,7 +77,7 @@ export default function OpengraphImage() {
             display: "flex",
             marginTop: 32,
             fontSize: 26,
-            color: "#94A3B8",
+            color: "#9CA6B4",
             letterSpacing: "0.08em",
             textTransform: "uppercase",
           }}

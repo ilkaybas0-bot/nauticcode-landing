@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Mail, MessageCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-const CONTACT_EMAIL = "nauticcode.contact@gmail.com";
+const CONTACT_EMAIL = "contact@mogenssoftware.com";
 const WHATSAPP_NUMBER = "905384519785";
 const WHATSAPP_DISPLAY = "+90 538 451 97 85";
 

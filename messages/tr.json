@@ -59,7 +59,7 @@
     "project2Description": "Streamlit ile geliştirilmiş, çoklu işletme destekli bir dijital menü platformu. Her işletme menülerini yönetmek için kendi paneline sahipken, müşteriler uygulama indirmeden QR kodu okutarak menüyü görüntüler.",
     "project2Cta": "Menüyü görüntüle",
     "project3Category": "Yapay Zekâ Asistanı",
-    "project3Name": "NauticCode AI",
+    "project3Name": "Mogens Software AI",
     "project3Description": "Notlar ve hatırlatmalar için sohbet tabanlı bir kişisel asistan; masaüstü ve Android için geliştirildi.",
     "project3Badge": "Masaüstü ve Android uygulaması",
     "project4Category": "Canlı Spor Verisi",
@@ -70,7 +70,7 @@
   "about": {
     "eyebrow": "Hakkımızda",
     "heading": "Küçük, deneyimli bir geliştirme ekibi.",
-    "paragraph1": "NauticCode; B2B sistemler, özel yazılım platformları, yapay zekâ ajanları ve bunları ayakta tutan altyapı üzerine odaklanan bağımsız bir yazılım geliştirme pratiğidir. Hesap yöneticisi yok, şişirilmiş ekipler yok — sisteminizi kuran ekiple doğrudan çalışırsınız.",
+    "paragraph1": "Mogens Software; B2B sistemler, özel yazılım platformları, yapay zekâ ajanları ve bunları ayakta tutan altyapı üzerine odaklanan bağımsız bir yazılım geliştirme pratiğidir. Hesap yöneticisi yok, şişirilmiş ekipler yok — sisteminizi kuran ekiple doğrudan çalışırsınız.",
     "paragraph2": "Aklınızda bir proje, bir iş birliği fikri ya da sadece bir sorunuz mu var? Doğrudan yazın, her mesajı kendimiz okuyoruz.",
     "availability": "Şu anda sınırlı sayıda yeni proje kabul ediyoruz",
     "contactLabel": "İletişime Geçin",
@@ -96,15 +96,15 @@
     "genericError": "Bir şeyler ters gitti. Lütfen tekrar deneyin."
   },
   "footer": {
-    "copyright": "© {year} NauticCode. Tüm hakları saklıdır.",
+    "copyright": "© {year} Mogens Software. Tüm hakları saklıdır.",
     "privacyPolicy": "Gizlilik Politikası"
   },
   "privacy": {
-    "metaDescription": "NauticCode verilerinizi nasıl topluyor, kullanıyor ve koruyor.",
+    "metaDescription": "Mogens Software verilerinizi nasıl topluyor, kullanıyor ve koruyor.",
     "eyebrow": "Yasal",
     "title": "Gizlilik Politikası",
     "lastUpdated": "Son güncelleme: {date}",
-    "intro": "Bu politika, NauticCode'un bu web sitesi üzerinden hangi verileri topladığını, neden topladığını ve bu veriler üzerinde nasıl kontrol sahibi olabileceğinizi açıklar. Bu konuda dürüst olmak için bu sayfayı oluşturduk: denetim talebinize yanıt vermek için gereken asgari veriyi topluyoruz, fazlasını değil.",
+    "intro": "Bu politika, Mogens Software'nin bu web sitesi üzerinden hangi verileri topladığını, neden topladığını ve bu veriler üzerinde nasıl kontrol sahibi olabileceğinizi açıklar. Bu konuda dürüst olmak için bu sayfayı oluşturduk: denetim talebinize yanıt vermek için gereken asgari veriyi topluyoruz, fazlasını değil.",
     "collectTitle": "Ne topluyoruz",
     "collectBody": "Denetim talebi formunu gönderdiğinizde, yazdığınız bilgileri topluyoruz: adınız, iş e-postanız, şirket adınız ve ne inşa etmek istediğinize dair bir açıklama. Bu veriyi sitenin başka hiçbir yerinde toplamıyoruz — başka form yok ve sizi başka sitelerde takip etmiyoruz.",
     "analyticsTitle": "Analitik",

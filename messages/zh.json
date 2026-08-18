@@ -59,7 +59,7 @@
     "project2Description": "基于 Streamlit 构建的多租户数字菜单平台。每个商家都有自己的后台管理菜单，顾客扫描二维码即可查看菜单，无需下载应用。",
     "project2Cta": "查看菜单",
     "project3Category": "AI 助手",
-    "project3Name": "NauticCode AI",
+    "project3Name": "Mogens Software AI",
     "project3Description": "一款基于聊天的个人助手，用于记笔记和提醒，支持桌面端和 Android。",
     "project3Badge": "桌面端和 Android 应用",
     "project4Category": "实时体育数据",
@@ -70,7 +70,7 @@
   "about": {
     "eyebrow": "关于我们",
     "heading": "一支小而精的资深开发团队。",
-    "paragraph1": "NauticCode 是一家独立的软件开发工作室，专注于 B2B 系统：定制平台、AI 智能体，以及支撑它们运行的基础设施。没有客户经理，没有臃肿的团队——您将直接与构建您系统的人员合作。",
+    "paragraph1": "Mogens Software 是一家独立的软件开发工作室，专注于 B2B 系统：定制平台、AI 智能体，以及支撑它们运行的基础设施。没有客户经理，没有臃肿的团队——您将直接与构建您系统的人员合作。",
     "paragraph2": "有项目构想、合作意向，或只是想提个问题？直接联系我们，每条消息我们都会亲自阅读。",
     "availability": "目前接受有限数量的新项目",
     "contactLabel": "联系我们",
@@ -96,15 +96,15 @@
     "genericError": "出现了一些问题，请重试。"
   },
   "footer": {
-    "copyright": "© {year} NauticCode. 保留所有权利。",
+    "copyright": "© {year} Mogens Software. 保留所有权利。",
     "privacyPolicy": "隐私政策"
   },
   "privacy": {
-    "metaDescription": "了解 NauticCode 如何收集、使用和保护您的数据。",
+    "metaDescription": "了解 Mogens Software 如何收集、使用和保护您的数据。",
     "eyebrow": "法律",
     "title": "隐私政策",
     "lastUpdated": "最后更新：{date}",
-    "intro": "本政策说明 NauticCode 通过本网站收集哪些数据、为何收集，以及您如何加以控制。我们希望在这一点上做到坦诚：我们只收集回应您的审计申请所需的最少数据，不会更多。",
+    "intro": "本政策说明 Mogens Software 通过本网站收集哪些数据、为何收集，以及您如何加以控制。我们希望在这一点上做到坦诚：我们只收集回应您的审计申请所需的最少数据，不会更多。",
     "collectTitle": "我们收集哪些信息",
     "collectBody": "当您提交审计申请表单时，我们会收集您输入的信息：姓名、工作邮箱、公司名称，以及您想构建内容的描述。我们不会在网站的其他任何地方收集此类数据——没有其他表单，我们也不会在其他网站上追踪您。",
     "analyticsTitle": "数据分析",

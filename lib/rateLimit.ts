@@ -14,7 +14,7 @@ const persistentLimiter =
     ? new Ratelimit({
         redis: new Redis({ url: upstashUrl, token: upstashToken }),
         limiter: Ratelimit.slidingWindow(MAX_REQUESTS, "10 m"),
-        prefix: "nauticcode:contact",
+        prefix: "mogens:contact",
       })
     : null;
 
