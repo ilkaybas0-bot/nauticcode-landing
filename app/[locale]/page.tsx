@@ -11,32 +11,32 @@ import Footer from "@/components/Footer";
 
 const LOCALIZED_METADATA: Record<string, { title: string; description: string }> = {
   en: {
-    title: "Mogens Software — B2B Software Development",
+    title: "NauticCode — B2B Software Development",
     description:
       "We engineer resilient custom software, autonomous AI workflows, and cloud infrastructure designed to scale your operational velocity.",
   },
   tr: {
-    title: "Mogens Software — B2B Yazılım Geliştirme",
+    title: "NauticCode — B2B Yazılım Geliştirme",
     description:
       "Operasyonel hızınızı ölçeklendirmek için dayanıklı özel yazılımlar, otonom yapay zekâ iş akışları ve bulut altyapısı geliştiriyoruz.",
   },
   es: {
-    title: "Mogens Software — Desarrollo de Software B2B",
+    title: "NauticCode — Desarrollo de Software B2B",
     description:
       "Diseñamos software personalizado resiliente, flujos de trabajo autónomos de IA e infraestructura en la nube pensados para escalar tu velocidad operativa.",
   },
   it: {
-    title: "Mogens Software — Sviluppo Software B2B",
+    title: "NauticCode — Sviluppo Software B2B",
     description:
       "Progettiamo software personalizzato resiliente, flussi di lavoro AI autonomi e infrastrutture cloud pensate per scalare la tua velocità operativa.",
   },
   ar: {
-    title: "Mogens Software — تطوير برمجيات B2B",
+    title: "NauticCode — تطوير برمجيات B2B",
     description:
       "نصمم برمجيات مخصصة متينة، وسير عمل ذكاء اصطناعي مستقل، وبنية سحابية مصممة لتوسيع سرعة عملياتك.",
   },
   zh: {
-    title: "Mogens Software — B2B 软件开发",
+    title: "NauticCode — B2B 软件开发",
     description:
       "我们打造稳健的定制软件、自主 AI 工作流和云基础设施，助力提升您的运营效率。",
   },

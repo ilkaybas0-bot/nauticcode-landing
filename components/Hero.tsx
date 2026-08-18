@@ -5,7 +5,7 @@ import { ArrowRight, TerminalSquare } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const TERMINAL_LINES = [
-  { text: "$ Mogens Software deploy --agent=dispatch-ai", color: "text-text-secondary" },
+  { text: "$ nauticcode deploy --agent=dispatch-ai", color: "text-text-secondary" },
   { text: "> resolving node graph...", color: "text-text-secondary" },
   { text: "[<>] api.gateway   ⇄  llm.inference", color: "text-accent-cyan" },
   { text: "[<>] agent.core    ⇄  db.postgres", color: "text-accent-cyan" },
@@ -115,7 +115,7 @@ export default function Hero() {
               <span className="h-3 w-3 rounded-full bg-emerald-500/70" />
               <span className="ml-3 flex items-center gap-1.5 font-mono text-xs text-text-secondary">
                 <TerminalSquare size={12} />
-                Mogens Software — architecture.sh
+                nauticcode — architecture.sh
               </span>
             </div>
 
@@ -144,4 +144,3 @@ export default function Hero() {
     </section>
   );
 }
-

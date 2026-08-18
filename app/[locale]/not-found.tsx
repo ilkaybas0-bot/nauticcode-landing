@@ -20,12 +20,12 @@ export default function NotFound() {
               <span className="h-3 w-3 rounded-full bg-emerald-500/70" />
               <span className="ml-3 flex items-center gap-1.5 font-mono text-xs text-text-secondary">
                 <TerminalSquare size={12} />
-                mogens — 404.sh
+                nauticcode — 404.sh
               </span>
             </div>
 
             <div className="space-y-2.5 px-6 py-8 font-mono text-[13px] leading-relaxed">
-              <p className="text-text-secondary">$ mogens resolve --route</p>
+              <p className="text-text-secondary">$ nauticcode resolve --route</p>
               <p className="text-red-400">
                 ✗ 404 — route not found in system graph
               </p>

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://Mogens Software.com";
+const SITE_URL = "https://nauticcode.com";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -11,4 +11,3 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: `${SITE_URL}/sitemap.xml`,
   };
 }
-
