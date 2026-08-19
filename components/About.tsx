@@ -16,10 +16,13 @@ export default function About() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-5 lg:gap-16">
           <div className="lg:col-span-3">
-            <span className="font-mono text-xs uppercase tracking-widest text-accent-cyan">
-              {t("eyebrow")}
-            </span>
-            <h2 className="mt-4 font-sans text-3xl font-semibold tracking-tight sm:text-4xl">
+            <div className="flex items-center gap-3">
+              <span className="h-px w-8 bg-accent-cyan" />
+              <span className="font-mono text-xs uppercase tracking-widest text-text-secondary">
+                {t("eyebrow")}
+              </span>
+            </div>
+            <h2 className="mt-5 font-sans text-3xl font-semibold tracking-tight sm:text-4xl">
               {t("heading")}
             </h2>
             <p className="mt-6 text-base leading-relaxed text-text-secondary">

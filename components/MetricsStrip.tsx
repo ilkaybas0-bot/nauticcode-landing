@@ -48,7 +48,7 @@ export default function MetricsStrip() {
   return (
     <section className="relative border-y border-border bg-surface/30 py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
+        <div className="grid grid-cols-1 divide-y divide-border sm:grid-cols-3 sm:divide-x sm:divide-y-0">
           {STATS.map((stat, i) => (
             <motion.div
               key={stat.labelKey}
@@ -56,7 +56,7 @@ export default function MetricsStrip() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.1, ease: "easeOut" }}
-              className="text-center sm:text-left"
+              className="py-6 text-center first:pt-0 sm:px-8 sm:py-0 sm:text-left sm:first:pl-0 sm:last:pr-0"
             >
               <div className="text-4xl font-semibold text-gradient sm:text-5xl">
                 <StatCounter stat={stat} />

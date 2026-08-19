@@ -83,10 +83,14 @@ export default function Projects() {
     <section id="projects" className="relative py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="font-mono text-xs uppercase tracking-widest text-accent-cyan">
-            {t("eyebrow")}
-          </span>
-          <h2 className="mt-4 font-sans text-2xl font-semibold tracking-tight sm:text-3xl">
+          <div className="flex items-center justify-center gap-3">
+            <span className="h-px w-8 bg-accent-cyan" />
+            <span className="font-mono text-xs uppercase tracking-widest text-text-secondary">
+              {t("eyebrow")}
+            </span>
+            <span className="h-px w-8 bg-accent-cyan" />
+          </div>
+          <h2 className="mt-5 font-sans text-2xl font-semibold tracking-tight sm:text-3xl">
             {t("heading")}
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-text-secondary">
@@ -103,48 +107,55 @@ export default function Projects() {
           className="mt-12"
         />
 
-        <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 border-t border-border">
           {PROJECTS.map((project, i) => (
             <motion.div
               key={project.nameKey}
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.5, delay: i * 0.08, ease: "easeOut" }}
-              className="flex flex-col rounded-2xl border border-border bg-surface/50 p-6"
+              transition={{ duration: 0.5, delay: i * 0.06, ease: "easeOut" }}
+              className="group grid grid-cols-1 items-center gap-4 border-b border-border py-8 lg:grid-cols-12 lg:gap-8"
             >
-              <div
-                className={`flex h-10 w-10 items-center justify-center rounded-lg border bg-bg/60 ${project.border} ${project.accent}`}
-              >
-                <project.icon size={18} strokeWidth={1.75} />
+              <div className="flex items-center gap-5 lg:col-span-5">
+                <div
+                  className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border bg-bg/60 ${project.border} ${project.accent}`}
+                >
+                  <project.icon size={18} strokeWidth={1.75} />
+                </div>
+                <div>
+                  <span
+                    className={`block font-mono text-xs uppercase tracking-widest ${project.accent}`}
+                  >
+                    {t(project.categoryKey)}
+                  </span>
+                  <h3 className="mt-1 font-sans text-base font-semibold text-text-primary">
+                    {t(project.nameKey)}
+                  </h3>
+                </div>
               </div>
-              <span
-                className={`mt-5 block font-mono text-xs uppercase tracking-widest ${project.accent}`}
-              >
-                {t(project.categoryKey)}
-              </span>
-              <h3 className="mt-2 font-sans text-base font-semibold text-text-primary">
-                {t(project.nameKey)}
-              </h3>
-              <p className="mt-3 flex-1 text-sm leading-relaxed text-text-secondary">
+
+              <p className="text-sm leading-relaxed text-text-secondary lg:col-span-5">
                 {t(project.descriptionKey)}
               </p>
 
-              {project.href ? (
-                <a
-                  href={project.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`mt-5 inline-flex items-center gap-1 font-mono text-xs font-medium ${project.accent} transition-opacity hover:opacity-80`}
-                >
-                  {t(project.ctaKey!)}
-                  <ArrowUpRight size={13} />
-                </a>
-              ) : (
-                <span className="mt-5 inline-flex w-fit items-center rounded-md border border-border px-2.5 py-1 font-mono text-xs text-text-secondary">
-                  {t(project.badgeKey!)}
-                </span>
-              )}
+              <div className="lg:col-span-2 lg:text-right">
+                {project.href ? (
+                  <a
+                    href={project.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`inline-flex items-center gap-1 font-mono text-xs font-medium ${project.accent} transition-opacity hover:opacity-80`}
+                  >
+                    {t(project.ctaKey!)}
+                    <ArrowUpRight size={13} />
+                  </a>
+                ) : (
+                  <span className="inline-flex w-fit items-center rounded-md border border-border px-2.5 py-1 font-mono text-xs text-text-secondary">
+                    {t(project.badgeKey!)}
+                  </span>
+                )}
+              </div>
             </motion.div>
           ))}
         </div>
