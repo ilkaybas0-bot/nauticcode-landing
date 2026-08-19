@@ -46,7 +46,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="glass flex flex-col gap-6 rounded-xl p-8 lg:col-span-2"
+            className="glass-card relative flex flex-col gap-6 p-8 lg:col-span-2"
           >
             <div>
               <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-border bg-bg/60 text-accent-cyan">

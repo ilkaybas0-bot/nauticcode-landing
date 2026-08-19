@@ -107,54 +107,62 @@ export default function Projects() {
           className="mt-12"
         />
 
-        <div className="mt-16 border-t border-border">
+        <div className="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-2">
           {PROJECTS.map((project, i) => (
             <motion.div
               key={project.nameKey}
-              initial={{ opacity: 0, y: 16 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.5, delay: i * 0.06, ease: "easeOut" }}
-              className="group grid grid-cols-1 items-center gap-4 border-b border-border py-8 lg:grid-cols-12 lg:gap-8"
+              transition={{ duration: 0.6, delay: i * 0.08, ease: "easeOut" }}
+              className="glass-card group min-h-[280px]"
             >
-              <div className="flex items-center gap-5 lg:col-span-5">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={project.image}
+                alt=""
+                className="absolute inset-0 h-full w-full scale-105 object-cover opacity-25 blur-[1px] transition-all duration-700 group-hover:scale-110 group-hover:opacity-35"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/85 to-bg/40" />
+
+              <div className="relative flex h-full flex-col justify-between p-6">
                 <div
-                  className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border bg-bg/60 ${project.border} ${project.accent}`}
+                  className={`flex h-11 w-11 items-center justify-center rounded-lg border bg-bg/60 backdrop-blur ${project.border} ${project.accent}`}
                 >
                   <project.icon size={18} strokeWidth={1.75} />
                 </div>
+
                 <div>
                   <span
                     className={`block font-mono text-xs uppercase tracking-widest ${project.accent}`}
                   >
                     {t(project.categoryKey)}
                   </span>
-                  <h3 className="mt-1 font-sans text-base font-semibold text-text-primary">
+                  <h3 className="mt-1 font-sans text-lg font-semibold text-text-primary">
                     {t(project.nameKey)}
                   </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-text-secondary">
+                    {t(project.descriptionKey)}
+                  </p>
+
+                  <div className="mt-4">
+                    {project.href ? (
+                      <a
+                        href={project.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`inline-flex items-center gap-1 font-mono text-xs font-medium ${project.accent} transition-opacity hover:opacity-80`}
+                      >
+                        {t(project.ctaKey!)}
+                        <ArrowUpRight size={13} />
+                      </a>
+                    ) : (
+                      <span className="inline-flex w-fit items-center rounded-md border border-white/10 bg-bg/60 px-2.5 py-1 font-mono text-xs text-text-secondary backdrop-blur">
+                        {t(project.badgeKey!)}
+                      </span>
+                    )}
+                  </div>
                 </div>
-              </div>
-
-              <p className="text-sm leading-relaxed text-text-secondary lg:col-span-5">
-                {t(project.descriptionKey)}
-              </p>
-
-              <div className="lg:col-span-2 lg:text-right">
-                {project.href ? (
-                  <a
-                    href={project.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`inline-flex items-center gap-1 font-mono text-xs font-medium ${project.accent} transition-opacity hover:opacity-80`}
-                  >
-                    {t(project.ctaKey!)}
-                    <ArrowUpRight size={13} />
-                  </a>
-                ) : (
-                  <span className="inline-flex w-fit items-center rounded-md border border-border px-2.5 py-1 font-mono text-xs text-text-secondary">
-                    {t(project.badgeKey!)}
-                  </span>
-                )}
               </div>
             </motion.div>
           ))}

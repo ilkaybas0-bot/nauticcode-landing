@@ -35,7 +35,7 @@ export default function TechStack() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-2xl">
           <div className="flex items-center gap-3">
-            <span className="h-px w-8 bg-accent-cyan" />
+            <span className="h-px w-8 bg-accent-cyan shadow-glow-cyan" />
             <span className="font-mono text-xs uppercase tracking-widest text-text-secondary">
               {t("eyebrow")}
             </span>
@@ -48,28 +48,37 @@ export default function TechStack() {
           </p>
         </div>
 
-        <div className="mt-14">
+        <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {CATEGORIES.map((category, i) => (
             <motion.div
               key={category.labelKey}
-              initial={{ opacity: 0, y: 12 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.5, delay: i * 0.06, ease: "easeOut" }}
-              className="flex flex-col gap-3 border-b border-border py-6 sm:flex-row sm:items-baseline sm:gap-10"
+              transition={{ duration: 0.5, delay: i * 0.08, ease: "easeOut" }}
+              className="glass-card flex min-h-[220px] flex-col"
             >
-              <h3 className="w-full shrink-0 font-mono text-xs uppercase tracking-widest text-text-secondary sm:w-52">
-                {t(category.labelKey)}
-              </h3>
-              <div className="flex flex-wrap gap-x-8 gap-y-2">
-                {category.items.map((item) => (
-                  <span
-                    key={item}
-                    className="text-sm text-text-primary transition-colors hover:text-accent-cyan"
-                  >
-                    {item}
-                  </span>
-                ))}
+              <div className="flex items-center gap-1.5 border-b border-white/[0.06] px-4 py-3">
+                <span className="h-2 w-2 rounded-full bg-red-500/60" />
+                <span className="h-2 w-2 rounded-full bg-yellow-500/60" />
+                <span className="h-2 w-2 rounded-full bg-emerald-500/60" />
+              </div>
+
+              <div className="flex flex-1 flex-col justify-between p-5">
+                <h3 className="font-mono text-xs uppercase tracking-widest text-accent-cyan">
+                  {t(category.labelKey)}
+                </h3>
+                <div className="mt-4 flex flex-col gap-2.5">
+                  {category.items.map((item) => (
+                    <span
+                      key={item}
+                      className="font-mono text-sm text-text-primary"
+                    >
+                      <span className="mr-2 text-text-secondary/50">›</span>
+                      {item}
+                    </span>
+                  ))}
+                </div>
               </div>
             </motion.div>
           ))}

@@ -135,7 +135,7 @@ export default function FooterCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-          className="glass mx-auto mt-12 max-w-xl overflow-hidden rounded-xl text-left shadow-2xl"
+          className="glass-card relative mx-auto mt-12 max-w-xl text-left shadow-2xl"
         >
           <div className="flex items-center gap-2 border-b border-border bg-black/20 px-4 py-3">
             <span className="h-3 w-3 rounded-full bg-red-500/70" />
