@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
-import AetherFlowHero from "@/components/hero/AetherFlowHero";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -12,18 +11,28 @@ export default function Hero() {
 
   return (
     <section className="relative flex min-h-screen flex-col justify-end overflow-hidden pb-16 pt-32 lg:pb-24">
-      {/* Aether flow: cursor-reactive particle field, canvas-based */}
+      {/* Full-bleed background video. The cursor-reactive particle field is
+          a separate, site-wide layer (see app/[locale]/layout.tsx) that
+          shows through on top of this everywhere, hero included. */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.5, ease }}
+        initial={{ opacity: 0, scale: 1.05 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.8, ease }}
         className="absolute inset-0 -z-20"
       >
-        <AetherFlowHero />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="h-full w-full object-cover"
+        >
+          <source src="/video/hero-mogens.mp4" type="video/mp4" />
+        </video>
       </motion.div>
 
-      {/* Scrim: keeps the headline legible and adds depth toward the edges */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-bg via-bg/40 to-bg/10" />
+      {/* Scrim: keeps the headline legible and ties the footage into the brand palette */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-bg via-bg/75 to-bg/35" />
       <div className="absolute inset-0 -z-10 bg-radial-fade" />
 
       <div className="relative mx-auto w-full max-w-7xl px-6 lg:px-8">

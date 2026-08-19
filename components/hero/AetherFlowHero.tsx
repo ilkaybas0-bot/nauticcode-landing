@@ -31,8 +31,17 @@ const MAX_LINK_DIST = 120;
  * faint threads, with cursor repulsion + swirl and occasional ripple rings.
  * Plain Canvas 2D rather than WebGL — same visual language, far less GPU/
  * bundle cost, and easy to cap on mobile.
+ *
+ * Rendered once, site-wide, as a fixed full-viewport layer (see
+ * app/[locale]/layout.tsx) — pointer-events-none so it never blocks clicks,
+ * and cursor position is tracked on `window` rather than the element itself
+ * for exactly that reason.
  */
-export default function AetherFlowHero({ className = "" }: { className?: string }) {
+export default function AetherFlowHero({
+  className = "fixed inset-0",
+}: {
+  className?: string;
+}) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -58,7 +67,7 @@ export default function AetherFlowHero({ className = "" }: { className?: string 
     let ripples: Ripple[] = [];
     let width = 0;
     let height = 0;
-    let dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
     const pointer = { x: -9999, y: -9999, active: false };
     let lastRippleAt = 0;
     let rafId: number | null = null;
@@ -66,7 +75,7 @@ export default function AetherFlowHero({ className = "" }: { className?: string 
 
     function particleCount() {
       // Fewer particles on small/low-power screens.
-      return width < 640 ? 46 : width < 1024 ? 80 : 120;
+      return width < 640 ? 50 : width < 1024 ? 90 : 140;
     }
 
     function seedParticles() {
@@ -98,6 +107,8 @@ export default function AetherFlowHero({ className = "" }: { className?: string 
       seedParticles();
     }
 
+    // Tracked on window (not the canvas) since the canvas is pointer-events:
+    // none — it must never intercept clicks on real page content above it.
     function onPointerMove(e: PointerEvent) {
       const rect = containerEl.getBoundingClientRect();
       pointer.x = e.clientX - rect.left;
@@ -110,10 +121,6 @@ export default function AetherFlowHero({ className = "" }: { className?: string 
         ripples.push({ x: pointer.x, y: pointer.y, age: 0 });
         if (ripples.length > 6) ripples.shift();
       }
-    }
-
-    function onPointerLeave() {
-      pointer.active = false;
     }
 
     function step(t: number) {
@@ -220,8 +227,7 @@ export default function AetherFlowHero({ className = "" }: { className?: string 
       step(0);
     } else {
       rafId = requestAnimationFrame(step);
-      containerEl.addEventListener("pointermove", onPointerMove);
-      containerEl.addEventListener("pointerleave", onPointerLeave);
+      window.addEventListener("pointermove", onPointerMove);
       document.addEventListener("visibilitychange", onVisibilityChange);
     }
 
@@ -231,14 +237,17 @@ export default function AetherFlowHero({ className = "" }: { className?: string 
     return () => {
       if (rafId !== null) cancelAnimationFrame(rafId);
       observer.disconnect();
-      containerEl.removeEventListener("pointermove", onPointerMove);
-      containerEl.removeEventListener("pointerleave", onPointerLeave);
+      window.removeEventListener("pointermove", onPointerMove);
       document.removeEventListener("visibilitychange", onVisibilityChange);
     };
   }, []);
 
   return (
-    <div ref={containerRef} className={`absolute inset-0 overflow-hidden ${className}`}>
+    <div
+      ref={containerRef}
+      aria-hidden
+      className={`pointer-events-none overflow-hidden ${className}`}
+    >
       <canvas ref={canvasRef} className="h-full w-full" />
     </div>
   );

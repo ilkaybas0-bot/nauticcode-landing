@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import MotionProvider from "@/components/MotionProvider";
+import AetherFlowHero from "@/components/hero/AetherFlowHero";
 import "../globals.css";
 
 const inter = Inter({
@@ -106,6 +107,8 @@ export default async function LocaleLayout({
         >
           {t("skipToContent")}
         </a>
+        {/* Site-wide cursor-reactive particle field, behind every section */}
+        <AetherFlowHero className="fixed inset-0 z-0" />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <MotionProvider>{children}</MotionProvider>
         </NextIntlClientProvider>
