@@ -116,7 +116,7 @@ export default function Header() {
                   {link.label}
                 </Link>
               ))}
-              <LanguageSwitcher className="px-2 py-2.5" />
+              <LanguageSwitcher variant="inline" className="px-2 py-2.5" />
               <Link
                 href={ctaHref}
                 onClick={() => setMobileOpen(false)}

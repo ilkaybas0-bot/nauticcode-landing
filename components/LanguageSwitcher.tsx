@@ -25,8 +25,13 @@ const LOCALES = [
 
 export default function LanguageSwitcher({
   className = "",
+  variant = "dropdown",
 }: {
   className?: string;
+  /** "inline" avoids absolute positioning entirely — needed anywhere the
+   * switcher sits inside an `overflow-hidden` animated container (like the
+   * mobile menu panel), which would otherwise clip a floating dropdown. */
+  variant?: "dropdown" | "inline";
 }) {
   const locale = useLocale();
   const pathname = usePathname();
@@ -34,6 +39,30 @@ export default function LanguageSwitcher({
   const rootRef = useRef<HTMLDivElement>(null);
 
   const current = LOCALES.find((l) => l.code === locale) ?? LOCALES[0];
+
+  if (variant === "inline") {
+    return (
+      <div className={`flex flex-wrap gap-2 ${className}`} role="listbox">
+        {LOCALES.map((l) => (
+          <Link
+            key={l.code}
+            href={pathname}
+            locale={l.code}
+            role="option"
+            aria-selected={l.code === locale}
+            className={`flex items-center gap-2 rounded-md border px-2.5 py-1.5 font-mono text-xs transition-colors ${
+              l.code === locale
+                ? "border-accent-cyan/40 text-accent-cyan"
+                : "border-border text-text-secondary hover:border-accent-cyan/40 hover:text-accent-cyan"
+            }`}
+          >
+            <l.Flag aria-hidden className="h-3 w-4 flex-shrink-0 rounded-[2px]" />
+            <span>{l.code.toUpperCase()}</span>
+          </Link>
+        ))}
+      </div>
+    );
+  }
 
   useEffect(() => {
     if (!open) return;
