@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Calendar, QrCode, Bot, Trophy, ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { CoverflowCarousel } from "@/components/ui/coverflow-carousel";
 
 type ProjectEntry = {
   icon: typeof Calendar;
@@ -14,6 +15,7 @@ type ProjectEntry = {
   href: string | null;
   accent: string;
   border: string;
+  image: string;
 };
 
 const PROJECTS: ProjectEntry[] = [
@@ -27,6 +29,7 @@ const PROJECTS: ProjectEntry[] = [
     href: "https://slotly-jet.vercel.app/",
     accent: "text-accent-cyan",
     border: "border-accent-cyan/20",
+    image: "/projects/slotly.png",
   },
   {
     icon: QrCode,
@@ -38,6 +41,7 @@ const PROJECTS: ProjectEntry[] = [
     href: "https://qr-menugit.streamlit.app/",
     accent: "text-emerald-400",
     border: "border-emerald-400/20",
+    image: "/projects/qr-menu.png",
   },
   {
     icon: Bot,
@@ -49,6 +53,7 @@ const PROJECTS: ProjectEntry[] = [
     href: null,
     accent: "text-accent-cobalt",
     border: "border-accent-cobalt/20",
+    image: "/projects/mogens-ai.png",
   },
   {
     icon: Trophy,
@@ -60,11 +65,19 @@ const PROJECTS: ProjectEntry[] = [
     href: null,
     accent: "text-amber-400",
     border: "border-amber-400/20",
+    image: "/projects/nss-score.png",
   },
 ];
 
 export default function Projects() {
   const t = useTranslations("projects");
+
+  const slides = PROJECTS.map((project) => ({
+    src: project.image,
+    alt: t(project.nameKey),
+    title: t(project.nameKey),
+    subtitle: t(project.categoryKey),
+  }));
 
   return (
     <section id="projects" className="relative py-24 lg:py-32">
@@ -80,6 +93,15 @@ export default function Projects() {
             {t("description")}
           </p>
         </div>
+
+        <CoverflowCarousel
+          slides={slides}
+          showCaption
+          showPagination
+          showNavigation
+          label={t("heading")}
+          className="mt-12"
+        />
 
         <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {PROJECTS.map((project, i) => (

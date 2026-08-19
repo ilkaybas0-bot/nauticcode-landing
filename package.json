@@ -12,6 +12,7 @@
     "@upstash/ratelimit": "^2.0.8",
     "@upstash/redis": "^1.38.2",
     "@vercel/analytics": "^2.0.1",
+    "clsx": "^2.1.1",
     "country-flag-icons": "^1.6.20",
     "framer-motion": "^11.3.19",
     "lucide-react": "^0.424.0",
@@ -19,7 +20,8 @@
     "next-intl": "^4.13.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "resend": "^6.19.0"
+    "resend": "^6.19.0",
+    "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
     "@types/node": "^20.14.15",
@@ -28,6 +30,7 @@
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.40",
     "tailwindcss": "^3.4.7",
+    "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.5.4"
   }
 }
