@@ -32,8 +32,13 @@
     background-size: theme("backgroundSize.grid");
   }
 
+  /* Deliberately no position here — callers set their own (relative,
+     absolute, or fixed). .glass previously forced `position: relative`,
+     which silently overrode `fixed`/`absolute` on the same element since
+     both come from the same Tailwind utilities layer (a real bug: it broke
+     the language dropdown's positioning). */
   .glass {
-    @apply relative bg-surface/60 backdrop-blur-xl border border-white/[0.08];
+    @apply bg-surface/60 backdrop-blur-xl border border-white/[0.08];
   }
 
   .glass::before {

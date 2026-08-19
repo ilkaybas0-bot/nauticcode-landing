@@ -13,7 +13,7 @@ export default function NotFound() {
         className="relative flex min-h-[70vh] items-center justify-center pb-24 pt-40 lg:pt-48"
       >
         <div className="mx-auto w-full max-w-lg px-6 lg:px-8">
-          <div className="glass overflow-hidden rounded-xl shadow-2xl">
+          <div className="glass relative overflow-hidden rounded-xl shadow-2xl">
             <div className="flex items-center gap-2 border-b border-border bg-black/20 px-4 py-3">
               <span className="h-3 w-3 rounded-full bg-red-500/70" />
               <span className="h-3 w-3 rounded-full bg-yellow-500/70" />

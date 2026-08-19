@@ -36,9 +36,49 @@ export default function LanguageSwitcher({
   const locale = useLocale();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [menuPos, setMenuPos] = useState<{ top: number; right: number } | null>(null);
   const rootRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   const current = LOCALES.find((l) => l.code === locale) ?? LOCALES[0];
+
+  // Positions the dropdown by real, on-screen pixel coordinates (measured
+  // from the toggle button) rather than CSS `top-full` relative to an
+  // ancestor. `top-full` depends on the nearest positioned ancestor being
+  // exactly where you expect, which broke under the header's own entrance
+  // animation — fixed-position + measured coordinates can't drift like that.
+  function updatePosition() {
+    const rect = buttonRef.current?.getBoundingClientRect();
+    if (!rect) return;
+    setMenuPos({ top: rect.bottom + 8, right: window.innerWidth - rect.right });
+  }
+
+  useEffect(() => {
+    if (!open || variant !== "dropdown") return;
+
+    updatePosition();
+
+    function onPointerDown(e: PointerEvent) {
+      if (rootRef.current && !rootRef.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    }
+    function onKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") setOpen(false);
+    }
+
+    document.addEventListener("pointerdown", onPointerDown);
+    document.addEventListener("keydown", onKeyDown);
+    window.addEventListener("scroll", updatePosition, true);
+    window.addEventListener("resize", updatePosition);
+    return () => {
+      document.removeEventListener("pointerdown", onPointerDown);
+      document.removeEventListener("keydown", onKeyDown);
+      window.removeEventListener("scroll", updatePosition, true);
+      window.removeEventListener("resize", updatePosition);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [open, variant]);
 
   if (variant === "inline") {
     return (
@@ -64,29 +104,10 @@ export default function LanguageSwitcher({
     );
   }
 
-  useEffect(() => {
-    if (!open) return;
-
-    function onPointerDown(e: PointerEvent) {
-      if (rootRef.current && !rootRef.current.contains(e.target as Node)) {
-        setOpen(false);
-      }
-    }
-    function onKeyDown(e: KeyboardEvent) {
-      if (e.key === "Escape") setOpen(false);
-    }
-
-    document.addEventListener("pointerdown", onPointerDown);
-    document.addEventListener("keydown", onKeyDown);
-    return () => {
-      document.removeEventListener("pointerdown", onPointerDown);
-      document.removeEventListener("keydown", onKeyDown);
-    };
-  }, [open]);
-
   return (
     <div ref={rootRef} className={`relative ${className}`}>
       <button
+        ref={buttonRef}
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-haspopup="listbox"
@@ -102,14 +123,15 @@ export default function LanguageSwitcher({
       </button>
 
       <AnimatePresence>
-        {open && (
+        {open && menuPos && (
           <motion.div
             initial={{ opacity: 0, y: -6 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -6 }}
             transition={{ duration: 0.15, ease: "easeOut" }}
             role="listbox"
-            className="glass absolute right-0 top-full z-50 mt-2 w-40 overflow-hidden rounded-md py-1 shadow-2xl"
+            style={{ top: menuPos.top, right: menuPos.right }}
+            className="glass fixed z-50 w-40 rounded-md py-1 shadow-2xl"
           >
             {LOCALES.map((l) => (
               <Link
