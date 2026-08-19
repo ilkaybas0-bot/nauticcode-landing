@@ -46,6 +46,11 @@
     "cat3Label": "基础设施",
     "cat4Label": "自动化与交付"
   },
+  "globalReach": {
+    "eyebrow": "全球覆盖",
+    "heading": "无论用户在哪里，就近部署。",
+    "description": "跨 AWS 和 GCP 的多区域云基础设施 —— 无论您的客户身在何处，都能实现低延迟部署，而不仅限于我们团队所在的地方。"
+  },
   "projects": {
     "eyebrow": "我们的作品",
     "heading": "真实的产品，已上线运行。",

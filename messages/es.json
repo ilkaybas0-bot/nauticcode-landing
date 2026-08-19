@@ -46,6 +46,11 @@
     "cat3Label": "Infraestructura",
     "cat4Label": "Automatización y Entrega"
   },
+  "globalReach": {
+    "eyebrow": "Alcance Global",
+    "heading": "Despliega cerca de tus usuarios, estén donde estén.",
+    "description": "Infraestructura en la nube multi-región en AWS y GCP — despliegues de baja latencia donde estén tus clientes, no solo donde está nuestro equipo."
+  },
   "projects": {
     "eyebrow": "Nuestro Trabajo",
     "heading": "Productos reales, en producción.",

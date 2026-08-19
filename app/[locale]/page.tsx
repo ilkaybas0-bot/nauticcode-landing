@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import MetricsStrip from "@/components/MetricsStrip";
 import Capabilities from "@/components/Capabilities";
 import TechStack from "@/components/TechStack";
+import GlobalReach from "@/components/GlobalReach";
 import Projects from "@/components/Projects";
 import About from "@/components/About";
 import FooterCTA from "@/components/FooterCTA";
@@ -76,6 +77,7 @@ export default function Home() {
         <MetricsStrip />
         <Capabilities />
         <TechStack />
+        <GlobalReach />
         <Projects />
         <About />
         <FooterCTA />

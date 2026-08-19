@@ -46,6 +46,11 @@
     "cat3Label": "Altyapı",
     "cat4Label": "Otomasyon & Teslimat"
   },
+  "globalReach": {
+    "eyebrow": "Küresel Erişim",
+    "heading": "Kullanıcılarınıza en yakın yerden dağıtım.",
+    "description": "AWS ve GCP üzerinde çoklu bölge bulut altyapısı — ekibimizin değil, müşterilerinizin bulunduğu her yerde düşük gecikmeli dağıtım."
+  },
   "projects": {
     "eyebrow": "Çalışmalarımız",
     "heading": "Gerçek ürünler, geliştirilip yayında.",

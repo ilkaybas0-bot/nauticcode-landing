@@ -46,6 +46,11 @@
     "cat3Label": "Infrastruttura",
     "cat4Label": "Automazione e Delivery"
   },
+  "globalReach": {
+    "eyebrow": "Portata Globale",
+    "heading": "Distribuisci vicino ai tuoi utenti, ovunque si trovino.",
+    "description": "Infrastruttura cloud multi-regione su AWS e GCP — distribuzioni a bassa latenza ovunque si trovino i tuoi clienti, non solo dove si trova il nostro team."
+  },
   "projects": {
     "eyebrow": "I Nostri Lavori",
     "heading": "Prodotti reali, sviluppati e attivi.",
