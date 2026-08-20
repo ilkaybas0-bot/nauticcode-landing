@@ -133,7 +133,33 @@
   },
   "footer": {
     "copyright": "© {year} Mogens Software. All rights reserved.",
+    "termsOfService": "Terms of Service",
     "privacyPolicy": "Privacy Policy"
+  },
+  "terms": {
+    "metaDescription": "The terms that govern engagements with Mogens Software and use of this website.",
+    "eyebrow": "Legal",
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: {date}",
+    "intro": "These terms cover two things: using this website, and engaging Mogens Software for development work. They're written in plain language on purpose — if anything here is unclear, ask us directly before signing anything.",
+    "scopeTitle": "Scope of engagement",
+    "scopeBody": "Every project is scoped individually. The specific deliverables, timeline, and price for your project are agreed in writing (email is fine) before work begins — these terms set the general ground rules, they don't replace that written agreement.",
+    "engagementTitle": "Payment",
+    "engagementBody": "Pricing is either a fixed project price or a day rate, agreed upfront per project as described in the FAQ. Payment terms (deposit, milestones, or on completion) are set per engagement in the written agreement, not by these terms alone.",
+    "ipTitle": "Intellectual property",
+    "ipBody": "Once a project is paid in full, the code, infrastructure configuration, and any custom assets built for that project are yours. We may reuse general-purpose tools, libraries, and know-how developed along the way in other projects, but not your specific business logic or data.",
+    "confidentialityTitle": "Confidentiality",
+    "confidentialityBody": "We treat information you share about your business as confidential and don't disclose it to third parties. If your project needs a signed NDA before any detailed discussion, we're glad to sign one.",
+    "liabilityTitle": "Limitation of liability",
+    "liabilityBody": "We build things carefully and test before deploying, but as with any software engagement, our liability for any claim arising from the work is limited to the amount paid for that specific engagement. We are not liable for indirect or consequential damages.",
+    "siteUseTitle": "Use of this website",
+    "siteUseBody": "The content on this site — text, design, and code — belongs to Mogens Software unless stated otherwise. You're welcome to browse, share links, and reach out through the contact form; automated scraping or republishing the content elsewhere without permission isn't.",
+    "lawTitle": "Governing law",
+    "lawBody": "These terms are governed by the laws of the Republic of Türkiye, without regard to conflict-of-law principles.",
+    "changesTitle": "Changes to these terms",
+    "changesBody": "If these terms change, we'll update the date at the top of this page. Changes won't apply retroactively to an already-agreed engagement.",
+    "contactTitle": "Contact",
+    "contactBody": "Questions about these terms? Reach us at <link>{email}</link>."
   },
   "privacy": {
     "metaDescription": "How Mogens Software collects, uses, and protects your data.",

@@ -133,7 +133,33 @@
   },
   "footer": {
     "copyright": "© {year} Mogens Software. Tüm hakları saklıdır.",
+    "termsOfService": "Kullanım Koşulları",
     "privacyPolicy": "Gizlilik Politikası"
+  },
+  "terms": {
+    "metaDescription": "Mogens Software ile yapılan çalışmaları ve bu web sitesinin kullanımını düzenleyen koşullar.",
+    "eyebrow": "Yasal",
+    "title": "Kullanım Koşulları",
+    "lastUpdated": "Son güncelleme: {date}",
+    "intro": "Bu koşullar iki şeyi kapsar: bu web sitesinin kullanımı ve Mogens Software ile geliştirme işi için anlaşma yapılması. Bilinçli olarak sade bir dille yazıldı — burada anlaşılmayan bir şey varsa, herhangi bir şey imzalamadan önce bize doğrudan sorun.",
+    "scopeTitle": "Çalışma kapsamı",
+    "scopeBody": "Her proje ayrı ayrı kapsam belirlenerek yürütülür. Projenize özel teslimatlar, zaman çizelgesi ve fiyat, çalışmaya başlamadan önce yazılı olarak (e-posta yeterli) kararlaştırılır — bu koşullar genel zemin kurallarını belirler, bu yazılı anlaşmanın yerini tutmaz.",
+    "engagementTitle": "Ödeme",
+    "engagementBody": "Fiyatlandırma, SSS bölümünde anlatıldığı gibi proje bazında önceden kararlaştırılan sabit bir proje fiyatı ya da günlük ücrettir. Ödeme koşulları (kapora, kilometre taşları veya teslimde ödeme) sadece bu koşullarla değil, her çalışma için ayrı yazılı anlaşmayla belirlenir.",
+    "ipTitle": "Fikri mülkiyet",
+    "ipBody": "Bir proje tamamen ödendiğinde, o proje için geliştirilen kod, altyapı yapılandırması ve tüm özel varlıklar size aittir. Süreç içinde geliştirilen genel amaçlı araçları, kütüphaneleri ve know-how'ı başka projelerde yeniden kullanabiliriz, ancak sizin özel iş mantığınızı veya verinizi kullanmayız.",
+    "confidentialityTitle": "Gizlilik",
+    "confidentialityBody": "İşletmeniz hakkında paylaştığınız bilgileri gizli olarak ele alır ve üçüncü taraflara ifşa etmeyiz. Projeniz detaylı görüşmeden önce imzalanmış bir NDA gerektiriyorsa, memnuniyetle imzalarız.",
+    "liabilityTitle": "Sorumluluk sınırlaması",
+    "liabilityBody": "İşleri özenle yapıp devreye almadan önce test ediyoruz, ancak her yazılım çalışmasında olduğu gibi, işten doğan herhangi bir talebe ilişkin sorumluluğumuz o çalışma için ödenen tutarla sınırlıdır. Dolaylı veya sonuç niteliğindeki zararlardan sorumlu değiliz.",
+    "siteUseTitle": "Bu web sitesinin kullanımı",
+    "siteUseBody": "Bu sitedeki içerik — metin, tasarım ve kod — aksi belirtilmedikçe Mogens Software'e aittir. Siteyi gezmeniz, bağlantı paylaşmanız ve iletişim formu üzerinden ulaşmanız memnuniyetle karşılanır; otomatik veri kazıma veya izin almadan içeriğin başka yerde yeniden yayınlanması kabul edilmez.",
+    "lawTitle": "Uygulanacak hukuk",
+    "lawBody": "Bu koşullar, kanunlar ihtilafı ilkeleri gözetilmeksizin Türkiye Cumhuriyeti kanunlarına tabidir.",
+    "changesTitle": "Bu koşullardaki değişiklikler",
+    "changesBody": "Bu koşullar değişirse, bu sayfanın üstündeki tarihi güncelleriz. Değişiklikler zaten üzerinde anlaşılmış bir çalışmaya geriye dönük olarak uygulanmaz.",
+    "contactTitle": "İletişim",
+    "contactBody": "Bu koşullar hakkında sorularınız mı var? Bize <link>{email}</link> adresinden ulaşın."
   },
   "privacy": {
     "metaDescription": "Mogens Software verilerinizi nasıl topluyor, kullanıyor ve koruyor.",

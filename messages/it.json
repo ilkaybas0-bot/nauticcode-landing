@@ -133,7 +133,33 @@
   },
   "footer": {
     "copyright": "© {year} Mogens Software. Tutti i diritti riservati.",
+    "termsOfService": "Termini di Servizio",
     "privacyPolicy": "Informativa sulla Privacy"
+  },
+  "terms": {
+    "metaDescription": "I termini che regolano gli incarichi con Mogens Software e l'uso di questo sito web.",
+    "eyebrow": "Legale",
+    "title": "Termini di Servizio",
+    "lastUpdated": "Ultimo aggiornamento: {date}",
+    "intro": "Questi termini coprono due cose: l'uso di questo sito web e l'incarico di Mogens Software per lavori di sviluppo. Sono scritti in linguaggio semplice apposta — se qualcosa non è chiaro, chiedicelo direttamente prima di firmare qualsiasi cosa.",
+    "scopeTitle": "Ambito dell'incarico",
+    "scopeBody": "Ogni progetto viene definito individualmente. I deliverable specifici, la tempistica e il prezzo del tuo progetto vengono concordati per iscritto (basta un'email) prima di iniziare — questi termini stabiliscono le regole generali, non sostituiscono quell'accordo scritto.",
+    "engagementTitle": "Pagamento",
+    "engagementBody": "Il prezzo è fisso per progetto oppure a tariffa giornaliera, concordato in anticipo per ogni progetto come descritto nelle FAQ. Le condizioni di pagamento (acconto, milestone o a completamento) sono stabilite per ogni incarico nell'accordo scritto, non solo da questi termini.",
+    "ipTitle": "Proprietà intellettuale",
+    "ipBody": "Una volta pagato integralmente il progetto, il codice, la configurazione dell'infrastruttura e qualsiasi asset personalizzato costruito per quel progetto sono tuoi. Possiamo riutilizzare strumenti, librerie e know-how di uso generale sviluppati nel processo in altri progetti, ma non la tua logica di business o i tuoi dati specifici.",
+    "confidentialityTitle": "Riservatezza",
+    "confidentialityBody": "Trattiamo le informazioni che condividi sulla tua attività come riservate e non le divulghiamo a terzi. Se il tuo progetto richiede un NDA firmato prima di qualsiasi discussione dettagliata, siamo lieti di firmarne uno.",
+    "liabilityTitle": "Limitazione di responsabilità",
+    "liabilityBody": "Costruiamo con cura e testiamo prima di distribuire, ma come in qualsiasi incarico software, la nostra responsabilità per qualsiasi reclamo derivante dal lavoro è limitata all'importo pagato per quello specifico incarico. Non siamo responsabili per danni indiretti o consequenziali.",
+    "siteUseTitle": "Uso di questo sito web",
+    "siteUseBody": "Il contenuto di questo sito — testo, design e codice — appartiene a Mogens Software salvo diversa indicazione. Sei benvenuto a navigare, condividere link e contattarci tramite il modulo di contatto; lo scraping automatizzato o la ripubblicazione del contenuto altrove senza permesso non lo è.",
+    "lawTitle": "Legge applicabile",
+    "lawBody": "Questi termini sono regolati dalle leggi della Repubblica di Türkiye, senza riguardo ai principi di conflitto di leggi.",
+    "changesTitle": "Modifiche a questi termini",
+    "changesBody": "Se questi termini cambiano, aggiorneremo la data in cima a questa pagina. Le modifiche non si applicheranno retroattivamente a un incarico già concordato.",
+    "contactTitle": "Contatti",
+    "contactBody": "Domande su questi termini? Contattaci a <link>{email}</link>."
   },
   "privacy": {
     "metaDescription": "Come Mogens Software raccoglie, utilizza e protegge i tuoi dati.",

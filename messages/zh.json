@@ -133,7 +133,33 @@
   },
   "footer": {
     "copyright": "© {year} Mogens Software. 保留所有权利。",
+    "termsOfService": "服务条款",
     "privacyPolicy": "隐私政策"
+  },
+  "terms": {
+    "metaDescription": "适用于与 Mogens Software 合作及使用本网站的条款。",
+    "eyebrow": "法律",
+    "title": "服务条款",
+    "lastUpdated": "最后更新：{date}",
+    "intro": "本条款涵盖两方面内容：使用本网站，以及委托 Mogens Software 进行开发工作。我们特意使用通俗易懂的语言撰写 —— 如果其中有任何不清楚的地方，请在签署任何文件之前直接向我们咨询。",
+    "scopeTitle": "项目范围",
+    "scopeBody": "每个项目都会单独确定范围。您项目的具体交付物、时间表和价格会在开始工作前以书面形式（电子邮件即可）确定 —— 本条款设定的是总体基本规则，并不能替代该书面协议。",
+    "engagementTitle": "付款",
+    "engagementBody": "定价为项目固定报价或按日计费，均按常见问题中所述在项目开始前逐项协商确定。付款条件（预付款、按阶段付款或完工后付款）由每份书面协议单独约定，而非仅由本条款规定。",
+    "ipTitle": "知识产权",
+    "ipBody": "项目全额付款后，为该项目开发的代码、基础设施配置以及任何定制资产均归您所有。我们可能会在其他项目中重复使用开发过程中形成的通用工具、库和技术经验，但不会使用您特定的业务逻辑或数据。",
+    "confidentialityTitle": "保密",
+    "confidentialityBody": "我们会对您分享的业务信息予以保密，不会向第三方披露。如果您的项目需要在深入讨论前签署保密协议，我们很乐意签署。",
+    "liabilityTitle": "责任限制",
+    "liabilityBody": "我们在部署前会认真构建并测试系统，但与任何软件合作一样，我们对因此项工作产生的任何索赔所承担的责任，仅限于该具体项目已支付的金额。我们不对间接或后果性损害承担责任。",
+    "siteUseTitle": "本网站的使用",
+    "siteUseBody": "本网站上的内容 —— 文字、设计和代码 —— 除另有说明外均归 Mogens Software 所有。欢迎您浏览网站、分享链接，并通过联系表单与我们沟通；但未经许可进行自动化抓取或在其他地方转载本站内容则不被允许。",
+    "lawTitle": "适用法律",
+    "lawBody": "本条款受土耳其共和国法律管辖，不考虑法律冲突原则。",
+    "changesTitle": "条款变更",
+    "changesBody": "如果本条款发生变更，我们会更新本页顶部的日期。变更不会追溯适用于已经达成一致的合作项目。",
+    "contactTitle": "联系方式",
+    "contactBody": "对本条款有疑问？请通过 <link>{email}</link> 联系我们。"
   },
   "privacy": {
     "metaDescription": "了解 Mogens Software 如何收集、使用和保护您的数据。",
