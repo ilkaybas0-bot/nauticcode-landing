@@ -1,12 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Calendar, QrCode, Bot, Trophy, ArrowUpRight } from "lucide-react";
+import { Languages, QrCode, Bot, CalendarClock, ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { CoverflowCarousel } from "@/components/ui/coverflow-carousel";
 
 type ProjectEntry = {
-  icon: typeof Calendar;
+  icon: typeof Languages;
   categoryKey: string;
   nameKey: string;
   descriptionKey: string;
@@ -15,28 +15,40 @@ type ProjectEntry = {
   href: string | null;
   accent: string;
   border: string;
-  image: string;
+  image: string | null;
 };
 
 const PROJECTS: ProjectEntry[] = [
   {
-    icon: Calendar,
+    icon: Languages,
     categoryKey: "project1Category",
     nameKey: "project1Name",
     descriptionKey: "project1Description",
-    ctaKey: "project1Cta",
-    badgeKey: null,
-    href: "https://slotly-jet.vercel.app/",
-    accent: "text-accent-cyan",
-    border: "border-accent-cyan/20",
-    image: "/projects/slotly.png",
+    ctaKey: null,
+    badgeKey: "project1Badge",
+    href: null,
+    accent: "text-accent-cobalt",
+    border: "border-accent-cobalt/20",
+    image: null,
   },
   {
-    icon: QrCode,
+    icon: Bot,
     categoryKey: "project2Category",
     nameKey: "project2Name",
     descriptionKey: "project2Description",
-    ctaKey: "project2Cta",
+    ctaKey: null,
+    badgeKey: "project2Badge",
+    href: null,
+    accent: "text-accent-cyan",
+    border: "border-accent-cyan/20",
+    image: "/projects/mogens-ai.png",
+  },
+  {
+    icon: QrCode,
+    categoryKey: "project3Category",
+    nameKey: "project3Name",
+    descriptionKey: "project3Description",
+    ctaKey: "project3Cta",
     badgeKey: null,
     href: "https://qr-menugit.streamlit.app/",
     accent: "text-emerald-400",
@@ -44,36 +56,24 @@ const PROJECTS: ProjectEntry[] = [
     image: "/projects/qr-menu.png",
   },
   {
-    icon: Bot,
-    categoryKey: "project3Category",
-    nameKey: "project3Name",
-    descriptionKey: "project3Description",
-    ctaKey: null,
-    badgeKey: "project3Badge",
-    href: null,
-    accent: "text-accent-cobalt",
-    border: "border-accent-cobalt/20",
-    image: "/projects/mogens-ai.png",
-  },
-  {
-    icon: Trophy,
+    icon: CalendarClock,
     categoryKey: "project4Category",
     nameKey: "project4Name",
     descriptionKey: "project4Description",
-    ctaKey: null,
-    badgeKey: "project4Badge",
-    href: null,
+    ctaKey: "project4Cta",
+    badgeKey: null,
+    href: "https://slotly-jet.vercel.app/",
     accent: "text-amber-400",
     border: "border-amber-400/20",
-    image: "/projects/nss-score.png",
+    image: "/projects/slotly.png",
   },
 ];
 
 export default function Projects() {
   const t = useTranslations("projects");
 
-  const slides = PROJECTS.map((project) => ({
-    src: project.image,
+  const slides = PROJECTS.filter((project) => project.image).map((project) => ({
+    src: project.image as string,
     alt: t(project.nameKey),
     title: t(project.nameKey),
     subtitle: t(project.categoryKey),
@@ -117,13 +117,17 @@ export default function Projects() {
               transition={{ duration: 0.6, delay: i * 0.08, ease: "easeOut" }}
               className="glass-card group min-h-[280px]"
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={project.image}
-                alt=""
-                className="absolute inset-0 h-full w-full scale-105 object-cover opacity-25 blur-[1px] transition-all duration-700 group-hover:scale-110 group-hover:opacity-35"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/85 to-bg/40" />
+              {project.image && (
+                <>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={project.image}
+                    alt=""
+                    className="absolute inset-0 h-full w-full scale-105 object-cover opacity-25 blur-[1px] transition-all duration-700 group-hover:scale-110 group-hover:opacity-35"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/85 to-bg/40" />
+                </>
+              )}
 
               <div className="relative flex h-full flex-col justify-between p-6">
                 <div

@@ -72,7 +72,7 @@ public/logo-mark.png    # logo mark used in the header
 
 - **Rate limiting** on `/api/contact` uses Upstash Redis when `UPSTASH_REDIS_REST_URL`/`UPSTASH_REDIS_REST_TOKEN` are set (persistent, shared across instances); otherwise it falls back to an in-memory limiter that resets on cold start and isn't shared. Set the Upstash vars in production.
 - **Confirmation email** to the form submitter now delivers to any address — `mogenssoftware.com` is a verified sending domain in Resend, so this is no longer limited to the account owner's own inbox.
-- **Projects** section (`components/Projects.tsx`) showcases real, currently-live products (Slotly, QR Menu, Mogens Software AI, NSS Score) — not fictional case studies.
+- **Projects** section (`components/Projects.tsx`) is framed as services we integrate for clients (language switching, AI assistants, digital menus, booking portals), each backed by a real case study (this site's own i18n, Mogens Software AI, QR Menu, Slotly) — not fictional case studies.
 
 ## Deployment
 
