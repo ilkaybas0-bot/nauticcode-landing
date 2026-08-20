@@ -20,9 +20,9 @@
     "ctaSecondary": "Sistem Mimarisini İncele"
   },
   "metrics": {
-    "stat1Label": "Sistem Çalışma Süresi Mimarisi",
-    "stat2Label": "Operasyonel Hız Artışı",
-    "stat3Label": "Tasarruf Edilen Altyapı Maliyeti"
+    "stat1Label": "Yayında olan canlı sistem",
+    "stat2Label": "Desteklenen dil — bu site dahil",
+    "stat3Label": "İş günü içinde geri dönüş"
   },
   "capabilities": {
     "eyebrow": "Temel Yetkinlikler",

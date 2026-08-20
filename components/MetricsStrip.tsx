@@ -8,14 +8,13 @@ type Stat = {
   display: string;
 };
 
-// Static, confidently-stated values rather than a count-from-zero animation:
-// the count-up depends on IntersectionObserver + rAF firing correctly, and
-// a slow/blocked first paint could leave a visitor looking at "0%" — not a
-// risk worth taking on numbers meant to read as an established track record.
+// Real, verifiable facts rather than invented benchmark numbers — each one
+// is something a visitor can check elsewhere on this site (the Projects
+// section, the language switcher in the header, the contact form copy).
 const STATS: Stat[] = [
-  { labelKey: "stat1Label", display: "99.98%" },
-  { labelKey: "stat2Label", display: "4.2x" },
-  { labelKey: "stat3Label", display: "$12M+" },
+  { labelKey: "stat1Label", display: "3" },
+  { labelKey: "stat2Label", display: "6" },
+  { labelKey: "stat3Label", display: "1" },
 ];
 
 export default function MetricsStrip() {

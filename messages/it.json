@@ -20,9 +20,9 @@
     "ctaSecondary": "Vedi l'Architettura dei Sistemi"
   },
   "metrics": {
-    "stat1Label": "Architettura di Disponibilità del Sistema",
-    "stat2Label": "Aumento della Velocità Operativa",
-    "stat3Label": "Costi Infrastrutturali Risparmiati"
+    "stat1Label": "Sistemi in produzione, live",
+    "stat2Label": "Lingue supportate — questo sito incluso",
+    "stat3Label": "Giorno lavorativo per la risposta"
   },
   "capabilities": {
     "eyebrow": "Competenze Principali",

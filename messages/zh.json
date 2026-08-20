@@ -20,9 +20,9 @@
     "ctaSecondary": "查看系统架构"
   },
   "metrics": {
-    "stat1Label": "系统正常运行架构",
-    "stat2Label": "运营效率提升",
-    "stat3Label": "节省的基础设施成本"
+    "stat1Label": "已上线运行的生产系统",
+    "stat2Label": "支持的语言数量（含本站）",
+    "stat3Label": "一个工作日内回复"
   },
   "capabilities": {
     "eyebrow": "核心能力",

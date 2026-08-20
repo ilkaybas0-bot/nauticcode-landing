@@ -20,9 +20,9 @@
     "ctaSecondary": "View Systems Architecture"
   },
   "metrics": {
-    "stat1Label": "System Uptime Architecture",
-    "stat2Label": "Operational Velocity Boost",
-    "stat3Label": "Infrastructure Costs Saved"
+    "stat1Label": "Live production systems shipped",
+    "stat2Label": "Languages supported — this site included",
+    "stat3Label": "Business day to hear back"
   },
   "capabilities": {
     "eyebrow": "Core Capabilities",

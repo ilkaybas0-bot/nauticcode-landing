@@ -20,9 +20,9 @@
     "ctaSecondary": "Ver Arquitectura de Sistemas"
   },
   "metrics": {
-    "stat1Label": "Arquitectura de Disponibilidad del Sistema",
-    "stat2Label": "Aumento de Velocidad Operativa",
-    "stat3Label": "Costos de Infraestructura Ahorrados"
+    "stat1Label": "Sistemas en producción, en vivo",
+    "stat2Label": "Idiomas soportados — este sitio incluido",
+    "stat3Label": "Día hábil para recibir respuesta"
   },
   "capabilities": {
     "eyebrow": "Capacidades Principales",
