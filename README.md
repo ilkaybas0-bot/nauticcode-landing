@@ -2,7 +2,7 @@
 
 Marketing site for Mogens Software (B2B software development), built with Next.js 14 (App Router) and Tailwind CSS.
 
-Live: https://www.mogenssoftware.com
+Live: [https://www.mogenssoftware.com](https://www.mogenssoftware.com)
 
 ## Stack
 
