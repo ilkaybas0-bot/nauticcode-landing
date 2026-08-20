@@ -93,7 +93,9 @@
     "availability": "Currently taking on a limited number of new projects",
     "contactLabel": "Get in touch",
     "whatsappLabel": "Message on WhatsApp",
-    "linkedinLabel": "Connect on LinkedIn"
+    "linkedinLabel": "Connect on LinkedIn",
+    "calendlyLabel": "Book a call",
+    "calendlyCta": "Schedule 30 min"
   },
   "faq": {
     "eyebrow": "FAQ",

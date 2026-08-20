@@ -93,7 +93,9 @@
     "availability": "Attualmente accettiamo un numero limitato di nuovi progetti",
     "contactLabel": "Contattaci",
     "whatsappLabel": "Scrivici su WhatsApp",
-    "linkedinLabel": "Connettiti su LinkedIn"
+    "linkedinLabel": "Connettiti su LinkedIn",
+    "calendlyLabel": "Prenota una chiamata",
+    "calendlyCta": "Prenota 30 min"
   },
   "faq": {
     "eyebrow": "Domande Frequenti",

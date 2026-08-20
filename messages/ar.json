@@ -93,7 +93,9 @@
     "availability": "نستقبل حاليًا عددًا محدودًا من المشاريع الجديدة",
     "contactLabel": "تواصل معنا",
     "whatsappLabel": "راسلنا عبر واتساب",
-    "linkedinLabel": "تواصل عبر لينكدإن"
+    "linkedinLabel": "تواصل عبر لينكدإن",
+    "calendlyLabel": "احجز مكالمة",
+    "calendlyCta": "حجز 30 دقيقة"
   },
   "faq": {
     "eyebrow": "الأسئلة الشائعة",

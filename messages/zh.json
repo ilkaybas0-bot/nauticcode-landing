@@ -93,7 +93,9 @@
     "availability": "目前接受有限数量的新项目",
     "contactLabel": "联系我们",
     "whatsappLabel": "通过 WhatsApp 联系",
-    "linkedinLabel": "在 LinkedIn 上联系"
+    "linkedinLabel": "在 LinkedIn 上联系",
+    "calendlyLabel": "预约通话",
+    "calendlyCta": "预约 30 分钟"
   },
   "faq": {
     "eyebrow": "常见问题",

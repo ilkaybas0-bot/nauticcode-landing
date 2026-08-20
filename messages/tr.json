@@ -93,7 +93,9 @@
     "availability": "Şu anda sınırlı sayıda yeni proje kabul ediyoruz",
     "contactLabel": "İletişime Geçin",
     "whatsappLabel": "WhatsApp'tan Yaz",
-    "linkedinLabel": "LinkedIn'de Bağlan"
+    "linkedinLabel": "LinkedIn'de Bağlan",
+    "calendlyLabel": "Görüşme ayarla",
+    "calendlyCta": "30 dakika randevu al"
   },
   "faq": {
     "eyebrow": "SSS",
