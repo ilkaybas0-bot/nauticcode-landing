@@ -1,12 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, MessageCircle } from "lucide-react";
+import { Mail, MessageCircle, Linkedin } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const CONTACT_EMAIL = "contact@mogenssoftware.com";
 const WHATSAPP_NUMBER = "905384519785";
 const WHATSAPP_DISPLAY = "+90 538 451 97 85";
+const LINKEDIN_URL = "https://www.linkedin.com/in/mogens-software-04650442b/";
 
 export default function About() {
   const t = useTranslations("about");
@@ -77,6 +78,23 @@ export default function About() {
                 className="mt-2 block font-mono text-lg text-text-primary transition-colors hover:text-emerald-400"
               >
                 {WHATSAPP_DISPLAY}
+              </a>
+            </div>
+
+            <div className="border-t border-border pt-6">
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-border bg-bg/60 text-accent-cyan">
+                <Linkedin size={20} strokeWidth={1.75} />
+              </div>
+              <span className="mt-4 block font-mono text-xs uppercase tracking-widest text-text-secondary">
+                {t("linkedinLabel")}
+              </span>
+              <a
+                href={LINKEDIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 block font-mono text-lg text-text-primary transition-colors hover:text-accent-cyan"
+              >
+                LinkedIn
               </a>
             </div>
           </motion.div>

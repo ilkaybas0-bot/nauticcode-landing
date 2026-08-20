@@ -79,7 +79,8 @@
     "paragraph2": "Have a project in mind, a partnership idea, or just a question? Reach out directly, we read every message ourselves.",
     "availability": "Currently taking on a limited number of new projects",
     "contactLabel": "Get in touch",
-    "whatsappLabel": "Message on WhatsApp"
+    "whatsappLabel": "Message on WhatsApp",
+    "linkedinLabel": "Connect on LinkedIn"
   },
   "footerCta": {
     "headline": "Ready to <highlight>Modernize</highlight> Your Software Stack?",

@@ -79,7 +79,8 @@
     "paragraph2": "¿Tienes un proyecto en mente, una idea de colaboración o simplemente una pregunta? Escríbenos directamente, leemos cada mensaje nosotros mismos.",
     "availability": "Actualmente aceptando un número limitado de nuevos proyectos",
     "contactLabel": "Ponte en contacto",
-    "whatsappLabel": "Escríbenos por WhatsApp"
+    "whatsappLabel": "Escríbenos por WhatsApp",
+    "linkedinLabel": "Conéctate en LinkedIn"
   },
   "footerCta": {
     "headline": "¿Listo para <highlight>Modernizar</highlight> Tu Stack de Software?",
