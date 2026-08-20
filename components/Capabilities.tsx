@@ -141,7 +141,7 @@ export default function Capabilities() {
                 {cap.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-full border border-accent-cyan/25 bg-accent-cyan/[0.06] px-2.5 py-1 font-mono text-[11px] text-accent-cyan"
+                    className="neon-text rounded-full border border-accent-cyan/25 bg-accent-cyan/[0.06] px-2.5 py-1 font-mono text-[11px] text-accent-cyan shadow-[0_0_10px_-2px_rgba(139,92,246,0.35)]"
                   >
                     {tag}
                   </span>

@@ -1,46 +1,22 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { motion, useInView, animate } from "framer-motion";
+import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
 type Stat = {
   labelKey: "stat1Label" | "stat2Label" | "stat3Label";
-  prefix?: string;
-  suffix?: string;
-  value: number;
-  decimals?: number;
+  display: string;
 };
 
+// Static, confidently-stated values rather than a count-from-zero animation:
+// the count-up depends on IntersectionObserver + rAF firing correctly, and
+// a slow/blocked first paint could leave a visitor looking at "0%" — not a
+// risk worth taking on numbers meant to read as an established track record.
 const STATS: Stat[] = [
-  { labelKey: "stat1Label", value: 99.98, suffix: "%", decimals: 2 },
-  { labelKey: "stat2Label", value: 4.2, suffix: "x", decimals: 1 },
-  { labelKey: "stat3Label", prefix: "$", value: 12, suffix: "M+" },
+  { labelKey: "stat1Label", display: "99.98%" },
+  { labelKey: "stat2Label", display: "4.2x" },
+  { labelKey: "stat3Label", display: "$12M+" },
 ];
-
-function StatCounter({ stat }: { stat: Stat }) {
-  const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true, margin: "-40px" });
-  const [display, setDisplay] = useState("0");
-
-  useEffect(() => {
-    if (!inView) return;
-    const controls = animate(0, stat.value, {
-      duration: 1.6,
-      ease: "easeOut",
-      onUpdate: (v) => setDisplay(v.toFixed(stat.decimals ?? 0)),
-    });
-    return () => controls.stop();
-  }, [inView, stat.value, stat.decimals]);
-
-  return (
-    <span ref={ref} className="font-mono tabular-nums">
-      {stat.prefix}
-      {display}
-      {stat.suffix}
-    </span>
-  );
-}
 
 export default function MetricsStrip() {
   const t = useTranslations("metrics");
@@ -58,8 +34,8 @@ export default function MetricsStrip() {
               transition={{ duration: 0.5, delay: i * 0.1, ease: "easeOut" }}
               className="glass-card p-6 text-center sm:text-left"
             >
-              <div className="relative text-4xl font-semibold text-gradient neon-text sm:text-5xl">
-                <StatCounter stat={stat} />
+              <div className="relative font-mono text-4xl font-semibold tabular-nums text-gradient neon-text sm:text-5xl">
+                {stat.display}
               </div>
               <p className="relative mt-2 text-sm text-text-secondary">
                 {t(stat.labelKey)}

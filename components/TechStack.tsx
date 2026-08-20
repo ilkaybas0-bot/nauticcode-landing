@@ -65,7 +65,7 @@ export default function TechStack() {
               </div>
 
               <div className="flex flex-1 flex-col justify-between p-5">
-                <h3 className="font-mono text-xs uppercase tracking-widest text-accent-cyan">
+                <h3 className="neon-text font-mono text-xs uppercase tracking-widest text-accent-cyan">
                   {t(category.labelKey)}
                 </h3>
                 <div className="mt-4 flex flex-col gap-2.5">
