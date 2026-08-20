@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import MetricsStrip from "@/components/MetricsStrip";
@@ -70,9 +71,38 @@ export function generateMetadata({
   };
 }
 
-export default function Home() {
+const FAQ_KEYS = ["q1", "q2", "q3", "q4", "q5", "q6"] as const;
+
+async function getFaqJsonLd(locale: string) {
+  const t = await getTranslations({ locale, namespace: "faq" });
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: FAQ_KEYS.map((key) => ({
+      "@type": "Question",
+      name: t(`${key}Question`),
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: t(`${key}Answer`),
+      },
+    })),
+  };
+}
+
+export default async function Home({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  const faqJsonLd = await getFaqJsonLd(params.locale);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Header />
       <main id="main-content">
         <Hero />

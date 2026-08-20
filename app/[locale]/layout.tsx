@@ -74,6 +74,16 @@ const organizationJsonLd = {
   logo: `${SITE_URL}/icon`,
   description: SITE_DESCRIPTION,
   slogan: "B2B Software Development",
+  email: "contact@mogenssoftware.com",
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer service",
+    email: "contact@mogenssoftware.com",
+    telephone: "+90-538-451-97-85",
+    areaServed: "Worldwide",
+    availableLanguage: ["English", "Turkish", "Spanish", "Italian", "Arabic", "Chinese"],
+  },
+  sameAs: ["https://www.linkedin.com/in/mogens-software-04650442b/"],
 };
 
 export function generateStaticParams() {
