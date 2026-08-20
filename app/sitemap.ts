@@ -22,13 +22,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: { languages },
   }));
 
-  return [
-    ...homeEntries,
-    {
-      url: `${SITE_URL}/privacy`,
+  function legalEntries(path: string): MetadataRoute.Sitemap {
+    const pathLanguages = Object.fromEntries(
+      routing.locales.map((locale) => [locale, `${SITE_URL}${localePath(locale)}${path}`])
+    );
+    return routing.locales.map((locale) => ({
+      url: `${SITE_URL}${localePath(locale)}${path}`,
       lastModified,
       changeFrequency: "yearly",
       priority: 0.3,
-    },
-  ];
+      alternates: { languages: pathLanguages },
+    }));
+  }
+
+  return [...homeEntries, ...legalEntries("/privacy"), ...legalEntries("/terms")];
 }
