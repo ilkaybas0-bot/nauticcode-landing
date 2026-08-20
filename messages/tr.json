@@ -95,6 +95,23 @@
     "whatsappLabel": "WhatsApp'tan Yaz",
     "linkedinLabel": "LinkedIn'de Bağlan"
   },
+  "faq": {
+    "eyebrow": "SSS",
+    "heading": "Proje başlamadan önce aldığımız sorular.",
+    "description": "Burada olmayan bir şey varsa doğrudan sor — her mesajı kendimiz okuyoruz.",
+    "q1Question": "Fiyatlandırmayı nasıl yapıyorsunuz?",
+    "q1Answer": "Her proje kapsamına ve süresine göre ayrı fiyatlandırılır — keşif görüşmesinden sonra işe uygun şekilde sabit fiyat ya da günlük ücret öneririz. Gizli ücret yok, koltuk başı lisans zammı yok.",
+    "q2Question": "Ortalama bir proje ne kadar sürer?",
+    "q2Answer": "Tamamen kapsama bağlı. Odaklı bir entegrasyon — rezervasyon portalı ya da dijital menü — birkaç haftada yayına alınabilir; özel bir AI ajanı ya da çok servisli bir backend daha uzun sürer. Gerçekçi bir zaman çizelgesini keşif görüşmesinden sonra alırsınız, önce değil.",
+    "q3Question": "Kod ve fikri mülkiyetin sahibi kim olur?",
+    "q3Answer": "Siz olursunuz. Proje ödemesi tamamlandığında kod, altyapı yapılandırması ve tüm özel varlıklar tamamen size aittir — tedarikçiye bağımlılık yok, bizde kalan bir hak yok.",
+    "q4Question": "Gizlilik sözleşmesi (NDA) imzalıyor musunuz?",
+    "q4Answer": "Evet. Projeniz hassas iş mantığı veya veri içeriyorsa, detaylı görüşmeden önce NDA imzalamaktan memnuniyet duyarız.",
+    "q5Question": "Küçük bir ekipsiniz — karmaşık projeleri nasıl yönetiyorsunuz?",
+    "q5Answer": "Yalnızca küçük, deneyimli bir ekibin iyi yürütebileceği işleri üstleniyoruz — bu bilinçli bir tercih, bir kısıtlama değil. Hesap yöneticileri ve junior geliştiriciler yerine sisteminizi kuran kişilerle doğrudan çalışırsınız.",
+    "q6Question": "Yayına aldıktan sonra destek sağlıyor musunuz?",
+    "q6Answer": "Evet — ihtiyaçlarınız değiştikçe düzeltmek, genişletmek ve iyileştirmek için yayın sonrasında da yanınızdayız. Destek kuyruğu yok, bize doğrudan ulaşırsınız."
+  },
   "footerCta": {
     "headline": "Yazılım Altyapınızı <highlight>Modernize</highlight> Etmeye Hazır mısınız?",
     "subheadline": "Denetimi başlatın. Kıdemli bir geliştirici altyapınızı inceler ve bir iş günü içinde geri döner.",

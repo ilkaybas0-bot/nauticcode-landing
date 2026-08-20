@@ -95,6 +95,23 @@
     "whatsappLabel": "Message on WhatsApp",
     "linkedinLabel": "Connect on LinkedIn"
   },
+  "faq": {
+    "eyebrow": "FAQ",
+    "heading": "Questions we get before a project starts.",
+    "description": "If something's not covered here, ask directly — we read every message ourselves.",
+    "q1Question": "How do you price projects?",
+    "q1Answer": "Every project is scoped individually based on complexity and timeline — after the discovery call, we quote either a fixed price or a day rate, whichever fits the work. No hidden fees, no per-seat markup.",
+    "q2Question": "How long does a typical project take?",
+    "q2Answer": "It depends entirely on scope. A focused integration — a booking portal or a digital menu — can ship in a few weeks; a custom AI agent or multi-service backend takes longer. You get a realistic timeline after the discovery call, not before.",
+    "q3Question": "Who owns the code and IP once it's done?",
+    "q3Answer": "You do. Once the project is paid for, the code, infrastructure configuration, and any custom assets are entirely yours — no vendor lock-in, no rights retained on our side.",
+    "q4Question": "Do you sign NDAs?",
+    "q4Answer": "Yes. If your project involves sensitive business logic or data, we're happy to sign one before any detailed discussion.",
+    "q5Question": "You're a small team — can you handle complex projects?",
+    "q5Answer": "We only take on what a small, senior team can execute well — that's a deliberate choice, not a limitation. You work directly with the people building your system instead of being routed through account managers and junior developers.",
+    "q6Question": "Do you provide support after launch?",
+    "q6Answer": "Yes — we stay involved after launch to fix, extend, and iterate as your needs change. There's no ticket queue; you reach us directly."
+  },
   "footerCta": {
     "headline": "Ready to <highlight>Modernize</highlight> Your Software Stack?",
     "subheadline": "Run the audit. A senior developer reviews your stack and replies within one business day.",

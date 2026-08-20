@@ -8,6 +8,7 @@ import TechStack from "@/components/TechStack";
 import GlobalReach from "@/components/GlobalReach";
 import Projects from "@/components/Projects";
 import About from "@/components/About";
+import FAQ from "@/components/FAQ";
 import FooterCTA from "@/components/FooterCTA";
 import Footer from "@/components/Footer";
 
@@ -82,6 +83,7 @@ export default function Home() {
         <GlobalReach />
         <Projects />
         <About />
+        <FAQ />
         <FooterCTA />
       </main>
       <Footer />

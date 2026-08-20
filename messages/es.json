@@ -95,6 +95,23 @@
     "whatsappLabel": "Escríbenos por WhatsApp",
     "linkedinLabel": "Conéctate en LinkedIn"
   },
+  "faq": {
+    "eyebrow": "Preguntas Frecuentes",
+    "heading": "Preguntas que recibimos antes de empezar un proyecto.",
+    "description": "Si algo no está aquí, pregúntanos directamente — leemos cada mensaje nosotros mismos.",
+    "q1Question": "¿Cómo calculan los precios?",
+    "q1Answer": "Cada proyecto se cotiza individualmente según su complejidad y plazo — tras la llamada de descubrimiento, proponemos un precio fijo o una tarifa por día, lo que mejor se ajuste al trabajo. Sin costos ocultos, sin recargos por usuario.",
+    "q2Question": "¿Cuánto dura un proyecto típico?",
+    "q2Answer": "Depende totalmente del alcance. Una integración puntual — un portal de reservas o un menú digital — puede lanzarse en pocas semanas; un agente de IA personalizado o un backend multiservicio tarda más. Recibes un cronograma realista después de la llamada de descubrimiento, no antes.",
+    "q3Question": "¿Quién es dueño del código y la propiedad intelectual al finalizar?",
+    "q3Answer": "Tú. Una vez pagado el proyecto, el código, la configuración de infraestructura y cualquier recurso personalizado son completamente tuyos — sin dependencia de proveedor, sin derechos retenidos de nuestra parte.",
+    "q4Question": "¿Firman acuerdos de confidencialidad (NDA)?",
+    "q4Answer": "Sí. Si tu proyecto involucra lógica de negocio o datos sensibles, con gusto firmamos uno antes de cualquier discusión detallada.",
+    "q5Question": "Son un equipo pequeño — ¿pueden manejar proyectos complejos?",
+    "q5Answer": "Solo aceptamos lo que un equipo pequeño y experimentado puede ejecutar bien — es una elección deliberada, no una limitación. Trabajas directamente con las personas que construyen tu sistema, sin pasar por gestores de cuenta ni desarrolladores junior.",
+    "q6Question": "¿Ofrecen soporte después del lanzamiento?",
+    "q6Answer": "Sí — seguimos involucrados después del lanzamiento para corregir, ampliar e iterar según cambien tus necesidades. Sin cola de tickets; nos contactas directamente."
+  },
   "footerCta": {
     "headline": "¿Listo para <highlight>Modernizar</highlight> Tu Stack de Software?",
     "subheadline": "Inicia la auditoría. Un desarrollador senior revisará tu stack y te responderá dentro de un día hábil.",
