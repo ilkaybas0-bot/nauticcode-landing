@@ -37,6 +37,19 @@
     "card4Title": "Bulut Altyapısı & DevOps",
     "card4Description": "Kubernetes, kesintisiz CI/CD hatlarıyla kurulmuş AWS/GCP sunucusuz mimariler."
   },
+  "process": {
+    "eyebrow": "Nasıl Çalışıyoruz",
+    "heading": "İlk görüşmeden yayına, dört adımda.",
+    "description": "Hesap yöneticisi yok, satış katmanı yok — ilk görüşmeden yayına ve sonrasına kadar, sisteminizi kuran kişilerle doğrudan konuşursunuz.",
+    "step1Title": "Keşif Görüşmesi",
+    "step1Description": "Kısa bir teknik sohbet — ne inşa etmek istediğiniz, mevcut altyapınız ve gerçek kısıtların nerede olduğu. Sunum yok, dolgu yok.",
+    "step2Title": "Mimari & Geliştirme",
+    "step2Description": "Sistemi tasarlıyor, yaklaşımda anlaşıyor, sonra kısa iterasyonlar halinde geliştiriyoruz — sonda büyük bir sürprizle değil, erken aşamada çalışan kodla karşılaşırsınız.",
+    "step3Title": "Test & Devreye Alma",
+    "step3Description": "Her sistem testlerle ve bir CI/CD hattıyla birlikte teslim edilir, kendi altyapınıza ya da bizimkine dağıtılır, ilk günden itibaren izlenir.",
+    "step4Title": "Destek & İyileştirme",
+    "step4Description": "Sistemi kuran kişilerle doğrudan çalışırsınız — destek kuyruğu yok. İhtiyaçlarınız değiştikçe düzeltmek, genişletmek ve iyileştirmek için yayın sonrasında da yanınızdayız."
+  },
   "techStack": {
     "eyebrow": "Teknoloji",
     "heading": "İşin arkasındaki araçlar.",

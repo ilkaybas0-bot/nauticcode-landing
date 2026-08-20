@@ -37,6 +37,19 @@
     "card4Title": "云基础设施与 DevOps",
     "card4Description": "Kubernetes、AWS/GCP 无服务器架构，配备零停机 CI/CD 流水线。"
   },
+  "process": {
+    "eyebrow": "我们的工作方式",
+    "heading": "从首次沟通到上线，四个步骤。",
+    "description": "没有客户经理，没有销售层级 —— 从第一次沟通到上线乃至之后，您始终直接与实际构建系统的人对接。",
+    "step1Title": "初步沟通",
+    "step1Description": "一次简短的技术交流 —— 您想构建什么、现有技术栈情况，以及真正的限制条件在哪里。没有幻灯片，没有套话。",
+    "step2Title": "架构与开发",
+    "step2Description": "我们设计系统架构，就方案达成一致，然后以短周期迭代开发 —— 您很早就能看到可运行的代码，而不是在最后才揭晓成果。",
+    "step3Title": "测试与部署",
+    "step3Description": "每个系统都配备测试和 CI/CD 流水线，部署到您的基础设施或我们的基础设施上，从第一天起就进行监控。",
+    "step4Title": "支持与持续优化",
+    "step4Description": "您直接与构建系统的人合作 —— 没有工单排队。上线后我们仍会持续参与，根据您需求的变化进行修复、扩展和优化。"
+  },
   "techStack": {
     "eyebrow": "技术栈",
     "heading": "支撑这项工作的工具。",

@@ -37,6 +37,19 @@
     "card4Title": "Infrastruttura Cloud e DevOps",
     "card4Description": "Kubernetes, configurazioni serverless AWS/GCP con pipeline CI/CD a zero downtime."
   },
+  "process": {
+    "eyebrow": "Come Lavoriamo",
+    "heading": "Dalla prima chiamata alla produzione, in quattro passaggi.",
+    "description": "Nessun account manager, nessuno strato di vendita — parli direttamente con le persone che costruiscono il tuo sistema, dalla prima chiamata al lancio e oltre.",
+    "step1Title": "Chiamata Conoscitiva",
+    "step1Description": "Una breve conversazione tecnica — cosa vuoi costruire, il tuo stack attuale e dove sono i vincoli reali. Nessuna presentazione, nessun riempitivo.",
+    "step2Title": "Architettura e Sviluppo",
+    "step2Description": "Progettiamo il sistema, concordiamo l'approccio, poi costruiamo in iterazioni brevi — vedi codice funzionante fin da subito, non una grande rivelazione alla fine.",
+    "step3Title": "Test e Deploy",
+    "step3Description": "Ogni sistema viene consegnato con test e una pipeline CI/CD, distribuito sulla tua infrastruttura o sulla nostra, monitorato fin dal primo giorno.",
+    "step4Title": "Supporto e Iterazione",
+    "step4Description": "Lavori direttamente con le persone che l'hanno costruito — nessuna coda di ticket. Restiamo coinvolti dopo il lancio per correggere, estendere e migliorare man mano che le tue esigenze cambiano."
+  },
   "techStack": {
     "eyebrow": "Stack",
     "heading": "Gli strumenti dietro il lavoro.",

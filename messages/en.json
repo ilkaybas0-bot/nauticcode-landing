@@ -37,6 +37,19 @@
     "card4Title": "Cloud Infrastructure & DevOps",
     "card4Description": "Kubernetes, AWS/GCP serverless setups with zero-downtime CI/CD pipelines built for resilience."
   },
+  "process": {
+    "eyebrow": "How We Work",
+    "heading": "From first call to production, in four steps.",
+    "description": "No account managers, no sales layer — you talk to the people building your system, from the first call through launch and beyond.",
+    "step1Title": "Discovery Call",
+    "step1Description": "A short technical conversation — what you're trying to build, your existing stack, and where the real constraints are. No deck, no filler.",
+    "step2Title": "Architecture & Build",
+    "step2Description": "We design the system, agree on the approach, then build in short iterations — you see working code early, not a big reveal at the end.",
+    "step3Title": "Test & Deploy",
+    "step3Description": "Every system ships with tests and a CI/CD pipeline, deployed to your infrastructure or ours, monitored from day one.",
+    "step4Title": "Support & Iterate",
+    "step4Description": "You work directly with the people who built it — no ticket queue. We stay involved after launch to fix, extend, and iterate as your needs change."
+  },
   "techStack": {
     "eyebrow": "Stack",
     "heading": "The tools behind the work.",
