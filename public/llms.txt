@@ -1,0 +1,52 @@
+# Mogens Software
+
+> B2B software development practice. We build custom software, AI agent
+> integrations, and cloud infrastructure. Small, senior, independent
+> team — no account managers, direct communication with the people
+> building your system.
+
+## Services
+
+- Custom AI agents & RAG pipelines — LLM workflows integrated into existing databases
+- Custom software development — microservices, Rust/Go backends, low-latency APIs
+- Automated business logic — n8n/Python orchestration
+- Cloud infrastructure & DevOps — Kubernetes, AWS/GCP, zero-downtime CI/CD
+
+## Integrations we build for clients
+
+- Website language switcher / multi-language integration
+- AI website assistant integration (chat-based, deployable on web, desktop, or mobile)
+- Digital menu integration for restaurants and cafés (QR-based)
+- Online reservation / booking portal integration for service businesses
+
+## Case studies (real, shipped, currently live)
+
+- Slotly — multi-tenant booking SaaS for service businesses: https://slotly-jet.vercel.app/
+- QR Menu — multi-tenant digital menu platform: https://qr-menugit.streamlit.app/
+- Mogens Software AI — chat-based personal assistant, desktop & Android
+
+## How we work
+
+1. Discovery call — short technical conversation, no sales deck
+2. Architecture & build — short iterations, working code shown early
+3. Test & deploy — tests and CI/CD pipeline, zero-downtime
+4. Support & iterate — direct access post-launch, no ticket queue
+
+## Facts
+
+- 3 live production systems shipped
+- 6 languages supported on this website (en, tr, es, it, ar, zh)
+- 1 business day typical response time
+
+## Contact
+
+- Email: contact@mogenssoftware.com
+- WhatsApp: +90 538 451 97 85
+- LinkedIn: https://www.linkedin.com/in/mogens-software-04650442b/
+
+## Pages
+
+- Homepage: https://mogenssoftware.com
+- FAQ: https://mogenssoftware.com/#faq
+- Privacy Policy: https://mogenssoftware.com/privacy
+- Terms of Service: https://mogenssoftware.com/terms
