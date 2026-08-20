@@ -64,7 +64,10 @@ export default function Capabilities() {
     <section id="services" className="relative py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-2xl">
-          <div className="flex items-center gap-3">
+          <p className="font-mono text-xs text-text-secondary/40">
+            // services/core-capabilities.md
+          </p>
+          <div className="mt-2 flex items-center gap-3">
             <span className="h-px w-8 bg-accent-cyan shadow-glow-cyan" />
             <span className="font-mono text-xs uppercase tracking-widest text-text-secondary">
               {t("eyebrow")}
