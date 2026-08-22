@@ -77,7 +77,7 @@ const PROJECTS: ProjectEntry[] = [
     href: "https://dashboard-nu-three-qvf72a701a.vercel.app",
     accent: "text-fuchsia-400",
     border: "border-fuchsia-400/20",
-    image: null,
+    image: "/projects/rag-assistant.png",
   },
 ];
 
