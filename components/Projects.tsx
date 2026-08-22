@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Languages, QrCode, Bot, CalendarClock, ArrowUpRight } from "lucide-react";
+import { Languages, QrCode, Bot, CalendarClock, MessagesSquare, ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { CoverflowCarousel } from "@/components/ui/coverflow-carousel";
 
@@ -66,6 +66,18 @@ const PROJECTS: ProjectEntry[] = [
     accent: "text-amber-400",
     border: "border-amber-400/20",
     image: "/projects/slotly.png",
+  },
+  {
+    icon: MessagesSquare,
+    categoryKey: "project5Category",
+    nameKey: "project5Name",
+    descriptionKey: "project5Description",
+    ctaKey: "project5Cta",
+    badgeKey: null,
+    href: "https://dashboard-nu-three-qvf72a701a.vercel.app",
+    accent: "text-fuchsia-400",
+    border: "border-fuchsia-400/20",
+    image: null,
   },
 ];
 

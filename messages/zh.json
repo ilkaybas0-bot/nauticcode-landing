@@ -83,7 +83,11 @@
     "project4Category": "预约与预订",
     "project4Name": "在线预约门户集成",
     "project4Description": "面向服务型企业（工作室、沙龙、诊所）的预约系统 —— 顾客可实时预约空闲时段，您则通过统一后台管理日程。案例参考：我们自研的预约平台 Slotly。",
-    "project4Cta": "查看实际案例"
+    "project4Cta": "查看实际案例",
+    "project5Category": "文档问答助手",
+    "project5Name": "基于文档的网站聊天组件",
+    "project5Description": "上传菜单、指南或常见问题文档，一行代码即可在网站中嵌入聊天组件，仅根据这些文档回答访客问题，无需训练。案例参考：我们自研的 RAG 智能助手。",
+    "project5Cta": "查看实际案例"
   },
   "about": {
     "eyebrow": "关于我们",

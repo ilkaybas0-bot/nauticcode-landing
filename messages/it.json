@@ -83,7 +83,11 @@
     "project4Category": "Prenotazioni",
     "project4Name": "Portale di Prenotazione Online",
     "project4Description": "Un sistema di prenotazione per attività di servizi — studi, saloni, cliniche — dove i clienti prenotano gli slot disponibili in tempo reale e tu gestisci il calendario da un'unica dashboard. Caso di studio: Slotly, la nostra piattaforma di prenotazione.",
-    "project4Cta": "Vedi esempio live"
+    "project4Cta": "Vedi esempio live",
+    "project5Category": "Chat Basata su Documenti",
+    "project5Name": "Widget di Chat Basato su Documenti per Siti Web",
+    "project5Description": "Carica i tuoi documenti di menu, guida o FAQ e integra un widget di chat che risponde alle domande dei visitatori basandosi solo su quei documenti — una riga di codice, nessun addestramento richiesto. Caso di studio: il nostro assistente basato su RAG.",
+    "project5Cta": "Vedi esempio live"
   },
   "about": {
     "eyebrow": "Chi siamo",

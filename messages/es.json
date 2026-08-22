@@ -83,7 +83,11 @@
     "project4Category": "Reservas",
     "project4Name": "Portal de Reservas Online",
     "project4Description": "Un sistema de reservas para negocios de servicios — estudios, salones, clínicas — donde los clientes reservan horarios disponibles en tiempo real y tú gestionas tu calendario desde un solo panel. Caso de estudio: Slotly, nuestra propia plataforma de reservas.",
-    "project4Cta": "Ver ejemplo en vivo"
+    "project4Cta": "Ver ejemplo en vivo",
+    "project5Category": "Chat Basado en Documentos",
+    "project5Name": "Widget de Chat Basado en Documentos para Sitios Web",
+    "project5Description": "Sube tus documentos de menú, guía o preguntas frecuentes e integra un widget de chat que responde las preguntas de los visitantes basándose solo en esos documentos — una línea de código, sin necesidad de entrenamiento. Caso de estudio: nuestro propio asistente basado en RAG.",
+    "project5Cta": "Ver ejemplo en vivo"
   },
   "about": {
     "eyebrow": "Nosotros",

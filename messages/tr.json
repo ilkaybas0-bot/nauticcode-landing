@@ -83,7 +83,11 @@
     "project4Category": "Rezervasyon",
     "project4Name": "İşletmeler İçin Online Rezervasyon Portalı",
     "project4Description": "Stüdyo, salon, klinik gibi hizmet işletmeleri için bir rezervasyon sistemi — müşteriler boş saatleri gerçek zamanlı rezerve eder, siz takviminizi tek bir panelden yönetirsiniz. Örnek çalışma: kendi rezervasyon platformumuz Slotly.",
-    "project4Cta": "Canlı örneği görüntüle"
+    "project4Cta": "Canlı örneği görüntüle",
+    "project5Category": "Belge Tabanlı Sohbet Asistanı",
+    "project5Name": "İşletmeler İçin Belge Tabanlı Sohbet Widget'ı",
+    "project5Description": "Menü, kılavuz veya SSS belgelerinizi yükleyin, ziyaretçilerinizin sorularını yalnızca o belgelere dayanarak yanıtlayan bir sohbet widget'ı sitenize eklensin — tek satırlık kodla, eğitim gerektirmeden. Örnek çalışma: kendi RAG destekli asistanımız.",
+    "project5Cta": "Canlı örneği görüntüle"
   },
   "about": {
     "eyebrow": "Hakkımızda",

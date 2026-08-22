@@ -83,7 +83,11 @@
     "project4Category": "Booking & Reservations",
     "project4Name": "Online Reservation Portal",
     "project4Description": "A booking system for service businesses — studios, salons, clinics — where customers reserve open slots in real time and you manage your calendar from one dashboard. Case study: Slotly, our own booking platform.",
-    "project4Cta": "View live example"
+    "project4Cta": "View live example",
+    "project5Category": "Document-Based Chat",
+    "project5Name": "Document-Based Chat Widget for Websites",
+    "project5Description": "Upload your menu, guide, or FAQ documents and embed a chat widget that answers visitor questions using only those documents — one line of code, no training required. Case study: our own RAG-powered assistant.",
+    "project5Cta": "View live example"
   },
   "about": {
     "eyebrow": "About",
