@@ -89,7 +89,7 @@ const PROJECTS: ProjectEntry[] = [
     href: "https://sadakat.mogenssoftware.com",
     accent: "text-rose-400",
     border: "border-rose-400/20",
-    image: null,
+    image: "/projects/loyalty-saas.png",
   },
 ];
 
