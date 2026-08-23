@@ -87,7 +87,11 @@
     "project5Category": "文档问答助手",
     "project5Name": "基于文档的网站聊天组件",
     "project5Description": "上传菜单、指南或常见问题文档，一行代码即可在网站中嵌入聊天组件，仅根据这些文档回答访客问题，无需训练。案例参考：我们自研的 RAG 智能助手。",
-    "project5Cta": "查看实际案例"
+    "project5Cta": "查看实际案例",
+    "project6Category": "会员积分卡 SaaS",
+    "project6Name": "本地商家数字会员卡系统",
+    "project6Description": "无需下载 App 的数字集章卡系统，适用于咖啡馆、美发店和健身房 —— 支持多活动方案、扫码集章、Stripe 订阅计费和实时统计数据。",
+    "project6Cta": "查看实际案例"
   },
   "about": {
     "eyebrow": "关于我们",

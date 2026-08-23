@@ -87,7 +87,11 @@
     "project5Category": "Document-Based Chat",
     "project5Name": "Document-Based Chat Widget for Websites",
     "project5Description": "Upload your menu, guide, or FAQ documents and embed a chat widget that answers visitor questions using only those documents — one line of code, no training required. Case study: our own RAG-powered assistant.",
-    "project5Cta": "View live example"
+    "project5Cta": "View live example",
+    "project6Category": "Loyalty Card SaaS",
+    "project6Name": "Digital Loyalty Cards for Local Businesses",
+    "project6Description": "A no-app-install digital stamp card system for cafes, salons, and gyms — multi-campaign support, QR-based stamping, Stripe subscription billing, and real-time stats.",
+    "project6Cta": "View live example"
   },
   "about": {
     "eyebrow": "About",

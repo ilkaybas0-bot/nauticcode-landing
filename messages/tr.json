@@ -87,7 +87,11 @@
     "project5Category": "Belge Tabanlı Sohbet Asistanı",
     "project5Name": "İşletmeler İçin Belge Tabanlı Sohbet Widget'ı",
     "project5Description": "Menü, kılavuz veya SSS belgelerinizi yükleyin, ziyaretçilerinizin sorularını yalnızca o belgelere dayanarak yanıtlayan bir sohbet widget'ı sitenize eklensin — tek satırlık kodla, eğitim gerektirmeden. Örnek çalışma: kendi RAG destekli asistanımız.",
-    "project5Cta": "Canlı örneği görüntüle"
+    "project5Cta": "Canlı örneği görüntüle",
+    "project6Category": "Sadakat Kartı SaaS'ı",
+    "project6Name": "Yerel İşletmeler İçin Dijital Sadakat Kartı",
+    "project6Description": "Kafe, kuaför ve spor salonları için uygulama indirmeden çalışan dijital damga kartı sistemi — çoklu kampanya, QR ile damga ekleme, Stripe abonelik ve gerçek zamanlı istatistikler dahil.",
+    "project6Cta": "Canlı örneği görüntüle"
   },
   "about": {
     "eyebrow": "Hakkımızda",

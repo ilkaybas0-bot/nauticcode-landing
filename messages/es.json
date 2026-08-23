@@ -87,7 +87,11 @@
     "project5Category": "Chat Basado en Documentos",
     "project5Name": "Widget de Chat Basado en Documentos para Sitios Web",
     "project5Description": "Sube tus documentos de menú, guía o preguntas frecuentes e integra un widget de chat que responde las preguntas de los visitantes basándose solo en esos documentos — una línea de código, sin necesidad de entrenamiento. Caso de estudio: nuestro propio asistente basado en RAG.",
-    "project5Cta": "Ver ejemplo en vivo"
+    "project5Cta": "Ver ejemplo en vivo",
+    "project6Category": "SaaS de Tarjeta de Fidelidad",
+    "project6Name": "Tarjetas de Fidelidad Digitales para Negocios Locales",
+    "project6Description": "Un sistema de tarjeta de sellos digital sin necesidad de instalar una app, para cafeterías, peluquerías y gimnasios — múltiples campañas, sellado por QR, facturación por suscripción con Stripe y estadísticas en tiempo real.",
+    "project6Cta": "Ver ejemplo en vivo"
   },
   "about": {
     "eyebrow": "Nosotros",

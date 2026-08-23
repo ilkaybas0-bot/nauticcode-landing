@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Languages, QrCode, Bot, CalendarClock, MessagesSquare, ArrowUpRight } from "lucide-react";
+import { Languages, QrCode, Bot, CalendarClock, MessagesSquare, Stamp, ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { CoverflowCarousel } from "@/components/ui/coverflow-carousel";
 
@@ -78,6 +78,18 @@ const PROJECTS: ProjectEntry[] = [
     accent: "text-fuchsia-400",
     border: "border-fuchsia-400/20",
     image: "/projects/rag-assistant.png",
+  },
+  {
+    icon: Stamp,
+    categoryKey: "project6Category",
+    nameKey: "project6Name",
+    descriptionKey: "project6Description",
+    ctaKey: "project6Cta",
+    badgeKey: null,
+    href: "https://sadakat.mogenssoftware.com",
+    accent: "text-rose-400",
+    border: "border-rose-400/20",
+    image: null,
   },
 ];
 
