@@ -91,7 +91,11 @@
     "project6Category": "Loyalty Card SaaS",
     "project6Name": "Digital Loyalty Cards for Local Businesses",
     "project6Description": "A no-app-install digital stamp card system for cafes, salons, and gyms — multi-campaign support, QR-based stamping, Stripe subscription billing, and real-time stats.",
-    "project6Cta": "View live example"
+    "project6Cta": "View live example",
+    "project7Category": "Price Tracking",
+    "project7Name": "E-Commerce Competitor & Price Tracking Bot",
+    "project7Description": "A system that automatically monitors the price and stock of products you choose, sending instant Telegram and email alerts when prices drop or stock changes — includes competitor price comparison, historical price charts, and target price alarms.",
+    "project7Badge": "Internal tool"
   },
   "about": {
     "eyebrow": "About",

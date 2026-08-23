@@ -91,7 +91,11 @@
     "project6Category": "Sadakat Kartı SaaS'ı",
     "project6Name": "Yerel İşletmeler İçin Dijital Sadakat Kartı",
     "project6Description": "Kafe, kuaför ve spor salonları için uygulama indirmeden çalışan dijital damga kartı sistemi — çoklu kampanya, QR ile damga ekleme, Stripe abonelik ve gerçek zamanlı istatistikler dahil.",
-    "project6Cta": "Canlı örneği görüntüle"
+    "project6Cta": "Canlı örneği görüntüle",
+    "project7Category": "Fiyat Takibi",
+    "project7Name": "E-Ticaret Rakip ve Fiyat Takip Botu",
+    "project7Description": "Belirlediğiniz ürünlerin fiyatını ve stok durumunu otomatik izleyen, fiyat düşünce veya stok değişince anında Telegram ve e-posta bildirimi gönderen bir sistem — rakip fiyat karşılaştırma, geçmiş fiyat grafiği ve hedef fiyat alarmı dahil.",
+    "project7Badge": "İç kullanım aracı"
   },
   "about": {
     "eyebrow": "Hakkımızda",

@@ -91,7 +91,11 @@
     "project6Category": "会员积分卡 SaaS",
     "project6Name": "本地商家数字会员卡系统",
     "project6Description": "无需下载 App 的数字集章卡系统，适用于咖啡馆、美发店和健身房 —— 支持多活动方案、扫码集章、Stripe 订阅计费和实时统计数据。",
-    "project6Cta": "查看实际案例"
+    "project6Cta": "查看实际案例",
+    "project7Category": "价格追踪",
+    "project7Name": "电商竞品与价格追踪机器人",
+    "project7Description": "自动监控您指定商品价格和库存的系统，价格下降或库存变化时通过 Telegram 和邮件即时通知——包含竞品价格对比、历史价格图表和目标价格提醒。",
+    "project7Badge": "内部工具"
   },
   "about": {
     "eyebrow": "关于我们",

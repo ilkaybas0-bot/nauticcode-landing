@@ -91,7 +91,11 @@
     "project6Category": "SaaS de Tarjeta de Fidelidad",
     "project6Name": "Tarjetas de Fidelidad Digitales para Negocios Locales",
     "project6Description": "Un sistema de tarjeta de sellos digital sin necesidad de instalar una app, para cafeterías, peluquerías y gimnasios — múltiples campañas, sellado por QR, facturación por suscripción con Stripe y estadísticas en tiempo real.",
-    "project6Cta": "Ver ejemplo en vivo"
+    "project6Cta": "Ver ejemplo en vivo",
+    "project7Category": "Seguimiento de Precios",
+    "project7Name": "Bot de Seguimiento de Precios y Competencia para E-Commerce",
+    "project7Description": "Un sistema que monitorea automáticamente el precio y stock de los productos que elijas, enviando alertas instantáneas por Telegram y correo cuando el precio baja o el stock cambia — incluye comparación de precios de la competencia, gráficos de precio histórico y alarmas de precio objetivo.",
+    "project7Badge": "Herramienta interna"
   },
   "about": {
     "eyebrow": "Nosotros",

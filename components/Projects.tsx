@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Languages, QrCode, Bot, CalendarClock, MessagesSquare, Stamp, ArrowUpRight } from "lucide-react";
+import { Languages, QrCode, Bot, CalendarClock, MessagesSquare, Stamp, TrendingDown, ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { CoverflowCarousel } from "@/components/ui/coverflow-carousel";
 
@@ -90,6 +90,18 @@ const PROJECTS: ProjectEntry[] = [
     accent: "text-rose-400",
     border: "border-rose-400/20",
     image: "/projects/loyalty-saas.png",
+  },
+  {
+    icon: TrendingDown,
+    categoryKey: "project7Category",
+    nameKey: "project7Name",
+    descriptionKey: "project7Description",
+    ctaKey: null,
+    badgeKey: "project7Badge",
+    href: null,
+    accent: "text-lime-400",
+    border: "border-lime-400/20",
+    image: "/projects/fiyat-takip.png",
   },
 ];
 
