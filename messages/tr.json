@@ -95,7 +95,11 @@
     "project7Category": "Fiyat Takibi",
     "project7Name": "E-Ticaret Rakip ve Fiyat Takip Botu",
     "project7Description": "Belirlediğiniz ürünlerin fiyatını ve stok durumunu otomatik izleyen, fiyat düşünce veya stok değişince anında Telegram ve e-posta bildirimi gönderen bir sistem — rakip fiyat karşılaştırma, geçmiş fiyat grafiği ve hedef fiyat alarmı dahil.",
-    "project7Badge": "İç kullanım aracı"
+    "project7Badge": "İç kullanım aracı",
+    "project8Category": "Fatura Otomasyonu",
+    "project8Name": "Türkçe/İngilizce Otomatik Fatura & Teklif Sistemi",
+    "project8Description": "Freelancer ve KOBİ'ler için özel geliştirilmiş, bulut veritabanı destekli fatura/teklif sistemi — KDV hesaplama, müşteri yönetimi, gelir paneli, e-posta ve WhatsApp ile gönderim, Türkçe/İngilizce çıktı dahil.",
+    "project8Cta": "Canlı demoyu görüntüle"
   },
   "about": {
     "eyebrow": "Hakkımızda",

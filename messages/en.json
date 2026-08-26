@@ -95,7 +95,11 @@
     "project7Category": "Price Tracking",
     "project7Name": "E-Commerce Competitor & Price Tracking Bot",
     "project7Description": "A system that automatically monitors the price and stock of products you choose, sending instant Telegram and email alerts when prices drop or stock changes — includes competitor price comparison, historical price charts, and target price alarms.",
-    "project7Badge": "Internal tool"
+    "project7Badge": "Internal tool",
+    "project8Category": "Invoicing Automation",
+    "project8Name": "Automated TR/EN Invoice & Proposal System",
+    "project8Description": "A purpose-built, cloud-backed invoice/proposal system for freelancers and small businesses — VAT handling, client management, revenue dashboard, email and WhatsApp delivery, Turkish/English output.",
+    "project8Cta": "View live demo"
   },
   "about": {
     "eyebrow": "About",

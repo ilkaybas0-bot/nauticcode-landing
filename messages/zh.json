@@ -95,7 +95,11 @@
     "project7Category": "价格追踪",
     "project7Name": "电商竞品与价格追踪机器人",
     "project7Description": "自动监控您指定商品价格和库存的系统，价格下降或库存变化时通过 Telegram 和邮件即时通知——包含竞品价格对比、历史价格图表和目标价格提醒。",
-    "project7Badge": "内部工具"
+    "project7Badge": "内部工具",
+    "project8Category": "发票自动化",
+    "project8Name": "自动发票和报价系统（土耳其语/英语）",
+    "project8Description": "为自由职业者和中小企业量身定制的云数据库支持的发票/报价系统——包含增值税计算、客户管理、收入仪表盘、邮件和 WhatsApp 发送、土耳其语/英语输出。",
+    "project8Cta": "查看实时演示"
   },
   "about": {
     "eyebrow": "关于我们",

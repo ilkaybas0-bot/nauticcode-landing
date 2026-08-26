@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Languages, QrCode, Bot, CalendarClock, MessagesSquare, Stamp, TrendingDown, ArrowUpRight } from "lucide-react";
+import { Languages, QrCode, Bot, CalendarClock, MessagesSquare, Stamp, TrendingDown, Receipt, ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { CoverflowCarousel } from "@/components/ui/coverflow-carousel";
 
@@ -102,6 +102,18 @@ const PROJECTS: ProjectEntry[] = [
     accent: "text-lime-400",
     border: "border-lime-400/20",
     image: "/projects/fiyat-takip.png",
+  },
+  {
+    icon: Receipt,
+    categoryKey: "project8Category",
+    nameKey: "project8Name",
+    descriptionKey: "project8Description",
+    ctaKey: "project8Cta",
+    badgeKey: null,
+    href: "https://invoice-generator-zzsj26rvftrtgseyttge68.streamlit.app/",
+    accent: "text-accent-cobalt",
+    border: "border-accent-cobalt/20",
+    image: "/projects/invoice-generator.png",
   },
 ];
 

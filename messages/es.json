@@ -95,7 +95,11 @@
     "project7Category": "Seguimiento de Precios",
     "project7Name": "Bot de Seguimiento de Precios y Competencia para E-Commerce",
     "project7Description": "Un sistema que monitorea automáticamente el precio y stock de los productos que elijas, enviando alertas instantáneas por Telegram y correo cuando el precio baja o el stock cambia — incluye comparación de precios de la competencia, gráficos de precio histórico y alarmas de precio objetivo.",
-    "project7Badge": "Herramienta interna"
+    "project7Badge": "Herramienta interna",
+    "project8Category": "Automatización de Facturación",
+    "project8Name": "Sistema Automático de Facturas y Presupuestos (TR/EN)",
+    "project8Description": "Un sistema de facturas/presupuestos hecho a medida para freelancers y pequeñas empresas, respaldado por base de datos en la nube — cálculo de IVA, gestión de clientes, panel de ingresos, envío por correo y WhatsApp, salida en turco/inglés.",
+    "project8Cta": "Ver demo en vivo"
   },
   "about": {
     "eyebrow": "Nosotros",
